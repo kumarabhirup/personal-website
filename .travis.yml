@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - '8'
+  - '10'
+
+env:
+  - NODE_ENV=test
+script:
+  - npm run test:ci
+  - travis_wait 30 npm run lint

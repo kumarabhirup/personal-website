@@ -1,0 +1,30 @@
+{
+  "name": "jamstack-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build-web": "(cd web && npm run build)",
+    "build": "lerna run build --parallel",
+    "dev": "lerna run dev --parallel",
+    "start": "lerna run start --parallel",
+    "deploy:now": "now",
+    "lint": "lerna run lint --parallel",
+    "lint:fix": "lerna run lint:fix --parallel",
+    "test": "lerna run test --parallel",
+    "test:ci": "lerna run test:ci --parallel",
+    "postinstall": "lerna bootstrap"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:iqubex-technologies/adify.git",
+  "author": "Kumar Abhirup",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "engines": {
+    "node": "^8.10.0 || ^10.13.0 || >=11.10.1"
+  }
+}
