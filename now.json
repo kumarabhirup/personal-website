@@ -1,18 +1,30 @@
 {
   "version": 2,
-  "name": "jamstack",
+  "name": "personal-website",
   "public": true,
-  "alias": ["jamstack"],
+  "alias": [
+    "kumarabhirup",
+    "www.kumarabhirup"
+  ],
+  "scope": "kumarabhirup",
   "build": {
-    "env": {}
+    "env": {
+      "RECAPTCHA_CLIENT_KEY": "@kumarrecaptchaclientkey",
+      "GA_TRACKING_ID": "@kumargatrackingid",
+      "APILAYER_KEY": "@kumarapilayerkey"
+    }
   },
-  "builds": [{
-    "src": "packages/web/package.json",
-    "use": "@now/next"
-  }],
-  "routes": [{
-    "src": "(.*)",
-    "dest": "packages/web$1",
-    "continue": true
-  }]
+  "builds": [
+    {
+      "src": "packages/web/package.json",
+      "use": "@now/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "(.*)",
+      "dest": "packages/web$1",
+      "continue": true
+    }
+  ]
 }

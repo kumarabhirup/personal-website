@@ -1,5 +1,5 @@
 {
-  "name": "jamstack-boilerplate",
+  "name": "personal-website",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -7,9 +7,9 @@
   ],
   "scripts": {
     "build-web": "(cd web && npm run build)",
-    "build": "lerna run build --parallel",
-    "dev": "lerna run dev --parallel",
-    "start": "lerna run start --parallel",
+    "build": "NODE_ENV=production lerna run build --parallel",
+    "dev": "NODE_ENV=development lerna run dev --parallel",
+    "start": "NODE_ENV=production lerna run start --parallel",
     "deploy:now": "now",
     "lint": "lerna run lint --parallel",
     "lint:fix": "lerna run lint:fix --parallel",

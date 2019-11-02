@@ -1,28 +1,36 @@
-import React from 'react'
-import Head from 'next/head'
-import Link from 'next/link'
-import '../sass/index.sass'
+import React, { Component } from 'react'
 
-export default function HomePage() {
-  return (
-    <main>
-      <Head>
-        <title>Next.js on Now</title>
-      </Head>
-      <h1>Next.js on Now</h1>
-      <h2>
-        Developed & Deployed with{' '}
-        <a
-          href="https://zeit.co/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          ZEIT Now
-        </a>
-      </h2>
-      <Link href="/post/[pid]" as="/post/test">
-        <a>Test post</a>
-      </Link>
-    </main>
-  )
+import { homeLandingPage } from '../src/api/pageLanding';
+import { activities } from '../src/api/activities';
+import { contactSection } from '../src/api/others';
+import { banner } from '../src/api/banner';
+import { portfolio } from '../src/api/portfolio';
+import { skills } from '../src/api/skills';
+import { socialLinks } from '../src/api/socialLinks';
+import { aboutMe } from '../src/api/about';
+
+import HomepageParallax from '../src/components/mobirise/HomepageParallax';
+import About from '../src/components/mobirise/About';
+import SocialLinks from '../src/components/mobirise/SocialLinks';
+import Skills from '../src/components/mobirise/Skills';
+import Portfolio from '../src/components/mobirise/Portfolio';
+import Banner from '../src/components/mobirise/Banner';
+import Contact from '../src/components/mobirise/Contact';
+import Activities from '../src/components/mobirise/Activities';
+
+export default class homePage extends Component {
+  render() {
+    return (
+      <>
+        <HomepageParallax {...homeLandingPage} />
+        <About data={aboutMe} />
+        <SocialLinks data={socialLinks} />
+        <Skills data={skills} />
+        <Portfolio data={portfolio} />
+        <Banner data={banner} />
+        <Contact data={contactSection} />
+        <Activities data={activities} />
+      </>
+    )
+  }
 }
