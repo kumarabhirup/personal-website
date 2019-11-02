@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next -p 3001",
     "start": "next start",
-    "build": "next export && next build",
+    "build": "next build",
     "lint": "eslint src/** pages/**",
     "lint:fix": "eslint src/** pages/** --fix",
     "test": "NODE_ENV=test jest --passWithNoTests --watch",

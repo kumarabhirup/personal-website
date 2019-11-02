@@ -9,4 +9,5 @@ module.exports = withSass({
     APILAYER_KEY: process.env.APILAYER_KEY,
     KUMAR_BACKEND_URL: process.env.KUMAR_BACKEND_URL,
   },
+  cssModules: true,
 })
