@@ -30,13 +30,13 @@
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "packages/backend/src/index.ts"
+    },
+    {
       "src": "(.*)",
       "dest": "packages/web$1",
       "continue": true
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "packages/backend/src/index.ts"
     }
   ]
 }
