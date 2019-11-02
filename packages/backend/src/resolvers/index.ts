@@ -1,11 +1,8 @@
-import exampleMutation from './mutations/exampleMutation'
-import exampleQuery from './queries/exampleQuery'
+import sendMessage from './mutations/sendMessage'
 
 export default {
-  Query: {
-    exampleQuery,
-  },
+  Query: {},
   Mutation: {
-    exampleMutation,
+    sendMessage,
   },
 }

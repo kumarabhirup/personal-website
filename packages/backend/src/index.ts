@@ -4,7 +4,7 @@ import * as bodyParser from 'body-parser'
 
 import typeDefs from './utils/schema'
 import resolvers from './resolvers'
-import db from './utils/database'
+import { prisma } from './utils/generated/prisma-client'
 
 const server: GraphQLServer = new GraphQLServer({
   typeDefs,
@@ -14,7 +14,7 @@ const server: GraphQLServer = new GraphQLServer({
   },
   context: (request): object => ({
     ...request,
-    db,
+    prisma,
   }),
 })
 

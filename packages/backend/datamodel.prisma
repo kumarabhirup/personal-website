@@ -1,0 +1,10 @@
+type Contact {
+  id: ID! @unique
+  fullname: String!
+  phone: String
+  email: String!
+  subject: String!
+  message: String!
+  updatedAt: DateTime!
+  createdAt: DateTime!
+}

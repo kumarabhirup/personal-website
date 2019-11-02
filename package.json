@@ -8,6 +8,7 @@
   "scripts": {
     "build-web": "(cd web && npm run build)",
     "build": "NODE_ENV=production lerna run build --parallel",
+    "build:watch": "NODE_ENV=production lerna run build:watch --parallel",
     "dev": "NODE_ENV=development lerna run dev --parallel",
     "start": "NODE_ENV=production lerna run start --parallel",
     "deploy:now": "now",

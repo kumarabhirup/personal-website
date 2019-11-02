@@ -10,6 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "removeComments": true,
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    "allowJs": true
   }
 }
