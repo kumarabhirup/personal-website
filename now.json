@@ -13,6 +13,11 @@
       "APILAYER_KEY": "@kumarapilayerkey"
     }
   },
+  "env": {
+    "PRISMA_SECRET": "@kumarprismasecret",
+    "APILAYER_KEY": "@kumarapilayerkey",
+    "RECAPTCHA_SERVER_KEY": "@kumarrecaptchaserverkey"
+  },
   "builds": [
     {
       "src": "packages/web/package.json",
