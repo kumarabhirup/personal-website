@@ -3,8 +3,7 @@
   "name": "personal-website",
   "public": true,
   "alias": [
-    "kumarabhirup",
-    "www.kumarabhirup"
+    "kumarabhirup"
   ],
   "scope": "kumarabhirup",
   "build": {
