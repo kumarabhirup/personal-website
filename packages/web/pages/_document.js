@@ -3,27 +3,34 @@ import { ServerStyleSheet } from 'styled-components'
 
 // To render styles on the server-side (for styled-components)
 class MyDocument extends Document {
-
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
-    const page = renderPage(App => props => sheet.collectStyles(<App {...props} />))
+    const page = renderPage(App => props =>
+      sheet.collectStyles(<App {...props} />)
+    )
     const styleTags = sheet.getStyleElement()
     return { ...page, styleTags }
   }
 
   render() {
     return (
-      <html>
-
-        <Head>
-          {this.props.styleTags}
-        </Head>
+      <html lang="en">
+        <Head>{this.props.styleTags}</Head>
 
         <body>
-
           <noscript>
-            <div style={{width: "900px", margin: "20% auto", textAlign: "center"}}>
-              <h2>It's pity that you wanna live in a <span style={{color: "red"}}>world without JavaScript!</span> 🌎</h2>
+            <div
+              style={{
+                width: '900px',
+                margin: '20% auto',
+                textAlign: 'center',
+              }}
+            >
+              <h2>
+                It's pity that you wanna live in a{' '}
+                <span style={{ color: 'red' }}>world without JavaScript!</span>{' '}
+                🌎
+              </h2>
             </div>
           </noscript>
 
@@ -42,14 +49,10 @@ class MyDocument extends Document {
           <script src="/static/prebuilt/jarallax/jarallax.min.js"></script>
           <script src="/static/prebuilt/theme/js/script.js"></script>
           <script src="/static/prebuilt/formoid/formoid.min.js"></script>
-
         </body>
-        
       </html>
-    ) 
+    )
   }
-  
 }
-
 
 export default MyDocument

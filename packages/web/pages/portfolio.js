@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import NavBar from '../src/components/mobirise/NavBar';
-import PageLanding from '../src/components/mobirise/PageLanding';
-import PortfolioExtended from '../src/components/mobirise/PortfolioExtended';
-import Banner from '../src/components/mobirise/Banner';
-import Contact from '../src/components/mobirise/Contact';
+import NavBar from '../src/components/mobirise/NavBar'
+import PageLanding from '../src/components/mobirise/PageLanding'
+import PortfolioExtended from '../src/components/mobirise/PortfolioExtended'
+import Banner from '../src/components/mobirise/Banner'
+import Contact from '../src/components/mobirise/Contact'
 
 import { portfolioLandingPage } from '../src/api/pageLanding'
 import { navBar } from '../src/api/navBar'

@@ -1,11 +1,14 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+
 import React, { Component } from 'react'
-import styled, { ThemeProvider, injectGlobal } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 
 import Meta from './Meta'
-import Footer from './mobirise/Footer';
+import Footer from './mobirise/Footer'
 
 const theme = {
-  defaultColor: '#ffffff'
+  defaultColor: '#ffffff',
 }
 
 class Page extends Component {
@@ -14,15 +17,12 @@ class Page extends Component {
       <ThemeProvider theme={theme}>
         <>
           <Meta />
-          <div>
-            { this.props.children }
-          </div>
+          <div>{this.props.children}</div>
           <Footer />
         </>
       </ThemeProvider>
     )
   }
 }
-
 
 export default Page
