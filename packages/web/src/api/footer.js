@@ -41,9 +41,9 @@ export const footerContent = {
         <>
           JavaScript, Node.JS, React.JS
           <br />
-          GraphQL/Prisma
+          GraphQL, MongoDB, Prisma
           <br />
-          PHP, WordPress &amp; Laravel
+          WordPress, Gatsby, MySQL
         </>
       ),
     },
@@ -52,7 +52,7 @@ export const footerContent = {
     <>
       No rights reserved. Code is hosted on{' '}
       <a
-        href="https://github.com/KumarAbhirup/kumarabhirup"
+        href="https://github.com/KumarAbhirup/personal-website"
         className="text-success"
       >
         GitHub

@@ -5,23 +5,27 @@ import { meta } from './meta'
 
 export const aboutMe = {
   title: `👁️‍🗨️ Who am I?`,
-  text: `I develop web apps, simple command line tools and mobile apps ☕`,
+  text: `I develop web apps, command line tools, mobile apps and games! ☕`,
   questions: [
     {
-      question: ` Why do I code at the age of ${getAge('2003-11-13')}? 🖥️`,
+      question: ` My Resume 📄`,
       answer: (
         <>
-          I started learning web development when I was 12.
-          <br /> I have never looked back since then... 🙂
-          <br />I love building and shipping stuffs. It's my hobby.
-          <br />
-          Here's{' '}
-          <a href={`${meta.domain}/portfolio`}>what I shipped till date!</a>
+          I have my resume, hosted on{' '}
+          <a
+            href="https://github.com/KumarAbhirup/resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            this GitHub repository
+          </a>
+          . It is always updated and you may also see the previous versions of
+          it in the Git Commit Log.
         </>
       ),
     },
     {
-      question: ` What are your everyday tools? 🤔`,
+      question: ` What are my everyday tools? 🤔`,
       answer: (
         <>
           Visit <a href={`${meta.domain}/uses`}>kumar.now.sh/uses</a>&nbsp;to
@@ -40,19 +44,34 @@ export const aboutMe = {
       ),
     },
     {
-      question: ` My story 🏮`,
+      question: ` Where do I write? ✍`,
       answer: (
         <>
-          I started out my coding journey with WordPress 🤟🏻 Here's{' '}
+          I currently right my Web and React Development related posts on{' '}
           <a
-            href="https://heropress.com/essays/life-designed-wordpress/"
+            href="https://dev.to/kumar_abhirup/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            my story
+            DEV
           </a>{' '}
-          published on HeroPress. It's kinda old now, but I'll write another
-          soon enough. 😅
+          and I also republish them on{' '}
+          <a
+            href="https://medium.com/@kumar_abhirup"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Medium
+          </a>
+          . I used to write on{' '}
+          <a
+            href="https://iqubex.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IQubex.com
+          </a>
+          , so you may get to read what I have written, there too!
         </>
       ),
     },

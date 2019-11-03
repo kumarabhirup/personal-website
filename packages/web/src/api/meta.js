@@ -6,11 +6,11 @@ export const meta = {
   title: 'Kumar Abhirup',
   website: 'https://kumar.now.sh',
   meta_description:
-    'Hi, I am Kumar Abhirup. A Junior developer with a passion for learning. WordPress, JavaScript, Node and React are my jam!',
+    'Hi, I am Kumar Abhirup. A Junior web developer with a passion for learning. JavaScript, Node, React and GraphQL are my jam!',
   meta_ogTitle: 'Hey, I am Kumar Abhirup 👋🏻',
   tagline: (
     <>
-      A Jnr. developer with a passion for learning 👋🏻 <br />
+      A Web Developer with a passion for learning 👋🏻 <br />
       <br />
     </>
   ), // A 15 year-old web developer 👋🏻

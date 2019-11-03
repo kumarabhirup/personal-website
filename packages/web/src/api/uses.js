@@ -8,7 +8,8 @@ export const uses = {
       title: <>&nbsp; Devices and Accessories</>,
       answer: (
         <>
-          I use <strong>MacBook Air&nbsp;</strong>💻&nbsp; for coding. <br />
+          I use <strong>MacBook Air 2019&nbsp;</strong>💻&nbsp; for coding.{' '}
+          <br />
           <strong>Oppo F7</strong>📱... Yes, I do use Android!
           <br />
           <strong>Lenovo Tablet</strong> for watching courses.
@@ -33,11 +34,10 @@ export const uses = {
       answer: (
         <>
           <strong>*</strong> I use <strong>Hyper Terminal</strong> instead of
-          the normal OSX terminal. It does face few issues, but it's great once
-          solved.&nbsp;😉
+          the normal OSX terminal.
           <br />
           <br />
-          <strong>*</strong> I have recently switched to{' '}
+          <strong>*</strong> It is configured with{' '}
           <em>
             <strong>ohmyzsh</strong>
           </em>{' '}
@@ -45,17 +45,20 @@ export const uses = {
           <br />
           <br />
           <strong>*</strong> I have configured{' '}
-          <strong>WesBos' Cobalt2 Theme for HyperTerm </strong>which uses{' '}
-          <strong>Powerline fonts for terminal</strong>.
-        </>
-      ),
-    },
-    {
-      title: <>&nbsp; Developer utilities</>,
-      answer: (
-        <>
-          Babel, ESLint, WebPack, Prettier is what I use for doing good to my
-          code.
+          <strong>Shades of Purple Theme for HyperTerm </strong>which uses{' '}
+          <strong>Dank Mono font</strong> for terminal.
+          <br />
+          <br />
+          <strong>*</strong> You can actually replicate my complete terminal
+          design by following{' '}
+          <a
+            href="https://dev.to/kumar_abhirup/weekend-task-set-up-ohmyzsh-on-hyperterm-with-the-best-plugins-and-themes-also-integrated-terminal-on-vscode-1d7b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            this tutorial I wrote on DEV
+          </a>
+          .
         </>
       ),
     },

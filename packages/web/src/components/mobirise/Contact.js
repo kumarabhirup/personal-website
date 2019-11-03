@@ -250,7 +250,7 @@ export default class Contact extends Component {
                     title="Google Maps"
                     frameBorder="0"
                     style={{ border: 0 }}
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik"
+                    src={data.map}
                     allowFullScreen=""
                   ></iframe>
                 </div>

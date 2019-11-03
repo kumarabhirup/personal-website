@@ -5,9 +5,9 @@ export const activities = {
   text: `Here I reveal latest and greatest ongoing things of my life!`,
   activities: [
     {
-      timestamp: `19th June 2019`,
-      title: <>Updated Skills section 🔁</>,
-      body: <>The updated skills section, explains me better.</>,
+      timestamp: `3rd November 2019`,
+      title: <>Updated the public information 🍺</>,
+      body: <>This portfolio website will from today explain me better.</>,
     },
     {
       timestamp: `10th February 2019`,

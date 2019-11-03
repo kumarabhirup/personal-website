@@ -5,9 +5,9 @@ export const banner = {
   text: (
     <>
       <strong>C</strong>offee ☕ &nbsp; &nbsp;<strong>C</strong>ourses 💻 &nbsp;
-      &nbsp;<strong>C</strong>ommunity 🇮🇳
+      &nbsp;<strong>C</strong>ommunity 🎉
       <br />
     </>
   ),
-  backgound: `${process.env.PUBLIC_URL}/prebuilt/images/mbr-2-1620x1080.jpg`,
+  backgound: `static/prebuilt/images/mbr-2-1620x1080.jpg`,
 }

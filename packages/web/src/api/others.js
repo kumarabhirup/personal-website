@@ -18,7 +18,7 @@ export const contactSection = {
   text: `Trust. Write. I don't disclose 😜`,
   submitText: `SEND MESSAGE 💌`,
   map:
-    'https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik',
+    'https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=Nashik, Maharashtra, India',
   placeholders: {
     name: `* Full name`,
     phone: `Phone: +91-7304257125`,
