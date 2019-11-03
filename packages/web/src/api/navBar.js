@@ -1,7 +1,7 @@
 import React from 'react' // For making JSX work 😆
 
 export const navBar = {
-  logo: `/static/prebuilt/images/kumar-abhirup.jpg`,
+  logo: `/static/prebuilt/images/kumar-1024x1024.jpg`,
   menu: [
     { name: 'home', link: `/` },
     { name: 'portfolio', link: `/portfolio` },
