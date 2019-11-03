@@ -17,11 +17,6 @@ export default class Meta extends Component {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="og:title" property="og:title" content={meta.meta_ogTitle} />
-        <meta name="description" content={meta.meta_description} />
-        <meta name="author" content={meta.name} />
-        <meta name="robots" content="index, follow" />
-
         <link rel="shortcut icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/static/manifest.json" />
 
@@ -66,7 +61,28 @@ export default class Meta extends Component {
           type="text/css"
         />
 
-        {/* <script src="https://www.google.com/recaptcha/api.js" async defer></script> */}
+        <meta name="description" content={meta.meta_description} />
+        <meta name="copyright" content={meta.name} />
+        <meta name="robots" content="index,follow" />
+        <meta name="author" content={`${meta.name}, ${meta.email}`} />
+        <meta name="url" content={meta.website} />
+        <meta name="identifier-URL" content={meta.website} />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+
+        <meta property="og:title" content={meta.meta_ogTitle} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={meta.website} />
+        <meta property="og:image" content={meta.image} />
+
+        <meta name="twitter:title" content={meta.meta_ogTitle} />
+        <meta name="twitter:description" content={meta.meta_description} />
+        <meta name="twitter:image" content={meta.image} />
+        <meta name="twitter:image:alt" content={meta.meta_ogTitle} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content={`@${meta.twitter}`} />
+        <meta name="twitter:creator" content={`@${meta.twitter}`} />
       </Head>
     )
   }

@@ -21,4 +21,5 @@ export const meta = {
     process.env.NODE_ENV === 'production'
       ? 'https://kumar.now.sh'
       : 'http://localhost:3001',
+  twitter: 'kumar_abhirup',
 }
