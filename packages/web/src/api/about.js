@@ -1,5 +1,4 @@
 import React from 'react'
-import getAge from 'get-age'
 
 import { meta } from './meta'
 
