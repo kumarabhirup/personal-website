@@ -24,15 +24,13 @@ export const skills = {
       percent: 60,
       icon: 'https://montykamath.files.wordpress.com/2018/02/graphql.png',
     },
+    {
+      name: 'p5.js',
+      percent: 60,
+      icon: 'https://i.ibb.co/9TK2HPN/p5-sq-white-background.png',
+    },
   ],
-  beginnerLevel: ['React Native', 'React Hooks', 'Gatsby', 'Redux'],
-  alsoKnow: ['WordPress', 'Laravel', 'Git', 'Heroku', 'Next.js'],
-  wishlist: [
-    'Vue.js',
-    'Docker',
-    'TypeScript',
-    'Electron',
-    'Progressive Web App',
-    'AWS',
-  ],
+  beginnerLevel: ['TypeScript', 'React Native', 'Redux'],
+  alsoKnow: ['Next.js', 'WordPress', 'Rest API', 'Git Workflow'],
+  wishlist: ['Vue.js', 'Docker', 'Electron', 'Progressive Web App', 'AWS'],
 }
