@@ -1,9 +1,9 @@
 const projects = [
   {
-    title: `PaprInk`,
-    description: `An isomorphic webapp for writers to make habit of writing everyday. Complete CRUD interface built on Server Side using React, Apollo, Prisma and GraphQL.`,
-    link: `https://paprink.com`,
-    image: `https://i.ibb.co/QXLsPdD/logo.jpg`, // `https://i.ibb.co/pQRG5ZT/PaprInk.jpg`
+    title: `pkgreview.dev`,
+    description: `A lot of people find it very difficult to decide what NPM Package to use. pkgreview.dev helps developers in the JavaScript Community review and analyze each module before they start using it.`,
+    link: `https://pkgreview.dev`,
+    image: `https://i.ibb.co/dPRzYZv/pkgreview-2.jpg`,
   },
   {
     title: `JoinMyCall`,
@@ -16,6 +16,12 @@ const projects = [
     description: `A command line interface (cli) application that sends automated and dynamic emails to the list.`,
     link: `https://bulkmail.now.sh`,
     image: `/static/prebuilt/images/bulkmail.gif`,
+  },
+  {
+    title: `PaprInk`,
+    description: `An isomorphic webapp for writers to make habit of writing everyday. Complete CRUD interface built on Server Side using React, Apollo, Prisma and GraphQL.`,
+    link: `https://paprink.com`,
+    image: `https://i.ibb.co/QXLsPdD/logo.jpg`, // `https://i.ibb.co/pQRG5ZT/PaprInk.jpg`
   },
   {
     title: `FlusLive`,
