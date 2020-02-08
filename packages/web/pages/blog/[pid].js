@@ -35,6 +35,7 @@ function blogPage({ content, data, excerpt, fourOFour }) {
             link: data?.authorLink,
           },
         })}
+        featuredImage={data?.featuredImage}
       />
       <BlogContent data={{ data, content, excerpt }} error={fourOFour} />
       <Banner data={banner} />

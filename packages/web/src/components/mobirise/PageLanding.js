@@ -7,12 +7,23 @@ import { arrowIcon } from '../../api/pageLanding'
 
 export default class PageLanding extends Component {
   render() {
-    const { title, iconsAndLabels, arrowTakesWhere, button } = this.props
+    const {
+      title,
+      iconsAndLabels,
+      arrowTakesWhere,
+      button,
+      featuredImage,
+    } = this.props
+
     return (
       <section
         className="header12 cid-reFvVotcRe mbr-fullscreen mbr-parallax-background"
         id="header12-x"
         data-rv-view="254"
+        style={{
+          backgroundImage: `url("${featuredImage ||
+            '/static/prebuilt/images/02.jpg'}")`,
+        }}
       >
         <div
           className="mbr-overlay"
