@@ -2,23 +2,21 @@
 /* eslint-disable react/prop-types */
 
 import React, { useEffect } from 'react'
-import Markdown from 'markdown-to-jsx'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 
 import NavBar from '../../src/components/mobirise/NavBar'
 import PageLanding from '../../src/components/mobirise/PageLanding'
-import Faq from '../../src/components/mobirise/FAQ'
 import Banner from '../../src/components/mobirise/Banner'
 import Contact from '../../src/components/mobirise/Contact'
+import BlogContent from '../../src/components/mobirise/BlogContent'
 
 import { blogLandingPage } from '../../src/api/pageLanding'
 import { navBar } from '../../src/api/navBar'
 import { banner } from '../../src/api/banner'
 import { contactSection } from '../../src/api/others'
-import { uses } from '../../src/api/uses'
 
-function blogPage({ content, data, data: { title, writtenBy }, fourOFour }) {
+function blogPage({ content, data, excerpt, fourOFour }) {
   const router = useRouter()
 
   useEffect(() => {
@@ -30,15 +28,15 @@ function blogPage({ content, data, data: { title, writtenBy }, fourOFour }) {
       <NavBar data={navBar} />
       <PageLanding
         {...blogLandingPage({
-          title,
+          title: data?.title,
           arrowTakesWhereAnchor: 'blog',
           author: {
-            name: writtenBy,
+            name: data?.writtenBy,
             link: data?.authorLink,
           },
         })}
       />
-      <Faq {...uses} />
+      <BlogContent data={{ data, content, excerpt }} error={fourOFour} />
       <Banner data={banner} />
       <Contact data={contactSection} />
     </>
@@ -47,13 +45,11 @@ function blogPage({ content, data, data: { title, writtenBy }, fourOFour }) {
 
 blogPage.getInitialProps = async ({ query }) => {
   try {
-    const post = await import(`../../content/${query.pid}.md`).then(
-      data => data.default
-    )
+    const post = await import(`../../content/${query.pid}.md`)
+      .then(data => data.default)
+      .catch(error => ({ fourOFour: true }))
 
     const document = await matter(post)
-
-    console.log(document)
 
     return {
       ...document,

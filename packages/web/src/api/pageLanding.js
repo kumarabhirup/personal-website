@@ -73,7 +73,7 @@ export const blogLandingPage = ({ title, arrowTakesWhereAnchor, author }) => ({
   ),
   button: {
     icon: `mbrib-user`,
-    text: author?.name || `WHO AM I?`,
+    text: `by ${author?.name}` || `WHO AM I?`,
     link: author?.link || `${meta.domain}#about`,
   },
   iconsAndLabels: [],

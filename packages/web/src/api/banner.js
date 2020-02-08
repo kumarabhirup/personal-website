@@ -9,5 +9,5 @@ export const banner = {
       <br />
     </>
   ),
-  backgound: `static/prebuilt/images/mbr-2-1620x1080.jpg`,
+  background: `static/prebuilt/images/mbr-2-1620x1080.jpg`,
 }
