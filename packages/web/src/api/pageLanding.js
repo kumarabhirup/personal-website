@@ -64,6 +64,22 @@ export const usesLandingPage = {
   arrowTakesWhere: 'uses',
 }
 
+export const blogLandingPage = ({ title, arrowTakesWhereAnchor, author }) => ({
+  title: (
+    <>
+      <br />
+      {title}
+    </>
+  ),
+  button: {
+    icon: `mbrib-user`,
+    text: author?.name || `WHO AM I?`,
+    link: author?.link || `${meta.domain}#about`,
+  },
+  iconsAndLabels: [],
+  arrowTakesWhere: arrowTakesWhereAnchor || 'uses',
+})
+
 export const page404LandingPage = {
   title: (
     <>
