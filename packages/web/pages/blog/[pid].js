@@ -7,13 +7,13 @@ import { useRouter } from 'next/router'
 
 import NavBar from '../../src/components/mobirise/NavBar'
 import PageLanding from '../../src/components/mobirise/PageLanding'
-import Banner from '../../src/components/mobirise/Banner'
+import SocialLinks from '../../src/components/mobirise/SocialLinks'
 import Contact from '../../src/components/mobirise/Contact'
 import BlogContent from '../../src/components/mobirise/BlogContent'
 
 import { blogLandingPage } from '../../src/api/pageLanding'
 import { navBar } from '../../src/api/navBar'
-import { banner } from '../../src/api/banner'
+import { socialLinks } from '../../src/api/socialLinks'
 import { contactSection } from '../../src/api/others'
 
 function blogPage({ content, data, excerpt, fourOFour }) {
@@ -38,7 +38,7 @@ function blogPage({ content, data, excerpt, fourOFour }) {
         featuredImage={data?.featuredImage}
       />
       <BlogContent data={{ data, content, excerpt }} error={fourOFour} />
-      <Banner data={banner} />
+      <SocialLinks data={socialLinks} />
       <Contact data={contactSection} />
     </>
   )
