@@ -37,7 +37,11 @@ function blogPage({ content, data, excerpt, fourOFour }) {
         })}
         featuredImage={data?.featuredImage}
       />
-      <BlogContent data={{ data, content, excerpt }} error={fourOFour} />
+      <BlogContent
+        data={{ data, content, excerpt }}
+        url={router.asPath}
+        error={fourOFour}
+      />
       <SocialLinks data={socialLinks} />
       <Contact data={contactSection} />
     </>

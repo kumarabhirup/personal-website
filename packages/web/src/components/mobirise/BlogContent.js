@@ -250,28 +250,32 @@ export default function BlogContent({ error, ...props }) {
   return (
     <section
       className="progress-bars3 cid-rezDHMdky7"
-      id="progress-bars3-j"
+      id="progress-bars3-j blog"
       data-rv-view="234"
       style={{ background: '#fff' }}
     >
       <Head>
-        <title></title>
+        <title>{data.title} — Kumar Abhirup</title>
 
-        <meta name="description" content={meta.meta_description} />
-        <meta name="url" content={meta.website} />
-        <meta name="identifier-URL" content={meta.website} />
+        <meta name="description" content={excerpt} />
+        <meta name="url" content={`${meta.website}${props.url}`} />
+        <meta name="identifier-URL" content={`${meta.website}${props.url}`} />
 
-        <meta property="og:title" content={meta.meta_ogTitle} />
+        <meta property="og:title" content={`${data.title} — Kumar Abhirup`} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={meta.website} />
-        <meta property="og:image" content={meta.image} />
+        <meta property="og:url" content={`${meta.website}${props.url}`} />
+        <meta property="og:image" content={data.featuredImage} />
 
-        <meta name="twitter:title" content={meta.meta_ogTitle} />
-        <meta name="twitter:description" content={meta.meta_description} />
-        <meta name="twitter:image" content={meta.image} />
-        <meta name="twitter:image:alt" content={meta.meta_ogTitle} />
+        <meta name="twitter:title" content={`${data.title} — Kumar Abhirup`} />
+        <meta name="twitter:description" content={excerpt} />
+        <meta name="twitter:image" content={data.featuredImage} />
+        <meta
+          name="twitter:image:alt"
+          content={`${data.title} — Kumar Abhirup`}
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+
       <div className="container">
         <center>
           <h3 style={{ color: '#1C2E36', opacity: 0.4 }}>
