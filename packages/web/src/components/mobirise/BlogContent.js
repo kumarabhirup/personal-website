@@ -250,6 +250,12 @@ export default function BlogContent({ error, ...props }) {
         <meta name="description" content={excerpt} />
         <meta name="url" content={`${meta.website}${props.url}`} />
         <meta name="identifier-URL" content={`${meta.website}${props.url}`} />
+        <meta
+          name="revised"
+          content={moment(data.date, 'MM/DD/YYYY, h:mm a').format(
+            'dddd, MMM Do YYYY'
+          )}
+        ></meta>
 
         <meta property="og:title" content={`${data.title} — Kumar Abhirup`} />
         <meta property="og:type" content="website" />
