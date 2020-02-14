@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react'
-import Markdown from 'react-markdown'
+import Markdown from 'react-markdown/with-html'
 import moment from 'moment'
 import styled from 'styled-components'
 import Head from 'next/head'
@@ -288,7 +288,11 @@ export default function BlogContent({ error, ...props }) {
         ) : (
           <MarkdownStyles id="markdownStyles" className="markdown-body">
             <center>
-              <Markdown source={content} renderers={{ code: CodeBlock }} />
+              <Markdown
+                escapeHtml={false}
+                source={content}
+                renderers={{ code: CodeBlock }}
+              />
             </center>
           </MarkdownStyles>
         )}

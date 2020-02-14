@@ -11,7 +11,7 @@ I am very thrilled to announce the side-project I have been working on since las
 
 I named it **[pkgreview.dev](https://pkgreview.dev)**! The complete product was born out of one tweet.
 
-<!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🔥⚡ Question Time ⚡🔥<br><br>Is there a Star Rating/Review website for <a href="https://twitter.com/hashtag/NPM?src=hash&amp;ref_src=twsrc%5Etfw">#NPM</a> packages...<br><br>where people could look at reviews before using a library?<br><br>Is it a good idea to build such a website?<br><br>⏳⌛⏳⌛⏳⌛⏳</p>&mdash; Kumar Abhirup (@kumar_abhirup) <a href="https://twitter.com/kumar_abhirup/status/1218860389833723905?ref_src=twsrc%5Etfw">January 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🔥⚡ Question Time ⚡🔥<br><br>Is there a Star Rating/Review website for <a href="https://twitter.com/hashtag/NPM?src=hash&amp;ref_src=twsrc%5Etfw">#NPM</a> packages...<br><br>where people could look at reviews before using a library?<br><br>Is it a good idea to build such a website?<br><br>⏳⌛⏳⌛⏳⌛⏳</p>&mdash; Kumar Abhirup (@kumar_abhirup) <a href="https://twitter.com/kumar_abhirup/status/1218860389833723905?ref_src=twsrc%5Etfw">January 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🎊 pkgreview.dev
 
