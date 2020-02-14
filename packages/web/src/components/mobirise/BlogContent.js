@@ -15,16 +15,6 @@ const MarkdownStyles = styled.article`
   max-width: 90%;
   margin: 0px auto;
 
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic, 300);
-
-  p {
-    font-size: 20px;
-    font-family: 'Open Sans';
-    line-height: 50px;
-    text-align: justify;
-    margin: 30px 0px;
-  }
-
   *::selection {
     color: #000;
     background: yellow;

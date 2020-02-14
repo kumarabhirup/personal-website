@@ -1556,6 +1556,16 @@ margin-top: 24px; */
   -webkit-filter: invert(1);
 }
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic, 300);
+
+.markdown-body p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif, "Helvetica Neue", "Helvetica", "Arial";
+  line-height: 50px;
+  text-align: justify;
+  margin: 30px 0px;
+}
+
 .markdown-body pre code {
   background-color: transparent;
   border: 0;
