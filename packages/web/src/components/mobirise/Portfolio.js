@@ -49,6 +49,7 @@ class Portfolio extends Component {
     const projectsToShow = data.portfolio.filter(
       (item, index) => index < data.projectsAtHomepage
     )
+
     return (
       <Element name="portfolio">
         <section

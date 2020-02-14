@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const activities = {
-  title: `Latest Activities 🎃`,
-  text: `Here I reveal latest and greatest ongoing things of my life!`,
+  title: `Blog 🎃`,
+  text: `Read everything I write. Here!`,
   activities: [
     {
       timestamp: `3rd November 2019`,

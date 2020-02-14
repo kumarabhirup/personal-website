@@ -6,9 +6,9 @@ export const homeLandingPage = {
     1: {
       class: `btn-secondary`,
       icon: `mbri-rocket`,
-      text: `ABOUT ME`,
-      link: `about`,
-      linkOffset: -50,
+      text: `Blog`,
+      link: `blog`,
+      linkOffset: 0,
     },
     2: {
       class: `btn-white-outline`,

@@ -71,6 +71,10 @@ export const aboutMe = {
             IQubex.com
           </a>
           , so you may get to read what I have written, there too!
+          <br />
+          <br />
+          <b>UPDATE:</b> I now primarily write on this website. :) Scroll down
+          to read.
         </>
       ),
     },

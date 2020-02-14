@@ -5,6 +5,7 @@ export const navBar = {
   menu: [
     { name: 'home', link: `/` },
     { name: 'portfolio', link: `/portfolio` },
+    { name: 'blog', link: `/#blog` },
   ],
   specialButton: (
     <div className="navbar-buttons mbr-section-btn">
