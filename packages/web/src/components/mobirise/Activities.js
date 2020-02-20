@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react'
 import { Element } from 'react-scroll'
+import Link from 'next/link'
+import Markdown from 'react-markdown'
 
 export default class Activities extends Component {
   render() {
@@ -43,13 +45,45 @@ export default class Activities extends Component {
                     </div>
                     <span className="iconBackground"></span>
                     <div className="col-xs-12 col-md-6 align-right">
-                      <div className="timeline-text-content">
-                        <h4 className="mbr-timeline-title pb-3 mbr-fonts-style display-5">
-                          {activity.title}
-                        </h4>
-                        <p className="mbr-timeline-text mbr-fonts-style display-7">
-                          {activity.body}
-                        </p>
+                      <div
+                        className="timeline-text-content"
+                        style={{ padding: 0 }}
+                      >
+                        {activity.featuredImage && (
+                          <Link href={`/blog/${activity?.slug}`}>
+                            <a>
+                              <img
+                                alt={activity.title}
+                                src={activity.featuredImage}
+                                style={{
+                                  width: '100%',
+                                  // maxWidth: '400px',
+                                  // zoom: 1.3,
+                                }}
+                                className="display-5 align-right col-xs-12"
+                              />
+                            </a>
+                          </Link>
+                        )}
+                        <div style={{ padding: '20px' }}>
+                          <h4 className="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            <Link href={`/blog/${activity?.slug}`}>
+                              <a style={{ color: '#000', lineHeight: '35px' }}>
+                                {activity.title}
+                              </a>
+                            </Link>
+                          </h4>
+                          <p
+                            className="mbr-timeline-text mbr-fonts-style display-7"
+                            style={{
+                              textAlign: 'justify',
+                              lineHeight: '45px',
+                              fontSize: '18px',
+                            }}
+                          >
+                            <Markdown source={activity.body} />
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

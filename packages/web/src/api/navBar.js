@@ -5,13 +5,13 @@ export const navBar = {
   menu: [
     { name: 'home', link: `/` },
     { name: 'portfolio', link: `/portfolio` },
-    { name: 'blog', link: `/#blog` },
+    { name: 'blog', link: `/` },
   ],
   specialButton: (
     <div className="navbar-buttons mbr-section-btn">
       <a
         className="btn btn-sm btn-primary display-4"
-        href="https://twitter.com/intent/follow?screen_name=kumar_abhirup"
+        href="https://twitter.com/kumar_abhirup"
         target="_blank"
         rel="noopener noreferrer"
       >

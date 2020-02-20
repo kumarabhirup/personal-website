@@ -54,7 +54,7 @@ blogPage.getInitialProps = async ({ query }) => {
       .then(data => data.default)
       .catch(error => ({ fourOFour: true }))
 
-    const document = await matter(post)
+    const document = await matter(post, { excerpt: true })
 
     return {
       ...document,

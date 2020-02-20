@@ -11,9 +11,11 @@ class Wrapper extends App {
       pageProps = await Component.getInitialProps(ctx)
     }
 
-    // This exposes query to the user
-    pageProps.query = ctx.query
-    pageProps.pathname = ctx.pathname
+    if (ctx && pageProps) {
+      // This exposes query to the user
+      pageProps.query = ctx?.query
+      pageProps.pathname = ctx.pathname
+    }
 
     return { pageProps }
   }

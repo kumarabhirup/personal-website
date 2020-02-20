@@ -245,29 +245,29 @@ export default function BlogContent({ error, ...props }) {
       style={{ background: '#fff' }}
     >
       <Head>
-        <title>{data.title} — Kumar Abhirup</title>
+        <title>{data?.title} — Kumar Abhirup</title>
 
         <meta name="description" content={excerpt} />
-        <meta name="url" content={`${meta.website}${props.url}`} />
-        <meta name="identifier-URL" content={`${meta.website}${props.url}`} />
+        <meta name="url" content={`${meta.website}${props?.url}`} />
+        <meta name="identifier-URL" content={`${meta.website}${props?.url}`} />
         <meta
           name="revised"
-          content={moment(data.date, 'MM/DD/YYYY, h:mm a').format(
+          content={moment(data?.date, 'MM/DD/YYYY, h:mm a').format(
             'dddd, MMM Do YYYY'
           )}
         ></meta>
 
-        <meta property="og:title" content={`${data.title} — Kumar Abhirup`} />
+        <meta property="og:title" content={`${data?.title} — Kumar Abhirup`} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${meta.website}${props.url}`} />
-        <meta property="og:image" content={data.featuredImage} />
+        <meta property="og:url" content={`${meta.website}${props?.url}`} />
+        <meta property="og:image" content={data?.featuredImage} />
 
-        <meta name="twitter:title" content={`${data.title} — Kumar Abhirup`} />
+        <meta name="twitter:title" content={`${data?.title} — Kumar Abhirup`} />
         <meta name="twitter:description" content={excerpt} />
-        <meta name="twitter:image" content={data.featuredImage} />
+        <meta name="twitter:image" content={data?.featuredImage} />
         <meta
           name="twitter:image:alt"
-          content={`${data.title} — Kumar Abhirup`}
+          content={`${data?.title} — Kumar Abhirup`}
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -275,10 +275,10 @@ export default function BlogContent({ error, ...props }) {
       <div className="container">
         <center>
           <h3 style={{ color: '#1C2E36', opacity: 0.4 }}>
-            {moment(data.date, 'MM/DD/YYYY, h:mm a').format(
+            {moment(data?.date, 'MM/DD/YYYY, h:mm a').format(
               'dddd, MMM Do YYYY'
             )}{' '}
-            ∙ {moment(data.date, 'MM/DD/YYYY, h:mm a').fromNow()}
+            ∙ {moment(data?.date, 'MM/DD/YYYY, h:mm a').fromNow()}
           </h3>
           <hr />
         </center>

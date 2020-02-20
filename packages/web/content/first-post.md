@@ -1,8 +1,16 @@
 ---
 title: "pkgreview.dev - The Ratings and Review Website for NPM Packages 🎉"
-date: 2/9/2020, 3:05 am
+date: 2/8/2020, 3:05 am
 writtenBy: Kumar Abhirup
 featuredImage: "https://res.cloudinary.com/practicaldev/image/fetch/s--6XoqW46m--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/cj694wkr77z93hijbdjj.jpg"
+---
+
+A lot of people find it very difficult to decide what NPM Package, React Component, Module or Library to use.
+
+**They end up checking on GitHub** to see how active the community is. GitHub does not tell you a clear picture. It is just a part of the picture.
+
+**What people often miss**, is the first-hand experience of the users who have used the library.
+
 ---
 
 Hey all! 🙌
