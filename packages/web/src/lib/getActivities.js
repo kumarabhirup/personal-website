@@ -11,33 +11,23 @@ const files =
 
 module.exports = !process.browser
   ? Promise.all(
-      files
-        .map(async file => {
-          const name = path.join(DIR, file)
+      files.map(async file => {
+        const name = path.join(DIR, file)
 
-          const contents = fs.readFileSync(name, 'utf8')
+        const contents = fs.readFileSync(name, 'utf8')
 
-          const data = await matter(contents, { excerpt: true })
+        const data = await matter(contents, { excerpt: true })
 
-          // console.log({
-          //   ...data,
-          //   fileName: file,
-          // })
-
-          return {
-            ...data,
-            slug: file.replace('.md', ''),
-          }
-        })
-        // .filter(async meta => {
-        //   const { data } = await meta
-        //   return data?.date
-        // })
-        .sort(async (a, b) => {
-          const i = await a
-          const j = await b
-
-          return j?.data?.date.localeCompare(i?.data?.date)
-        })
+        return {
+          ...data,
+          slug: file.replace('.md', ''),
+        }
+      })
+    ).then(result =>
+      result.sort(
+        (a, b) =>
+          moment(b?.data?.date, 'MM/DD/YYYY, h:mm a').toDate() -
+          moment(a?.data?.date, 'MM/DD/YYYY, h:mm a').toDate()
+      )
     )
   : null

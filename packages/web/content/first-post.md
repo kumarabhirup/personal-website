@@ -1,6 +1,6 @@
 ---
 title: "pkgreview.dev - The Ratings and Review Website for NPM Packages 🎉"
-date: 2/8/2020, 3:05 am
+date: 2/20/2020, 10:01 am
 writtenBy: Kumar Abhirup
 featuredImage: "https://res.cloudinary.com/practicaldev/image/fetch/s--6XoqW46m--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/cj694wkr77z93hijbdjj.jpg"
 ---
