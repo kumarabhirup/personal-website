@@ -27,7 +27,7 @@ import Activities from '../src/components/mobirise/Activities'
 
 export default class homePage extends Component {
   static async getInitialProps() {
-    const content = await getActivities
+    const content = await getActivities()
 
     return {
       activities: content,

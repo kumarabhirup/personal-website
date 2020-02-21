@@ -4,6 +4,35 @@ import React, { Component } from 'react'
 import { Element } from 'react-scroll'
 import Link from 'next/link'
 import Markdown from 'react-markdown'
+import styled from 'styled-components'
+
+const LightButton = styled.button`
+  @keyframes MoveUpDown {
+    0% {
+      /* Nothing */
+    }
+
+    100% {
+      transform: scale(1.05);
+      margin-top: 10px;
+    }
+  }
+
+  border: none;
+  background: none;
+  background: #fff;
+  padding: 10px 50px;
+  font-size: 25px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-animation: MoveUpDown 1s linear infinite alternate;
+  animation: MoveUpDown 1s linear infinite alternate;
+  transition: all 1s;
+
+  &:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  }
+`
 
 export default class Activities extends Component {
   render() {
@@ -89,6 +118,11 @@ export default class Activities extends Component {
                   </div>
                 )
               })}
+
+              <br />
+              <br />
+
+              <LightButton>Load More 🔰</LightButton>
             </div>
           </div>
         </section>
