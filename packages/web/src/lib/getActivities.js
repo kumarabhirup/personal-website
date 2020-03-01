@@ -7,31 +7,27 @@ const path = require('path')
 const DIR = path.join(process.cwd(), './content/')
 
 const files =
-  !process.browser && fs?.readdirSync(DIR).filter(file => file.endsWith('.md'))
+  !process.browser && fs?.readdirSync(DIR).filter(file => file.endsWith('.md')) // !process.browser &&
 
-module.exports = async function getActivities(pageNumber = 1, limit = 5) {
-  return !process.browser
-    ? Promise.all(
-        files.map(async file => {
-          const name = path.join(DIR, file)
+module.exports = async function getActivities() {
+  return Promise.all(
+    files.map(async file => {
+      const name = path.join(DIR, file)
 
-          const contents = fs.readFileSync(name, 'utf8')
+      const contents = fs.readFileSync(name, 'utf8')
 
-          const data = await matter(contents, { excerpt: true })
+      const data = await matter(contents, { excerpt: true })
 
-          return {
-            ...data,
-            slug: file.replace('.md', ''),
-          }
-        })
-      ).then(result =>
-        result
-          .sort(
-            (a, b) =>
-              moment(b?.data?.date, 'MM/DD/YYYY, h:mm a').toDate() -
-              moment(a?.data?.date, 'MM/DD/YYYY, h:mm a').toDate()
-          )
-          .slice((pageNumber - 1) * limit, pageNumber * limit)
-      )
-    : null
+      return {
+        ...data,
+        slug: file.replace('.md', ''),
+      }
+    })
+  ).then(result =>
+    result.sort(
+      (a, b) =>
+        moment(b?.data?.date, 'MM/DD/YYYY, h:mm a').toDate() -
+        moment(a?.data?.date, 'MM/DD/YYYY, h:mm a').toDate()
+    )
+  )
 }

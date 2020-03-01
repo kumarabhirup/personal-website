@@ -36,7 +36,7 @@ const LightButton = styled.button`
 
 export default class Activities extends Component {
   render() {
-    const { data } = this.props
+    const { data, loadMore, shouldLoadMore } = this.props
 
     return (
       <Element name="blog">
@@ -119,10 +119,21 @@ export default class Activities extends Component {
                 )
               })}
 
-              <br />
-              <br />
+              {shouldLoadMore && (
+                <>
+                  <br />
+                  <br />
 
-              <LightButton>Load More 🔰</LightButton>
+                  <LightButton
+                    type="button"
+                    onClick={() => {
+                      loadMore()
+                    }}
+                  >
+                    Load More 🔰
+                  </LightButton>
+                </>
+              )}
             </div>
           </div>
         </section>

@@ -1,9 +1,9 @@
+/* eslint-disable react/no-unused-state */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 
 import React, { Component } from 'react'
 import moment from 'moment'
-import Markdown from 'react-markdown'
 
 import { homeLandingPage } from '../src/api/pageLanding'
 import { activities } from '../src/api/activities'
@@ -34,7 +34,39 @@ export default class homePage extends Component {
     }
   }
 
+  // this.props.activities.slice(
+  //  (pageNumber - 1) * limit,
+  //  pageNumber * limit
+  // )
+
+  state = {
+    activities: {
+      data: this.props.activities.slice((1 - 1) * 1, 1 * 1),
+      page: 1,
+      shouldLoadMore: false,
+    },
+  }
+
+  componentDidMount() {
+    // decide shouldLoadMore
+    this.setState(prevState => ({
+      activities: {
+        ...prevState?.activities,
+        shouldLoadMore:
+          prevState.activities.data.length !== this.props.activities.length,
+      },
+    }))
+  }
+
+  paginateActivities(pageNumber = 1, limit = 1) {
+    const posts = [...this.props.activities]
+    return posts.slice((pageNumber - 1) * limit, pageNumber * limit)
+  }
+
   render() {
+    const statefulActivities = this.state?.activities?.data
+    const pageNumber = this.state?.activities?.page
+
     return (
       <>
         <HomepageParallax {...homeLandingPage} />
@@ -47,8 +79,9 @@ export default class homePage extends Component {
         <Activities
           data={{
             ...activities,
-            activities: this.props?.activities
-              ? this.props?.activities?.map(activity => ({
+            page: pageNumber,
+            activities: statefulActivities
+              ? statefulActivities?.map(activity => ({
                   title: activity.data?.title,
                   timestamp: moment(
                     activity.data?.date,
@@ -60,6 +93,30 @@ export default class homePage extends Component {
                 }))
               : [],
           }}
+          loadMore={async () => {
+            const content = this.paginateActivities(
+              this.state?.activities?.page + 1
+            )
+
+            this.setState(prevState => ({
+              activities: {
+                ...prevState?.activities,
+                data: [...prevState?.activities?.data, ...(content || [])],
+                page: prevState?.activities?.page + 1,
+              },
+            }))
+
+            // decide shouldLoadMore
+            this.setState(prevState => ({
+              activities: {
+                ...prevState?.activities,
+                shouldLoadMore:
+                  prevState.activities.data.length !==
+                  this.props.activities.length,
+              },
+            }))
+          }}
+          shouldLoadMore={this.state?.activities?.shouldLoadMore}
         />
       </>
     )
