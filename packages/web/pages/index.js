@@ -34,16 +34,12 @@ export default class homePage extends Component {
     }
   }
 
-  // this.props.activities.slice(
-  //  (pageNumber - 1) * limit,
-  //  pageNumber * limit
-  // )
-
   state = {
     activities: {
       data: this.props.activities.slice((1 - 1) * 1, 1 * 1),
       page: 1,
       shouldLoadMore: false,
+      searchText: '',
     },
   }
 
@@ -59,8 +55,18 @@ export default class homePage extends Component {
   }
 
   paginateActivities(pageNumber = 1, limit = 1) {
-    const posts = [...this.props.activities]
+    const posts = [...this.searchByText(this.state.searchText)]
     return posts.slice((pageNumber - 1) * limit, pageNumber * limit)
+  }
+
+  searchByText(searchText) {
+    return this.props.activities.filter(({ data }) => {
+      if (searchText === '') return true
+
+      if (data.title.search(searchText) > -1) return true
+
+      return false
+    })
   }
 
   render() {
@@ -112,9 +118,29 @@ export default class homePage extends Component {
                 ...prevState?.activities,
                 shouldLoadMore:
                   prevState.activities.data.length !==
+                  // eslint-disable-next-line react/no-access-state-in-setstate
                   this.props.activities.length,
               },
             }))
+          }}
+          getSearchText={searchText => {
+            this.setState({ searchText }, () => {
+              const content = this.paginateActivities()
+
+              // eslint-disable-next-line react/no-did-update-set-state
+              this.setState(prevState => ({
+                activities: {
+                  ...prevState?.activities,
+                  data: [...(content || [])],
+                  page: 1,
+                  // The below snippet has BUGS
+                  shouldLoadMore:
+                    prevState.activities.data.length !==
+                    // eslint-disable-next-line react/no-access-state-in-setstate
+                    this.state.activities.length,
+                },
+              }))
+            })
           }}
           shouldLoadMore={this.state?.activities?.shouldLoadMore}
         />

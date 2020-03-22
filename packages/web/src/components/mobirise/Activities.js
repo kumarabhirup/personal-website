@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Markdown from 'react-markdown'
 import styled from 'styled-components'
 
+import SearchBox from '../SearchBox'
+
 const LightButton = styled.button`
   @keyframes MoveUpDown {
     0% {
@@ -36,7 +38,7 @@ const LightButton = styled.button`
 
 export default class Activities extends Component {
   render() {
-    const { data, loadMore, shouldLoadMore } = this.props
+    const { data, loadMore, shouldLoadMore, getSearchText } = this.props
 
     return (
       <Element name="blog">
@@ -53,6 +55,12 @@ export default class Activities extends Component {
             <h3 className="mbr-section-subtitle pb-5 mbr-fonts-style display-5">
               {data.text}
             </h3>
+
+            <SearchBox
+              getSearchText={searchText => {
+                getSearchText(searchText)
+              }}
+            />
 
             <div className="container timelines-container" mbri-timelines="">
               {data.activities.map((activity, index) => {
