@@ -1,3 +1,4 @@
+/* eslint-disable react/no-access-state-in-setstate */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
@@ -36,11 +37,11 @@ export default class homePage extends Component {
 
   state = {
     activities: {
-      data: this.props.activities.slice((1 - 1) * 1, 1 * 1),
+      data: this.props.activities.slice((1 - 1) * 3, 1 * 3),
       page: 1,
       shouldLoadMore: false,
-      searchText: '',
     },
+    searchText: '',
   }
 
   componentDidMount() {
@@ -54,7 +55,7 @@ export default class homePage extends Component {
     }))
   }
 
-  paginateActivities(pageNumber = 1, limit = 1) {
+  paginateActivities(pageNumber = 1, limit = 3) {
     const posts = [...this.searchByText(this.state.searchText)]
     return posts.slice((pageNumber - 1) * limit, pageNumber * limit)
   }
@@ -67,6 +68,18 @@ export default class homePage extends Component {
 
       return false
     })
+  }
+
+  decideShouldLoadMore() {
+    this.setState(prevState => ({
+      activities: {
+        ...prevState?.activities,
+        shouldLoadMore:
+          this.state.searchText.length > 0
+            ? false
+            : prevState.activities.data.length !== this.props.activities.length,
+      },
+    }))
   }
 
   render() {
@@ -112,34 +125,24 @@ export default class homePage extends Component {
               },
             }))
 
-            // decide shouldLoadMore
-            this.setState(prevState => ({
-              activities: {
-                ...prevState?.activities,
-                shouldLoadMore:
-                  prevState.activities.data.length !==
-                  // eslint-disable-next-line react/no-access-state-in-setstate
-                  this.props.activities.length,
-              },
-            }))
+            this.decideShouldLoadMore()
           }}
           getSearchText={searchText => {
             this.setState({ searchText }, () => {
-              const content = this.paginateActivities()
+              const content =
+                this.state.searchText.length > 0
+                  ? this.searchByText(this.state.searchText)
+                  : this.paginateActivities()
 
-              // eslint-disable-next-line react/no-did-update-set-state
               this.setState(prevState => ({
                 activities: {
                   ...prevState?.activities,
+                  page: searchText.length > 0 ? 1 : prevState.activities.page,
                   data: [...(content || [])],
-                  page: 1,
-                  // The below snippet has BUGS
-                  shouldLoadMore:
-                    prevState.activities.data.length !==
-                    // eslint-disable-next-line react/no-access-state-in-setstate
-                    this.state.activities.length,
                 },
               }))
+
+              this.decideShouldLoadMore()
             })
           }}
           shouldLoadMore={this.state?.activities?.shouldLoadMore}

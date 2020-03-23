@@ -9,7 +9,7 @@ const DIR = path.join(process.cwd(), './content/')
 const files =
   !process.browser && fs?.readdirSync(DIR).filter(file => file.endsWith('.md')) // !process.browser &&
 
-module.exports = async function getActivities(searchText = '') {
+module.exports = async function getActivities() {
   return Promise.all(
     files.map(async file => {
       const name = path.join(DIR, file)
