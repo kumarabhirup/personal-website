@@ -1,6 +1,6 @@
 ---
 title: "pkgreview.dev - The Ratings and Review Website for NPM Packages 🎉"
-date: 2/20/2020, 10:01 am
+date: 1/31/2020, 10:00 am
 writtenBy: Kumar Abhirup
 featuredImage: "https://res.cloudinary.com/practicaldev/image/fetch/s--6XoqW46m--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/cj694wkr77z93hijbdjj.jpg"
 ---
@@ -17,9 +17,7 @@ Hey all! 🙌
 
 I am very thrilled to announce the side-project I have been working on since last week...
 
-I named it **[pkgreview.dev](https://pkgreview.dev)**! The complete product was born out of one tweet.
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🔥⚡ Question Time ⚡🔥<br><br>Is there a Star Rating/Review website for <a href="https://twitter.com/hashtag/NPM?src=hash&amp;ref_src=twsrc%5Etfw">#NPM</a> packages...<br><br>where people could look at reviews before using a library?<br><br>Is it a good idea to build such a website?<br><br>⏳⌛⏳⌛⏳⌛⏳</p>&mdash; Kumar Abhirup (@kumar_abhirup) <a href="https://twitter.com/kumar_abhirup/status/1218860389833723905?ref_src=twsrc%5Etfw">January 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+I named it **[pkgreview.dev](https://pkgreview.dev)**! The complete product was born out of [one tweet](https://twitter.com/kumar_abhirup/status/1218860389833723905).
 
 # 🎊 pkgreview.dev
 
@@ -79,8 +77,6 @@ I love positive as well as critical feedback 🙌
 
 ## About me
 
-> Lol, I love you all 😍
-
 I am Kumar Abhirup, a 16-year-old JavaScript React developer from India who keeps learning a new thing every single day.
 
 [Connect with me on Twitter 🐦](https://twitter.com/kumar_abhirup)
@@ -88,33 +84,3 @@ I am Kumar Abhirup, a 16-year-old JavaScript React developer from India who keep
 [My personal website and portfolio 🖥️](https://kumar.now.sh)
 
 _Comment below your better ways, and suggestions to improve this product. :)_
-
-```js
-import React, { PureComponent } from "react"
-import PropTypes from "prop-types"
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { coy } from "react-syntax-highlighter/dist/cjs/languages/prism"
-
-class CodeBlock extends PureComponent {
-  static propTypes = {
-    value: PropTypes.string.isRequired,
-    language: PropTypes.string
-  }
-
-  static defaultProps = {
-    language: null
-  }
-
-  render() {
-    const { language, value } = this.props
-
-    return (
-      <SyntaxHighlighter language={language} style={coy}>
-        {value}
-      </SyntaxHighlighter>
-    )
-  }
-}
-
-export default CodeBlock
-```
