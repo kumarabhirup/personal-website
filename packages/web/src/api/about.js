@@ -46,7 +46,7 @@ export const aboutMe = {
       question: ` Where do I write? ✍`,
       answer: (
         <>
-          I currently right my Web and React Development related posts on{' '}
+          I currently write my Web and React Development related posts on{' '}
           <a
             href="https://dev.to/kumar_abhirup/"
             target="_blank"
