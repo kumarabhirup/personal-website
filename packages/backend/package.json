@@ -8,8 +8,8 @@
     "build:watch": "tsc --watch",
     "start": "npm run build && node dist/index.js",
     "dev": "npm run build && nodemon dist/index.js",
-    "lint": "eslint src/*.ts",
-    "lint:fix": "eslint src/*.ts --fix",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
     "test": "echo \"No tests specified\""
   },
   "devDependencies": {

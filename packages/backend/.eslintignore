@@ -1,4 +1,4 @@
 # add files to ignore here
-.next
+dist
+generated
 build
-export

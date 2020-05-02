@@ -3,7 +3,8 @@ module.exports = {
     "wesbos"
   ],
   "rules": {
-    "semi": [2, "never"]
+    "semi": [2, "never"],
+    "react/prop-types": [1]
   },
   "parserOptions": {
     "ecmaVersion": 2017

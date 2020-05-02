@@ -4,13 +4,24 @@ import { ServerStyleSheet } from 'styled-components'
 // To render styles on the server-side (for styled-components)
 class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
+    const isProduction = process.env.NODE_ENV === 'production'
+
     const sheet = new ServerStyleSheet()
     const page = renderPage(App => props =>
       sheet.collectStyles(<App {...props} />)
     )
     const styleTags = sheet.getStyleElement()
-    return { ...page, styleTags }
+    return { ...page, styleTags, isProduction }
   }
+
+  setGoogleTags = () => ({
+    __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.GA_TRACKING_ID}');
+      `,
+  })
 
   render() {
     return (
@@ -37,18 +48,19 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
-          <script src="/static/prebuilt/web/assets/jquery/jquery.min.js"></script>
-          <script src="/static/prebuilt/popper/popper.min.js"></script>
-          <script src="/static/prebuilt/tether/tether.min.js"></script>
-          <script src="/static/prebuilt/bootstrap/js/bootstrap.min.js"></script>
-          <script src="/static/prebuilt/social-likes/social-likes.js"></script>
-          <script src="/static/prebuilt/dropdown/js/script.min.js"></script>
-          <script src="/static/prebuilt/touch-swipe/jquery.touch-swipe.min.js"></script>
-          <script src="/static/prebuilt/as-pie-progress/jquery-as-pie-progress.min.js"></script>
-          <script src="/static/prebuilt/smooth-scroll/smooth-scroll.js"></script>
-          <script src="/static/prebuilt/jarallax/jarallax.min.js"></script>
-          <script src="/static/prebuilt/theme/js/script.js"></script>
-          <script src="/static/prebuilt/formoid/formoid.min.js"></script>
+          {this.props.isProduction && (
+            <>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
+              />
+
+              <script
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={this.setGoogleTags()}
+              />
+            </>
+          )}
         </body>
       </html>
     )

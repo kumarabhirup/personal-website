@@ -1,33 +1,47 @@
-import App, { Container } from 'next/app'
-import { ApolloProvider } from 'react-apollo'
+import Head from 'next/head'
 
-import withData from '../src/lib/withData'
-import Page from '../src/components/Page'
+import '../styles/base.css'
 
-class Wrapper extends App {
-  static getInitialProps({ Component, ctx }) {
-    let pageProps = {}
-    if (Component.getInitialProps) {
-      pageProps = Component.getInitialProps(ctx)
-    }
+function MyApp({ Component, pageProps }) {
+  const og = pageProps.data?.og
+  const title = pageProps.data?.title
 
-    // This exposes query to the user
-    pageProps.query = ctx.query
-    return { pageProps }
-  }
+  return (
+    <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta property="og:title" content={title || `Telmo, code & design`} />
+        <meta property="og:site_name" content="Telmo, code & design" />
+        <meta
+          property="og:description"
+          content={
+            og
+              ? og.description
+              : `Writing about the tips I usually share on Twitter and some more.`
+          }
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@telmo" />
+        <meta
+          property="og:image"
+          content={og ? og.image : `https://telmo.im/og/default.png`}
+        />
 
-  render() {
-    const { Component, apollo, pageProps } = this.props
-    return (
-      <Container>
-        <ApolloProvider client={apollo}>
-          <Page>
-            <Component {...pageProps} />
-          </Page>
-        </ApolloProvider>
-      </Container>
-    )
-  }
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+
+        <title>{title || `Telmo, code & design`}</title>
+      </Head>
+
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default withData(Wrapper)
+export default MyApp
