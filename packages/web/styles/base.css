@@ -15,7 +15,7 @@
 
 [data-theme="dark"] {
   --primary-color: #9a97f3;
-  --secondary-color: #666;
+  --secondary-color: rgba(204, 204, 204, 0.863);
   --font-color: #fff;
   --bg-color: #010101;
   --heading-color: #fff;

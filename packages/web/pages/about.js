@@ -5,8 +5,8 @@ import dynamic from 'next/dynamic'
 import { config } from 'react-spring'
 
 import Layout from '../components/Layout'
-import { META } from '../constants/Meta'
-import { PAST, PRESENT, SKILLS } from '../constants/Stack'
+import { META, ELEMENTS } from '../constants/Meta'
+import { TECH, SKILLS, SOCIAL } from '../constants/Stack'
 
 const TextTransition = dynamic(() => import('react-text-transition'), {
   ssr: false,
@@ -59,47 +59,50 @@ function About() {
 
           <div className="about-intro">
             <Row>
-              <Col md={12}>
-                I'm a full-stack engineer with 13+ years of experience. I
-                started my career back in 2007 as a designer, then quickly
-                started coding as well.
-                <br />
-                <br />
-                I've seen it all. In my career I've worked with a lot of
-                technologies: PHP, MooTools, jQuery, Ruby on Rails, Angular,
-                ReactJS, GraphQL, and many more.
-              </Col>
+              <Col md={12}>{ELEMENTS.about}</Col>
             </Row>
             <hr />
-            <h3>Technologies I've worked over the years</h3>
-            <Row style={{ marginTop: 30 }}>
-              {PAST.map(s => (
-                <Col
-                  md={2}
-                  xs={3}
-                  key={s}
-                  style={{ textAlign: 'center', marginBottom: 40 }}
-                >
-                  <Icon stack={s} />
-                  <div className="stack-name">{s}</div>
-                </Col>
-              ))}
-            </Row>
+            <>
+              <h3>{TECH.title}</h3>
+              <Row style={{ marginTop: 30 }}>
+                {TECH.data.map(s => (
+                  <Col
+                    md={2}
+                    xs={4}
+                    key={s}
+                    style={{ textAlign: 'center', marginBottom: 40 }}
+                  >
+                    <Icon stack={s} />
+                    <div className="stack-name">{s}</div>
+                  </Col>
+                ))}
+              </Row>
+            </>
             <br />
-            <h3>What I'm focusing at the moment</h3>
-            <Row style={{ marginTop: 30 }}>
-              {PRESENT.map(s => (
-                <Col
-                  md={2}
-                  xs={4}
-                  key={s}
-                  style={{ textAlign: 'center', marginBottom: 40 }}
-                >
-                  <Icon stack={s} />
-                  <div className="stack-name">{s}</div>
-                </Col>
-              ))}
-            </Row>
+            <>
+              <h3>{SOCIAL.title}</h3>
+              <Row style={{ marginTop: 30 }}>
+                {SOCIAL.data.map(s => (
+                  <Col
+                    md={2}
+                    xs={4}
+                    key={s.link}
+                    style={{ textAlign: 'center', marginBottom: 40 }}
+                  >
+                    <Icon stack={s.platform} />
+                    <div className="stack-name">
+                      <a
+                        href={s.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {s.platform}
+                      </a>
+                    </div>
+                  </Col>
+                ))}
+              </Row>
+            </>
             <hr />
             Follow me on{' '}
             <a
