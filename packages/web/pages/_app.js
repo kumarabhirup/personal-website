@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { META } from '../constants/Meta'
+
 import '../styles/base.css'
 
 function MyApp({ Component, pageProps }) {
@@ -13,22 +15,15 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <meta property="og:title" content={title || `Telmo, code & design`} />
-        <meta property="og:site_name" content="Telmo, code & design" />
+        <meta property="og:title" content={title || META.title} />
+        <meta property="og:site_name" content={META.title} />
         <meta
           property="og:description"
-          content={
-            og
-              ? og.description
-              : `Writing about the tips I usually share on Twitter and some more.`
-          }
+          content={og ? og.description : META.description}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@telmo" />
-        <meta
-          property="og:image"
-          content={og ? og.image : `https://telmo.im/og/default.png`}
-        />
+        <meta name="twitter:site" content={`@${META.social.twitter}`} />
+        <meta property="og:image" content={og ? og.image : META.avatar} />
 
         <script
           async
@@ -36,7 +31,7 @@ function MyApp({ Component, pageProps }) {
           charset="utf-8"
         ></script>
 
-        <title>{title || `Telmo, code & design`}</title>
+        <title>{title || META.title}</title>
       </Head>
 
       <Component {...pageProps} />

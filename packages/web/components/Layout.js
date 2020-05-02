@@ -3,6 +3,8 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
 
+import { ELEMENTS } from '../constants/Meta'
+
 const menu = [
   {
     path: '/',
@@ -86,7 +88,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
                 className="blog-title"
                 style={isHomepage && { textAlign: 'left' }}
               >
-                Telmo, code <span className="amp">&</span> design
+                {ELEMENTS.mainText}
               </h1>
             )}
 

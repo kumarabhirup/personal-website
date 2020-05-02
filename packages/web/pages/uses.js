@@ -1,8 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
 
 import Layout from '../components/Layout'
 import { USES } from '../constants/Uses'
+import { META } from '../constants/Meta'
 
 function Uses({ og }) {
   return (
@@ -14,7 +14,7 @@ function Uses({ og }) {
           I often get asked about what's my setup as well as what I use to share
           all the tips I usually post on{' '}
           <a
-            href="https://twitter.com/telmo"
+            href={`https://twitter.com/${META.social.twitter}`}
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
@@ -49,8 +49,8 @@ function Uses({ og }) {
 Uses.getInitialProps = () => ({
   data: {
     og: {
-      description: 'What Telmo uses on a daily basis.',
-      image: 'https://telmo.im/og/uses.png',
+      description: `What ${META.fname} uses on a daily basis.`,
+      image: META.pageOgs.uses,
     },
   },
 })

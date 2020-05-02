@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 import ProgressBar from 'react-scroll-progress-bar'
 
+import { META } from '../../constants/Meta'
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
 
@@ -68,7 +69,7 @@ function Writing({ content, data }) {
               If you liked this post I'm sure you'll love what I usually share
               on{' '}
               <a
-                href="https://twitter.com/telmo"
+                href={`https://twitter.com/${META.social.twitter}`}
                 rel="noopener noreferrer nofollow"
               >
                 Twitter

@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import { config } from 'react-spring'
 
 import Layout from '../components/Layout'
+import { META } from '../constants/Meta'
 import { PAST, PRESENT, SKILLS } from '../constants/Stack'
 
 const TextTransition = dynamic(() => import('react-text-transition'), {
@@ -31,7 +32,7 @@ const Icon = ({ stack, style }) => {
 
 function About() {
   const [index, setIndex] = useState(0)
-  const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/telmo`
+  const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${META.social.twitter}`
 
   useEffect(() => {
     const intervalId = setInterval(
@@ -48,7 +49,7 @@ function About() {
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
           <h1 className="about-h1">
-            Telmo{' '}
+            {META.fname}{' '}
             <TextTransition
               text={SKILLS[index % SKILLS.length]}
               springConfig={config.gentle}
@@ -102,7 +103,7 @@ function About() {
             <hr />
             Follow me on{' '}
             <a
-              href="https://twitter.com/telmo"
+              href={`https://twitter.com/${META.social.twitter}`}
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
