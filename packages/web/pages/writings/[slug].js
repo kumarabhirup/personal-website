@@ -85,6 +85,29 @@ function Writing({ content, data }) {
             <div className="card">
               <Subscribe />
             </div>
+
+            <br />
+            <br />
+
+            <div
+              className="twitter-follow"
+              style={{
+                background:
+                  'url("https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-512.png")',
+                backgroundSize: '90px',
+                backgroundPosition: '105% 180%',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+              Chat with me and my friends at{' '}
+              <a
+                href="https://discord.gg/PCq4Fk"
+                rel="noopener noreferrer nofollow"
+              >
+                Kumar on Discord
+              </a>
+              . It's a fun community of learners, that I am building ✌️
+            </div>
           </div>
         </div>
       </Layout>
