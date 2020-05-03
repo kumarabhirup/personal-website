@@ -3,7 +3,7 @@ title: "My first post, on my new site!"
 date: "2020-05-05"
 og:
   description: "I rebuilt my website. No, not from scratch. Here's what I did."
-  image: "https://i.ibb.co/VjsMXqq/my-first-post.jpg"
+  image: "https://i.ibb.co/QF3Hhv5/my-first-post.jpg"
 author:
   twitter: "kumar_abhirup"
   name: "Kumar Abhirup"
