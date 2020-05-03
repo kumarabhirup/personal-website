@@ -23,8 +23,11 @@ const menu = [
 function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
   const onLoadTheme =
     typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
+
   const [theme, setTheme] = useState(onLoadTheme)
+
   const [mounted, setMounted] = useState(false)
+
   const switchTheme = () => {
     const setTo = theme === 'dark' ? 'light' : 'dark'
 
@@ -32,9 +35,9 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
   }
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark')
-    }
+    // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //   setTheme('dark')
+    // }
 
     setMounted(true)
   }, [])
