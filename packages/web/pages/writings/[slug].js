@@ -45,6 +45,7 @@ function Writing({ content, data }) {
               Make sure you follow me on{' '}
               <a
                 href={`https://twitter.com/${META.social.twitter}`}
+                target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 Twitter
@@ -102,6 +103,7 @@ function Writing({ content, data }) {
               Chat with me and my friends at{' '}
               <a
                 href="https://discord.gg/PCq4Fk"
+                target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 Kumar on Discord
