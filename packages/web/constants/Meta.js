@@ -22,6 +22,8 @@ export const META = {
     uses: 'https://i.ibb.co/9t04yDL/uses.jpg',
   },
   email: 'kumarabhirup5@gmail.com',
+  resume:
+    'https://github.com/KumarAbhirup/resume/blob/master/Kumar%20Abhirup%20CV.pdf',
 }
 
 export const ELEMENTS = {
@@ -40,7 +42,10 @@ export const ELEMENTS = {
       I am in the evergreen process of learning, and I am loving it!
       <br />
       <br />
-      <a href={`mailto:${META.email}`}>{META.email}</a>
+      <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
+      <a href={`${META.resume}`} target="_blank" rel="noopener noreferrer">
+        Resume
+      </a>
     </>
   ),
 }

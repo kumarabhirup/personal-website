@@ -106,7 +106,7 @@ h6 {
 .blog-title {
   font-weight: 700;
   font-size: 80px;
-  letter-spacing: -0.3rem;
+  letter-spacing: -0.2rem !important;
   text-align: center;
   margin: 100px 0 50px;
 }
@@ -187,7 +187,7 @@ h6 {
 .about-h1 {
   font-weight: 700;
   font-size: 56px;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
   margin: 50px 0 30px;
 }
 
@@ -224,9 +224,13 @@ h6 {
 
 .writing-container>blockquote {
   border-left: 5px var(--highlight-color) solid;
+  background: var(--highlight-color);
   font-style: italic;
   margin: 0;
-  padding: 0px 30px;
+  margin-bottom: 40px;
+  padding: 30px 30px;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .writing-container>p {
