@@ -9,19 +9,10 @@ function Uses({ og }) {
     <>
       <Layout secondaryPage>
         <h1 className="uses-h1">What I use</h1>
-
         <div className="uses-intro">
-          Many folks on my{' '}
-          <a
-            href={`https://twitter.com/${META.social.twitter}`}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Twitter
-          </a>{' '}
-          ask me what stuff I use everyday , so here it is.
+          I use a lot of stuff everyday. Softwares, gears, setup and so much
+          more!
         </div>
-
         {USES.map(({ title, stack }) => (
           <ul className="uses-list" key={title}>
             <li className="head">{title}</li>
@@ -42,6 +33,18 @@ function Uses({ og }) {
             ))}
           </ul>
         ))}
+        <div className="uses-intro">
+          This page is regularly updated. If there's anything you feel I forgot
+          to write on this page, you can DM me on{' '}
+          <a
+            href={`https://twitter.com/${META.social.twitter}`}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            Twitter
+          </a>
+          .
+        </div>
       </Layout>
     </>
   )

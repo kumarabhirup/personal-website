@@ -26,7 +26,7 @@ export const META = {
 export const ELEMENTS = {
   mainText: (
     <>
-      Kumar, code <span className="amp">&</span> design
+      Kumar, Kumar <span className="amp">&</span> Kumar
     </>
   ),
   about: (

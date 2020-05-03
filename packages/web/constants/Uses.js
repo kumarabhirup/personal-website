@@ -4,27 +4,29 @@ export const USES = [
     stack: [
       {
         name: 'VSCode',
-        description: 'By far my favorite IDE!',
+        description: 'Best IDE in my opinion!',
       },
       {
-        name: 'Auy',
-        description: `I've been using this theme for a few weeks now`,
-        link: 'https://github.com/dempfi/ayu',
+        name: 'VSCode Theme',
+        description: `Shades of Purple`,
       },
       {
-        name: 'IBM Plex Mono',
-        description: `I'm currently giving this font a try`,
-        link: 'https://fonts.google.com/specimen/IBM+Plex+Mono',
+        name: 'Hyper Terminal',
+        description: `I use Shades Of Purple Hyper Theme`,
       },
       {
-        name: 'iTerm2',
-        description: 'Has been my terminal for many years now',
-        link: 'https://iterm2.com/',
+        name: 'OhMyZsh, Zsh',
+        description: `I have configured them to my needs`,
       },
       {
         name: 'Google Chrome',
-        description: 'My main browser',
+        description: 'Sorry Firefox, you left no choice :/',
         link: 'https://www.google.com/chrome/',
+      },
+      {
+        name: 'Carbon',
+        description: 'To create code snippets',
+        link: 'https://carbon.now.sh',
       },
     ],
   },
@@ -32,40 +34,27 @@ export const USES = [
     title: 'Gear',
     stack: [
       {
-        name: 'MacBook Pro 13″',
-        description: '2.3 GHz Dual-Core Intel Core i5',
-        link: 'https://www.apple.com/macbook-pro-13/',
+        name: "MacBook Air '19",
+        description: 'Love you Apple',
+        link: 'https://www.apple.com/macbook-air',
       },
       {
-        name: 'Apple Magic Mouse',
-        description: 'Although, I use the trackpad a lot',
-        link:
-          'https://www.apple.com/shop/product/MRME2/magic-mouse-2-space-gray?fnode=4c',
+        name: 'Samsung M31',
+        description: "No, I don't use iPhone.",
       },
       {
-        name: 'LG Led Monitor',
-        description: 'I use 2 of these. 1 Horizontally, 1 Vertically',
-        link: 'https://www.lg.com/levant_en/monitors/lg-24MP48HQ-P',
-      },
-      {
-        name: 'AirPods 2nd Gen',
-        description: 'Thinking about changing these actually',
-        link: 'https://www.apple.com/airpods-2nd-generation/',
+        name: 'Lenovo Tablet',
+        description: 'I mostly watch courses with it',
       },
     ],
   },
   {
-    title: 'Twitter Tips',
+    title: 'Extras',
     stack: [
       {
         name: 'Kap',
         description: 'To record my screen',
         link: 'http://getkap.co/',
-      },
-      {
-        name: 'Sublime Text 3',
-        description: 'I use ST3 with a few custom configurations',
-        link: 'https://www.sublimetext.com/3',
       },
       {
         name: 'Keycastr',
