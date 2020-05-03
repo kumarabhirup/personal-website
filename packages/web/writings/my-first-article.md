@@ -9,4 +9,4 @@ author:
   name: "Kumar Abhirup"
 ---
 
-Thanks Telmo, for your awesome blog design!
+Thanks Telmo, for your `awesome blog design`!

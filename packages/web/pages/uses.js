@@ -11,16 +11,15 @@ function Uses({ og }) {
         <h1 className="uses-h1">What I use</h1>
 
         <div className="uses-intro">
-          I often get asked about what's my setup as well as what I use to share
-          all the tips I usually post on{' '}
+          Many folks on my{' '}
           <a
             href={`https://twitter.com/${META.social.twitter}`}
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
             Twitter
-          </a>
-          , so here it is.
+          </a>{' '}
+          ask me what stuff I use everyday , so here it is.
         </div>
 
         {USES.map(({ title, stack }) => (

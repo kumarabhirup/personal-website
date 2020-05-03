@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
 
-import { ELEMENTS } from '../constants/Meta'
+import { ELEMENTS, META } from '../constants/Meta'
 
 const menu = [
   {
@@ -54,6 +54,11 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
 
   return (
     <>
+      <img
+        className="about-avatar"
+        src={`https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${META.social.twitter}`}
+        alt="Avatar"
+      />
       <div className="top-menu">
         <Row>
           <Col xs={6}>
@@ -97,7 +102,16 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
         </Row>
       </Grid>
 
-      <footer>&copy; {new Date().getFullYear()}</footer>
+      <footer>
+        You can copy :) Code hosted on{' '}
+        <a
+          href={`https://github.com/${META.social.github}`}
+          rel="noopener noreferrer nofollow"
+        >
+          GitHub
+        </a>{' '}
+        😎
+      </footer>
     </>
   )
 }

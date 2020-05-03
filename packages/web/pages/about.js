@@ -32,7 +32,6 @@ const Icon = ({ stack, style }) => {
 
 function About() {
   const [index, setIndex] = useState(0)
-  const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${META.social.twitter}`
 
   useEffect(() => {
     const intervalId = setInterval(
@@ -44,8 +43,6 @@ function About() {
 
   return (
     <>
-      <img className="about-avatar" src={avatar} alt="Avatar" />
-
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
           <h1 className="about-h1">

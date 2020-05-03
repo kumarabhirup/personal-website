@@ -9,6 +9,7 @@ import ProgressBar from 'react-scroll-progress-bar'
 import { META } from '../../constants/Meta'
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
+import Subscribe from '../../components/Subscribe'
 
 function Writing({ content, data }) {
   const frontmatter = data
@@ -40,6 +41,20 @@ function Writing({ content, data }) {
           </div>
 
           <div className="writing-container">
+            <div className="twitter-follow">
+              Make sure you follow me on{' '}
+              <a
+                href={`https://twitter.com/${META.social.twitter}`}
+                rel="noopener noreferrer nofollow"
+              >
+                Twitter
+              </a>
+              , that's the place where I usually hang out ✌️
+            </div>
+
+            <br />
+            <br />
+
             <ReactMarkdown
               source={content}
               escapeHtml={false}
@@ -65,16 +80,10 @@ function Writing({ content, data }) {
               }}
             />
 
-            <div className="twitter-follow">
-              If you liked this post I'm sure you'll love what I usually share
-              on{' '}
-              <a
-                href={`https://twitter.com/${META.social.twitter}`}
-                rel="noopener noreferrer nofollow"
-              >
-                Twitter
-              </a>
-              , I share a lot of coding tips there ✌️
+            <br />
+
+            <div className="card">
+              <Subscribe />
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@
   --font-color: #fff;
   --bg-color: #010101;
   --heading-color: #fff;
-  --highlight-color: #38618c;
+  --highlight-color: #FE5E41;
   --hr-color: #222;
   --writing-body: #ccc;
 }
@@ -27,6 +27,7 @@
 ::-moz-selection {
   background: var(--highlight-color);
 }
+
 ::selection {
   background: var(--highlight-color);
 }
@@ -221,21 +222,21 @@ h6 {
   color: var(--writing-body);
 }
 
-.writing-container blockquote {
+.writing-container>blockquote {
   border-left: 5px var(--highlight-color) solid;
   font-style: italic;
   margin: 0;
   padding: 0px 30px;
 }
 
-.writing-container p {
+.writing-container>p {
   line-height: 1.8em;
   margin-bottom: 40px;
   font-size: 20px;
   color: var(--writing-body);
 }
 
-.writing-container *:not(pre) > code {
+.writing-container *:not(pre)>code {
   font-family: ibm-plex-mono, Monaco, "Lucida Console";
   background: var(--highlight-color);
   color: var(--heading-color);
@@ -298,7 +299,8 @@ hr {
   color: var(--heading-color);
 }
 
-footer {
+footer,
+footer>a {
   text-align: center;
   font-size: 13px;
   padding: 100px 0;
@@ -333,6 +335,61 @@ footer {
   border-radius: 8px;
   font-size: 18px;
   line-height: 1.9em;
+
+}
+
+.card {
+  background: var(--highlight-color);
+  color: var(--heading-color) !important;
+  box-shadow: 3px 3px 20px var(--highlight-color) !important;
+  padding: 30px 40px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.9em;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.card h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form p {
+  font-weight: normal;
+  color: var(--heading-color);
+}
+
+form input {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+
+  width: 100% !important;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+form input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px var(--heading-color);
 }
 
 .uses-intro,
@@ -416,7 +473,7 @@ footer {
 }
 
 /* Override scroll progress */
-.writing-progress > div {
+.writing-progress>div {
   background: var(--highlight-color) !important;
   margin: 0 -8px !important;
 }

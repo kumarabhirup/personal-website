@@ -12,6 +12,7 @@ export const META = {
     youtube: 'c/IQubex',
     dev: 'kumar_abhirup',
     facebook: 'krish.abhirup',
+    tinyletter: 'kumar_abhirup',
   },
   description:
     'Writing about the tips I usually share on Twitter and some more.',

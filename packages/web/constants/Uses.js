@@ -3,9 +3,8 @@ export const USES = [
     title: 'Coding',
     stack: [
       {
-        name: 'Sublime Text 3',
-        description: 'By far my favorite Text Editor',
-        link: 'https://www.sublimetext.com/3',
+        name: 'VSCode',
+        description: 'By far my favorite IDE!',
       },
       {
         name: 'Auy',
