@@ -11,8 +11,8 @@ const menu = [
     name: 'start',
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/writings',
+    name: 'writings',
   },
   {
     path: '/uses',
@@ -106,9 +106,9 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
       </Grid>
 
       <footer>
-        You can copy :) Code hosted on{' '}
+        Code hosted on{' '}
         <a
-          href={`https://github.com/${META.social.github}`}
+          href={`https://github.com/${META.social.github}/personal-website`}
           rel="noopener noreferrer nofollow"
         >
           GitHub

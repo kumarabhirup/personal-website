@@ -27,16 +27,18 @@ function Uses({ og }) {
             <li className="head">{title}</li>
 
             {stack.map(({ name, description, link }) => (
-              <li key={name}>
-                <a
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  {name}
-                </a>
-                <span>{description}</span>
-              </li>
+              <>
+                <li key={name}>
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    {name}
+                  </a>
+                  <span>{description}</span>
+                </li>
+              </>
             ))}
           </ul>
         ))}

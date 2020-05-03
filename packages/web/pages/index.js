@@ -1,80 +1,154 @@
-import React from 'react'
-import matter from 'gray-matter'
-import Link from 'next/link'
+import React, { useState, useEffect } from 'react'
+import simpleIcons from 'simple-icons'
 import { Row, Col } from 'react-flexbox-grid'
+import dynamic from 'next/dynamic'
+import { config } from 'react-spring'
 
 import Layout from '../components/Layout'
+import { META, ELEMENTS } from '../constants/Meta'
+import { TECH, SKILLS, SOCIAL, PROJECTS } from '../constants/Stack'
 
-function formatDate(date) {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' }
-  const today = new Date(date)
+const TextTransition = dynamic(() => import('react-text-transition'), {
+  ssr: false,
+})
 
-  return today.toLocaleDateString('en-US', options)
+const Icon = ({ stack, style }) => {
+  const icon = simpleIcons.get(stack)
+
+  return (
+    <div
+      data-icon={stack}
+      style={{
+        fill: `#${icon.hex}`,
+        display: 'inline-block',
+        width: '50px',
+        margin: '0 auto',
+        ...style,
+      }}
+      dangerouslySetInnerHTML={{ __html: icon.svg }}
+    />
+  )
 }
 
-function Homepage({ writings }) {
+function About() {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      // eslint-disable-next-line no-shadow
+      () => setIndex(index => index + 1),
+      3000 // every 3 seconds
+    )
+  }, [])
+
   return (
     <>
-      <Layout isHomepage>
-        <Row>
-          {writings.map(({ document, slug }) => {
-            const {
-              data: { title, date },
-            } = document
+      <Layout secondaryPage>
+        <div style={{ marginTop: 50 }}>
+          <h1 className="about-h1">
+            {META.fname}{' '}
+            <TextTransition
+              text={SKILLS[index % SKILLS.length]}
+              springConfig={config.gentle}
+              style={{ display: 'inline-block' }}
+            />
+          </h1>
 
-            return (
-              <Col md={6} key={slug}>
-                <div className="writing-row" key={title}>
-                  <Row>
-                    <Col md={12}>
-                      <div className="writing-date">{formatDate(date)}</div>
-                    </Col>
-
-                    <Col md={12}>
-                      <Link href="/writings/[slug]" as={`/writings/${slug}`}>
-                        <a>
-                          <span className="writing-title">{title}</span>
+          <div className="about-intro">
+            <Row>
+              <Col md={12}>{ELEMENTS.about}</Col>
+            </Row>
+            <hr />
+            <>
+              <h3>{TECH.title}</h3>
+              <Row style={{ marginTop: 30 }}>
+                {TECH.data.map(s => (
+                  <Col
+                    md={2}
+                    xs={4}
+                    key={s}
+                    style={{ textAlign: 'center', marginBottom: 40 }}
+                  >
+                    <Icon stack={s} />
+                    <div className="stack-name">{s}</div>
+                  </Col>
+                ))}
+              </Row>
+            </>
+            <br />
+            <>
+              <h3>{PROJECTS.title}</h3>
+              <Row style={{ marginTop: 30 }}>
+                <ul
+                  className="uses-list"
+                  style={{ marginTop: '0px', marginBottom: '0px' }}
+                >
+                  {PROJECTS.data.map(({ image, name, description, link }) => (
+                    <div key={link}>
+                      <img
+                        src={image}
+                        alt={`Project - ${name}`}
+                        style={{
+                          width: '200px',
+                          marginLeft: '10px',
+                        }}
+                      />
+                      <li key={name}>
+                        <a
+                          href={link}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                        >
+                          {name}
                         </a>
-                      </Link>
-                    </Col>
-                  </Row>
-                </div>
-              </Col>
-            )
-          })}
-        </Row>
+                        <span>{description}</span>
+                      </li>
+                      <br />
+                    </div>
+                  ))}
+                </ul>
+              </Row>
+            </>
+            <br />
+            <>
+              <h3>{SOCIAL.title}</h3>
+              <Row style={{ marginTop: 30 }}>
+                {SOCIAL.data.map(s => (
+                  <Col
+                    md={2}
+                    xs={4}
+                    key={s.link}
+                    style={{ textAlign: 'center', marginBottom: 40 }}
+                  >
+                    <Icon stack={s.platform} />
+                    <div className="stack-name">
+                      <a
+                        href={s.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {s.platform}
+                      </a>
+                    </div>
+                  </Col>
+                ))}
+              </Row>
+            </>
+            <hr />
+            Follow me on{' '}
+            <a
+              href={`https://twitter.com/${META.social.twitter}`}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Twitter
+            </a>
+            . That's where I usually hangout.
+          </div>
+        </div>
       </Layout>
     </>
   )
 }
 
-Homepage.getInitialProps = async context => {
-  // eslint-disable-next-line no-shadow
-  const writings = (context => {
-    const keys = context.keys()
-    const values = keys.map(context)
-    const data = keys.map((key, index) => {
-      const slug = key
-        // eslint-disable-next-line no-useless-escape
-        .replace(/^.*[\\\/]/, '')
-        .split('.')
-        .slice(0, -1)
-        .join('.')
-      const value = values[index]
-      const document = matter(value.default)
-      return { document, slug }
-    })
-
-    return data
-      .slice()
-      .sort(
-        (a, b) =>
-          new Date(b.document.data.date) - new Date(a.document.data.date)
-      )
-  })(require.context('../writings', true, /\.md$/))
-
-  return {
-    writings,
-  }
-}
-export default Homepage
+export default About

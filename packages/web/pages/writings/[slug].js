@@ -49,7 +49,7 @@ function Writing({ content, data }) {
               >
                 Twitter
               </a>
-              , that's the place where I usually hang out ✌️
+              , that's where I usually hang out ✌️
             </div>
 
             <br />

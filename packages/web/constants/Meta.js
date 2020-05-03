@@ -20,6 +20,7 @@ export const META = {
   pageOgs: {
     uses: 'https://telmo.im/og/uses.png',
   },
+  email: 'kumarabhirup5@gmail.com',
 }
 
 export const ELEMENTS = {
@@ -30,10 +31,15 @@ export const ELEMENTS = {
   ),
   about: (
     <>
-      I am 16 year old Node.js, JavaScript, React, Full-Stack Developer from
-      India 🇮🇳 who builds cool projects since 2018. I am specialized in building
-      full stack applications that use React in frontend and GraphQL in the
-      backend. I am in the evergreen process of learning, and I am loving it!
+      I am a Full-Stack JavaScript Developer from India 🇮🇳 who loved to code and
+      create cool projects. I am specialized in building full stack applications
+      that use React in frontend and Node.js, GraphQL in the backend.
+      <br />
+      <br />
+      I am in the evergreen process of learning, and I am loving it!
+      <br />
+      <br />
+      <a href={`mailto:${META.email}`}>{META.email}</a>
     </>
   ),
 }
