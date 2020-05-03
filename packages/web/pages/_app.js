@@ -44,14 +44,14 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:site_name" content={META.title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${META.website}/${router.asPath}`} />
-        <meta property="og:image" content={og ? og.image : META.avatar} />
+        <meta property="og:image" content={og ? og.image : META.thumbnail} />
 
         <meta name="twitter:title" content={title || META.title} />
         <meta
           name="twitter:description"
           content={og ? og.description : META.description}
         />
-        <meta name="twitter:image" content={og ? og.image : META.avatar} />
+        <meta name="twitter:image" content={og ? og.image : META.thumbnail} />
         <meta name="twitter:image:alt" content={title || META.title} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content={`@${META.social.twitter}`} />

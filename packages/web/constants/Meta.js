@@ -17,9 +17,9 @@ export const META = {
   },
   description:
     'Writing about the tips I usually share on Twitter and some more.',
-  avatar: 'https://telmo.im/og/default.png', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
+  thumbnail: 'https://i.ibb.co/n7bmwgg/default.png', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
   pageOgs: {
-    uses: 'https://telmo.im/og/uses.png',
+    uses: 'https://i.ibb.co/n7bmwgg/default.png',
   },
   email: 'kumarabhirup5@gmail.com',
 }

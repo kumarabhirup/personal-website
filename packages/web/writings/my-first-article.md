@@ -3,7 +3,7 @@ title: "Hi! This, is my first article."
 date: "2020-05-03"
 og:
   description: "This is my first article on my blog."
-  image: "https://telmo.im/og/ooswebsite.png"
+  image: "https://i.ibb.co/n7bmwgg/default.png"
 author:
   twitter: "kumar_abhirup"
   name: "Kumar Abhirup"
