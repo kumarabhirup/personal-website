@@ -39,16 +39,12 @@ The above repository includes...
 - ESLint + Prettier setup included.
 - It's TypeScript. :)
 
----
-
-## 🔰 Things you need
+# 🔰 Things you need
 
 - Docker Installed on your machine
 - Some basic knowledge of Next.js
 
----
-
-## 🚀 Clone and Setup the repository
+# 🚀 Clone and Setup the repository
 
 - Run the below command
 
@@ -72,7 +68,7 @@ docker-compose up
 
 ---
 
-## 👁 But Kumar, how does this thing even work
+# 👁 But Kumar, how does this thing even work
 
 You might be wondering where your Next.js project is staying.
 
@@ -90,7 +86,7 @@ So, the repository would not just contain a Next.js project but would have backe
 
 ---
 
-## 📦 How to containerize Next.js
+# 📦 How to containerize Next.js
 
 To use Docker to containerize any code, we need to have a `Dockerfile` in the package. Every container has its own `Dockerfile`.
 
@@ -213,7 +209,7 @@ The `volumes` part is very important here. Without it, your Next.js will work, b
 
 ---
 
-## 🔥 Hurray
+# 🔥 Hurray
 
 If you surf through the repository carefully, you will understand how to containerize Next.js with Docker.
 
@@ -227,7 +223,7 @@ To make changes in code, make changes to `packages/landingpage/pages/index.tsx` 
 
 ---
 
-## 🚀 For production
+# 🚀 For production
 
 When deploying to production, just make sure that you make a small change in your `packages/landingpage/Dockerfile`.
 
@@ -235,7 +231,7 @@ Change the last line (`CMD "npm" "run" "dev"`) to **`CMD "npm" "start"`**.
 
 ---
 
-## ❤️ Links
+# 💚 Links
 
 - [Source Code](https://github.com/KumarAbhirup/dockerized/)
 - [Docker + Next.js Tutorial](https://www.codemochi.com/blog/2019-08-27-nextjs-hmr/)

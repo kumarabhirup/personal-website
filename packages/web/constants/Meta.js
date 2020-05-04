@@ -49,14 +49,14 @@ export const ELEMENTS = {
     </>
   ),
   belowArticle: `
-  ---
+---
 
-  ## 🏆 About me
-  
-  I am **Kumar Abhirup, a 16-year-old JavaScript React developer** from India who keeps learning a new thing every single day.
-  
-  - [Connect with me on Twitter 🐦](https://twitter.com/kumar_abhirup)
-  
-  _Love what I write? Subscribe to **KumarWrites** and stay updated about the tech community, me and coding in general._
+# 🏆 About me
+
+I am **Kumar Abhirup, a 16-year-old JavaScript React developer** from India who keeps learning a new thing every single day.
+
+- [Connect with me on Twitter 🐦](https://twitter.com/kumar_abhirup)
+
+_Love what I write? Subscribe to **KumarWrites** and stay updated about the tech community, me and coding in general._
   `,
 }
