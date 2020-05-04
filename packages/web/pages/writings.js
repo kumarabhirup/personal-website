@@ -71,6 +71,12 @@ Homepage.getInitialProps = async context => {
         (a, b) =>
           new Date(b.document.data.date) - new Date(a.document.data.date)
       )
+      .filter(
+        post =>
+          post.document.data.isDraft === undefined ||
+          post.document.data.isDraft === false ||
+          post.document.data.isDraft === null
+      )
   })(require.context('../writings', true, /\.md$/))
 
   return {
