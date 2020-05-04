@@ -84,7 +84,7 @@ export const SKILLS = [
   'debugs',
   'learns',
   'helps',
-  'is hardworking',
+  'jokes',
   'speaks',
   'tweets',
   'lives',

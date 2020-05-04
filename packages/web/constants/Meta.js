@@ -29,12 +29,12 @@ export const META = {
 export const ELEMENTS = {
   mainText: (
     <>
-      Kumar, Kumar <span className="amp">&</span> Kumar
+      Kumar <span className="amp">&</span> Thoughts
     </>
   ),
   about: (
     <>
-      I am a Full-Stack JavaScript Developer from India 🇮🇳 who loved to code and
+      I am a Full-Stack JavaScript Developer from India 🇮🇳 who loves to code and
       create cool projects. I am specialized in building full stack applications
       that use React in frontend and Node.js, GraphQL in the backend.
       <br />
