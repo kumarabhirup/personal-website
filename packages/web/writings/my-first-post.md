@@ -1,6 +1,6 @@
 ---
 title: "My first post, on my new site!"
-date: "2020-05-05"
+date: "2020-05-03"
 og:
   description: "I rebuilt my website. No, not from scratch. Here's what I did."
   image: "https://i.ibb.co/QF3Hhv5/my-first-post.jpg"
