@@ -1,33 +1,74 @@
-import App, { Container } from 'next/app'
-import { ApolloProvider } from 'react-apollo'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
-import withData from '../src/lib/withData'
-import Page from '../src/components/Page'
+import { META } from '../constants/Meta'
 
-class Wrapper extends App {
-  static getInitialProps({ Component, ctx }) {
-    let pageProps = {}
-    if (Component.getInitialProps) {
-      pageProps = Component.getInitialProps(ctx)
-    }
+import '../styles/base.css'
 
-    // This exposes query to the user
-    pageProps.query = ctx.query
-    return { pageProps }
-  }
+function MyApp({ Component, pageProps }) {
+  const router = useRouter()
 
-  render() {
-    const { Component, apollo, pageProps } = this.props
-    return (
-      <Container>
-        <ApolloProvider client={apollo}>
-          <Page>
-            <Component {...pageProps} />
-          </Page>
-        </ApolloProvider>
-      </Container>
-    )
-  }
+  const og = pageProps.data?.og
+  const title = pageProps.data?.title
+
+  return (
+    <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <meta
+          name="description"
+          content={og ? og.description : META.description}
+        />
+        <meta name="copyright" content={META.name} />
+        <meta name="robots" content="index,follow" />
+        <meta name="author" content={`${META.name}, ${META.email}`} />
+        <meta name="url" content={`${META.website}/${router.asPath}`} />
+        <meta
+          name="identifier-URL"
+          content={`${META.website}/${router.asPath}`}
+        />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+
+        <meta property="og:title" content={title || META.title} />
+        <meta
+          property="og:description"
+          content={og ? og.description : META.description}
+        />
+        <meta property="og:site_name" content={META.title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${META.website}/${router.asPath}`} />
+        <meta property="og:image" content={og ? og.image : META.thumbnail} />
+
+        <meta name="twitter:title" content={title || META.title} />
+        <meta
+          name="twitter:description"
+          content={og ? og.description : META.description}
+        />
+        <meta name="twitter:image" content={og ? og.image : META.thumbnail} />
+        <meta name="twitter:image:alt" content={title || META.title} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content={`@${META.social.twitter}`} />
+        <meta name="twitter:creator" content={`@${META.social.twitter}`} />
+
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charSet="utf-8"
+        ></script>
+
+        <title>{title || META.title}</title>
+      </Head>
+
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default withData(Wrapper)
+export default MyApp
