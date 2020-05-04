@@ -101,9 +101,11 @@ function About() {
                         >
                           {name}
                         </a>
-                        <span>{description}</span>
+                        <br />
+                        <br />
+                        <span className="darker">{description}</span>
                       </li>
-                      <br />
+                      <hr />
                     </div>
                   ))}
                 </ul>

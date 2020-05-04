@@ -222,6 +222,10 @@ h6 {
   color: var(--writing-body);
 }
 
+span.darker {
+  color: var(--writing-body);
+}
+
 .writing-container>blockquote {
   border-left: 5px var(--highlight-color) solid;
   background: var(--highlight-color);
