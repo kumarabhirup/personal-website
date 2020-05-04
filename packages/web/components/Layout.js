@@ -12,7 +12,7 @@ const menu = [
   },
   {
     path: '/writings',
-    name: 'writings',
+    name: 'blog',
   },
   {
     path: '/uses',
