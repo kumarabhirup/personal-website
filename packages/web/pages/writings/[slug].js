@@ -56,22 +56,6 @@ function Writing({ content, data }) {
             <br />
             <br />
 
-            {console.log(`
-              ${content}
-
----
-
-# 🏆 About me
-
-I am **Kumar Abhirup, a 16-year-old JavaScript React developer** from India who keeps learning a new thing every single day.
-
-[Connect with me on Twitter 🐦](https://twitter.com/kumar_abhirup)
-[My personal website and portfolio 🖥️](https://kumar.now.sh)
-
-_Comment below your better ways, and suggestions to improve this post._
-              
-              `)}
-
             <ReactMarkdown
               source={`${content}${ELEMENTS.belowArticle}`}
               escapeHtml={false}
