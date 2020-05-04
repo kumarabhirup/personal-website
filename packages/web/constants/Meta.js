@@ -16,7 +16,7 @@ export const META = {
     tinyletter: 'kumar_abhirup',
   },
   description:
-    'Kumar is Full-Stack JavaScript Developer from India who loves to code. Say hi to him!',
+    'Kumar is a Full-Stack JavaScript Developer from India who builds new stuff. Say hi 👋 to him!',
   thumbnail: 'https://i.ibb.co/k5cMnNm/default.jpg', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
   pageOgs: {
     uses: 'https://i.ibb.co/9t04yDL/uses.jpg',
