@@ -1,6 +1,6 @@
 ---
 title: "Next.js + Docker. Made easy."
-date: "2020-05-05"
+date: "2020-05-04"
 og:
   description: "After a few days of research and setting up a Containerized Next.js App, I am here to share with you how to do it."
   image: "https://res.cloudinary.com/practicaldev/image/fetch/s--3XKn-1bL--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/vhyp2izu2jx3a6oj2euz.jpg"
