@@ -69,7 +69,8 @@ export const PROJECTS = {
         'This app makes your colleagues take a connection/camera/mic test before joining a call. Hosts can create infinite JoinMyCall links to invite guests in meeting. Guests can either skip or do the connection test.',
     },
     {
-      image: 'https://kumar.now.sh/static/prebuilt/images/bulkmail.gif',
+      image:
+        'https://ph-files.imgix.net/32a6ac11-e7b0-4c3f-82fc-bc92c38dba34?auto=format',
       name: 'bulk-mail-cli',
       link: 'https://bulkmail.now.sh',
       description:
