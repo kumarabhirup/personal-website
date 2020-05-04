@@ -19,7 +19,7 @@ That website was bloated with a combination of jQuery and React 😂 Can you bel
 
 Also, it didn't have a blog. I tried adding it there, but it was a failed attempt.
 
-I faced wierd bugs like background image not loading and stuff.
+I faced weird bugs like background image not loading and stuff.
 
 > **Confession:** The previous website's code was created using mbrise page builder. I just took the code and React-ified it. And so, fixing stuff was hard. I didn't even know jQuery.
 
