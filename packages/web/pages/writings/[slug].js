@@ -11,9 +11,10 @@ import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
 import Subscribe from '../../components/Subscribe'
 
-function Writing({ content, data }) {
+function Writing({ content, data, slug }) {
   const frontmatter = data
   const { title, author } = frontmatter
+
   const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${author.twitter}&w=40`
 
   return (
@@ -24,9 +25,21 @@ function Writing({ content, data }) {
 
       <Layout secondaryPage noHead>
         <div style={{ marginTop: 50 }}>
-          <Link href="/" as="/">
-            <a className="back-button">back</a>
-          </Link>
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Link href="/" as="/">
+              <a className="back-button">⏪ back</a>
+            </Link>
+
+            <a
+              className="back-button"
+              href={`https://github.com/KumarAbhirup/personal-website/edit/master/packages/web/writings/${slug}.md`}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              edit this article 📝
+            </a>
+          </div>
+
           <h1 className="writing-title-h1">{title}</h1>
 
           <div className="author">
@@ -122,7 +135,7 @@ Writing.getInitialProps = async context => {
   const content = await import(`../../writings/${slug}.md`)
   const data = matter(content.default)
 
-  return { ...data }
+  return { ...data, slug }
 }
 
 export default Writing
