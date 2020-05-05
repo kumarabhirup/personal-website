@@ -124,11 +124,20 @@ h6 {
   margin: 100px 0 50px;
 }
 
+.dynamicCenter {
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   .blog-title {
     font-size: 65px;
     text-align: left;
     margin: 100px 0 50px 14px;
+  }
+
+  .dynamicCenter {
+    text-align: center;
+    margin: 0px 0 0px -10px;
   }
 }
 

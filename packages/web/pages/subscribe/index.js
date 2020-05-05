@@ -1,9 +1,9 @@
 import React from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 
-import Layout from '../components/Layout'
-import Subscribe from '../components/Subscribe'
-import { META } from '../constants/Meta'
+import Layout from '../../components/Layout'
+import Subscribe from '../../components/Subscribe'
+import { META } from '../../constants/Meta'
 
 export function DiscordInviteBox() {
   return (
