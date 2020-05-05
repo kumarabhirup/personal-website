@@ -32,7 +32,7 @@ function Writing({ content, data, slug }) {
 
             <a
               className="back-button"
-              href={`https://github.com/KumarAbhirup/personal-website/edit/master/packages/web/writings/${slug}.md`}
+              href={`https://github.com/${META.githubUrl}/edit/master/packages/web/writings/${slug}.md`}
               target="_blank"
               rel="noreferrer noopener"
             >

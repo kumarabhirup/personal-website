@@ -108,7 +108,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
       <footer>
         Code hosted on{' '}
         <a
-          href={`https://github.com/${META.social.github}/personal-website`}
+          href={`https://github.com/${META.githubUrl}`}
           target="_blank"
           rel="noopener noreferrer nofollow"
         >

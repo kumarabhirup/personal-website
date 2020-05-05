@@ -24,6 +24,7 @@ export const META = {
   email: 'kumarabhirup5@gmail.com',
   resume:
     'https://github.com/KumarAbhirup/resume/blob/master/Kumar%20Abhirup%20CV.pdf',
+  githubUrl: 'KumarAbhirup/personal-website',
 }
 
 export const ELEMENTS = {
