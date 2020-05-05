@@ -14,6 +14,7 @@ export const META = {
     dev: 'kumar_abhirup',
     facebook: 'krish.abhirup',
     tinyletter: 'kumar_abhirup',
+    twitch: 'kumar_abhirup',
   },
   description:
     'Kumar is a Full-Stack JavaScript Developer from India who builds new stuff. Say hi 👋 to him!',

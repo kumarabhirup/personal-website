@@ -31,6 +31,7 @@
     "react-spring": "^8.0.27",
     "react-syntax-highlighter": "^12.2.1",
     "react-text-transition": "^1.0.2",
+    "react-twitch-embed-video": "^2.0.2",
     "simple-icons": "^2.9.0",
     "styled-components": "^5.1.0"
   },
