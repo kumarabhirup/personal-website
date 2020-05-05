@@ -102,7 +102,7 @@ function Writing({ content, data }) {
             >
               Chat with me and my friends at{' '}
               <a
-                href="https://discord.gg/PCq4Fk"
+                href="https://discord.gg/Ub9WWU4"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
