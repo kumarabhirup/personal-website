@@ -1,23 +1,12 @@
-const typeDefs = `
+const typeDefs = /* GraphQL */ `
   scalar DateTime
 
   type Mutation {
-    sendMessage(fullname: String!, phone: String, email: String!, subject: String!, message: String!, humanKey: String!): Contact!
+    exampleMutation: String!
   }
 
   type Query {
-    contacts: [Contact]!
-  }
-
-  type Contact {
-    id: ID!
-    fullname: String!
-    phone: String
-    email: String!
-    subject: String!
-    message: String!
-    updatedAt: String!
-    createdAt: String!
+    exampleQuery: String!
   }
 `
 

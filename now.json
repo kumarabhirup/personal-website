@@ -2,7 +2,7 @@
   "version": 2,
   "name": "personal-website",
   "public": true,
-  "alias": ["kumar"],
+  "alias": ["kumar", "kumarabhirup.me"],
   "scope": "kumarabhirup",
   "build": {
     "env": {
@@ -12,7 +12,6 @@
   },
   "env": {
     "PRISMA_SECRET": "@kumarprismasecret",
-    "APILAYER_KEY": "@kumarapilayerkey",
     "RECAPTCHA_SERVER_KEY": "@kumarrecaptchaserverkey"
   },
   "builds": [
