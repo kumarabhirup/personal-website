@@ -12,7 +12,8 @@ function About() {
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
           <h1 className="about-h1">
-            {META.fname} <TextTransitionAnimation />
+            {META.fname} {META.lname}
+            {/* <TextTransitionAnimation /> */}
           </h1>
 
           <div className="about-intro">
