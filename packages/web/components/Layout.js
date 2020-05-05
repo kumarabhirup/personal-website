@@ -95,7 +95,7 @@ function Layout({
       <div className="top-menu">
         <Row>
           <Col className="menubar" xs={6}>
-            <ul style={{ marginLeft: '5px', marginTop: '-5px' }}>
+            <ul style={{ marginLeft: '5px', marginTop: '-2px' }}>
               {menu.map(({ path, name, newTab }) => (
                 <li key={name}>
                   <Link href={path} as={path}>
@@ -106,20 +106,23 @@ function Layout({
             </ul>
           </Col>
 
-          <Col xs={6} style={{ textAlign: 'right', marginTop: '-3px' }}>
+          <Col
+            xs={6}
+            style={{
+              textAlign: 'right',
+              marginTop: '-3px',
+            }}
+          >
             <a
               className="theme-switch-button"
               href={`https://twitter.com/${META.social.twitter}`}
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                marginRight: '30px',
+              }}
             >
-              <Icon
-                stack="twitter"
-                style={{
-                  width: '22px',
-                  marginRight: '20px',
-                }}
-              />
+              <Icon stack="twitter" style={{ width: '22px' }} />
             </a>
 
             {!noColorModeChange && (
@@ -127,6 +130,10 @@ function Layout({
                 type="button"
                 className="theme-switch-button"
                 onClick={() => switchTheme()}
+                style={{
+                  width: '22px',
+                  marginRight: '20px',
+                }}
               >
                 {theme === 'dark' ? <Sun /> : <Moon />}
               </button>
