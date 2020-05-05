@@ -110,10 +110,15 @@ function Layout({
         src={`https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${META.social.twitter}`}
         alt="Avatar"
       />
+
       <div className="top-menu">
         <Row>
-          <Col className="menubar" xs={6}>
-            <ul style={{ marginLeft: '5px', marginTop: '-2px' }}>
+          <Col
+            className="menubar"
+            xs={6}
+            // style={{ marginLeft: '5px', marginTop: '-2px' }}
+          >
+            <ul>
               {menu.map(({ path, name, newTab }) => (
                 <li key={name}>
                   <Link href={path} as={path}>
@@ -128,7 +133,7 @@ function Layout({
             xs={6}
             style={{
               textAlign: 'right',
-              marginTop: '-3px',
+              marginTop: '-1px',
             }}
           >
             <a
