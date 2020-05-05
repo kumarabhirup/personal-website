@@ -55,6 +55,16 @@ body {
   padding: 0;
 }
 
+.menubar {
+  /**/
+}
+
+@media (max-width: 500px) {
+  .menubar {
+    overflow-x: scroll;
+  }
+}
+
 .top-menu ul li {
   display: inline;
   margin-right: 5px;

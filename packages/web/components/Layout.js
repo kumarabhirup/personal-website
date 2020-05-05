@@ -93,12 +93,7 @@ function Layout({
       />
       <div className="top-menu">
         <Row>
-          <Col
-            xs={6}
-            style={{
-              overflowX: 'scroll',
-            }}
-          >
+          <Col className="menubar" xs={6}>
             <ul style={{ marginLeft: '-5px' }}>
               {menu.map(({ path, name, newTab }) => (
                 <li key={name}>
