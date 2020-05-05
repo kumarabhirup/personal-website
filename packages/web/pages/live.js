@@ -21,7 +21,7 @@ function LivePage() {
         muted={false}
       />
 
-      <SubscribePage />
+      <SubscribePage noLiveShow />
     </>
   )
 }

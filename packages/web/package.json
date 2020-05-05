@@ -16,6 +16,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "gray-matter": "^4.0.2",
     "next": "^9.3.6",

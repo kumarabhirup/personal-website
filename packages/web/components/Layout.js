@@ -3,9 +3,15 @@ import simpleIcons from 'simple-icons'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import dynamic from 'next/dynamic'
 
 import { ELEMENTS, META } from '../constants/Meta'
+import useTwitchIsLive from '../hooks/useTwitchIsLive'
+
+const ReactTwitchEmbedVideo = dynamic(
+  () => import('react-twitch-embed-video'),
+  { ssr: false }
+)
 
 export const Icon = ({ stack, style }) => {
   const icon = simpleIcons.get(stack)
@@ -47,10 +53,9 @@ function Layout({
   secondaryPage,
   pageTitle,
   noColorModeChange,
+  noLiveShow,
   noHead = false,
 }) {
-  const router = useRouter()
-
   const onLoadTheme =
     typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
 
@@ -78,6 +83,8 @@ function Layout({
     localStorage.setItem('BLOG_THEME', theme)
   }, [theme])
 
+  const isLive = useTwitchIsLive()
+
   const containerProps = {
     ...(isHomepage && { md: 12 }),
     ...(!isHomepage && { md: 8, mdOffset: 2 }),
@@ -87,6 +94,17 @@ function Layout({
 
   return (
     <>
+      {isLive && !noLiveShow && (
+        <ReactTwitchEmbedVideo
+          channel={META.social.twitch}
+          width="100%"
+          height="600px"
+          theme="dark"
+          autoplay
+          muted={false}
+        />
+      )}
+
       <img
         className="about-avatar"
         src={`https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${META.social.twitter}`}
