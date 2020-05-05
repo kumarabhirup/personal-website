@@ -34,6 +34,7 @@
 
 html {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -108,7 +109,13 @@ h6 {
   font-size: 80px;
   letter-spacing: -0.2rem !important;
   text-align: center;
-  margin: 100px 0 50px;
+  margin: 100px 0 50px 14px;
+}
+
+@media (max-width: 450px) {
+  .blog-title {
+    font-size: 65px;
+  }
 }
 
 .writing-row a {
@@ -195,6 +202,10 @@ h6 {
   margin-bottom: 60px;
   font-size: 72px;
 }
+
+/* writing-container {
+  overflow-x: scroll !important;
+} */
 
 .writing-container h1,
 .writing-container h2,
