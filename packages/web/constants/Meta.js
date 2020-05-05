@@ -25,6 +25,7 @@ export const META = {
   resume:
     'https://github.com/KumarAbhirup/resume/blob/master/Kumar%20Abhirup%20CV.pdf',
   githubUrl: 'KumarAbhirup/personal-website',
+  discordLink: 'https://discord.gg/Ub9WWU4',
 }
 
 export const ELEMENTS = {

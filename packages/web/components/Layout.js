@@ -1,9 +1,29 @@
 import React, { useState, useEffect } from 'react'
+import simpleIcons from 'simple-icons'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { ELEMENTS, META } from '../constants/Meta'
+
+export const Icon = ({ stack, style }) => {
+  const icon = simpleIcons.get(stack)
+
+  return (
+    <div
+      data-icon={stack}
+      style={{
+        fill: `#${icon.hex}`,
+        display: 'inline-block',
+        width: '50px',
+        margin: '0 auto',
+        ...style,
+      }}
+      dangerouslySetInnerHTML={{ __html: icon.svg }}
+    />
+  )
+}
 
 const menu = [
   {
@@ -14,13 +34,22 @@ const menu = [
     path: '/writings',
     name: 'blog',
   },
+  { path: META.discordLink, name: 'discord', newTab: true },
   {
-    path: '/uses',
-    name: 'uses',
+    path: '/subscribe',
+    name: 'subscribe',
   },
 ]
 
-function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
+function Layout({
+  children,
+  isHomepage,
+  secondaryPage,
+  pageTitle,
+  noHead = false,
+}) {
+  const router = useRouter()
+
   const onLoadTheme =
     typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
 
@@ -64,12 +93,17 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
       />
       <div className="top-menu">
         <Row>
-          <Col xs={6}>
-            <ul>
-              {menu.map(({ path, name }) => (
+          <Col
+            xs={6}
+            style={{
+              overflowX: 'scroll',
+            }}
+          >
+            <ul style={{ marginLeft: '-5px' }}>
+              {menu.map(({ path, name, newTab }) => (
                 <li key={name}>
                   <Link href={path} as={path}>
-                    <a>{name}</a>
+                    <a target={newTab ? '_blank' : ''}>{name}</a>
                   </Link>
                 </li>
               ))}
@@ -77,6 +111,21 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
           </Col>
 
           <Col xs={6} style={{ textAlign: 'right' }}>
+            <a
+              className="theme-switch-button"
+              href={`https://twitter.com/${META.social.twitter}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                stack="twitter"
+                style={{
+                  width: '22px',
+                  marginRight: '20px',
+                }}
+              />
+            </a>
+
             <button
               type="button"
               className="theme-switch-button"
@@ -96,7 +145,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
                 className="blog-title"
                 style={isHomepage && { textAlign: 'left' }}
               >
-                {ELEMENTS.mainText}
+                {pageTitle || ELEMENTS.mainText}
               </h1>
             )}
 

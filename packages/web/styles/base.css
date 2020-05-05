@@ -19,7 +19,7 @@
   --font-color: #fff;
   --bg-color: #010101;
   --heading-color: #fff;
-  --highlight-color: #FE5E41;
+  --highlight-color: #fe5e41;
   --hr-color: #222;
   --writing-body: #ccc;
 }
@@ -109,12 +109,14 @@ h6 {
   font-size: 80px;
   letter-spacing: -0.2rem !important;
   text-align: center;
-  margin: 100px 0 50px 14px;
+  margin: 100px 0 50px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .blog-title {
     font-size: 65px;
+    text-align: left;
+    margin: 100px 0 50px 14px;
   }
 }
 
@@ -237,7 +239,7 @@ span.darker {
   color: var(--writing-body);
 }
 
-.writing-container>blockquote {
+.writing-container > blockquote {
   border-left: 5px var(--highlight-color) solid;
   background: var(--highlight-color);
   font-style: italic;
@@ -248,14 +250,14 @@ span.darker {
   line-height: 40px;
 }
 
-.writing-container>p {
+.writing-container > p {
   line-height: 1.8em;
   margin-bottom: 40px;
   font-size: 20px;
   color: var(--writing-body);
 }
 
-.writing-container *:not(pre)>code {
+.writing-container *:not(pre) > code {
   font-family: ibm-plex-mono, Monaco, "Lucida Console";
   background: var(--highlight-color);
   color: var(--heading-color);
@@ -272,7 +274,9 @@ hr {
   margin: 45px 0;
 }
 
-.writing-container a {
+.writing-container a,
+.card a,
+.twitter-follow a {
   color: var(--heading-color);
   text-decoration: none;
   border-bottom: 1px var(--heading-color) dashed;
@@ -325,7 +329,7 @@ footer {
   color: var(--secondary-color);
 }
 
-footer>a {
+footer > a {
   text-align: center;
   font-size: 13px;
   color: var(--heading-color);
@@ -361,7 +365,6 @@ footer>a {
   border-radius: 8px;
   font-size: 18px;
   line-height: 1.9em;
-
 }
 
 .card {
@@ -489,7 +492,6 @@ form input:focus {
   border-bottom: 1px var(--heading-color) dashed;
 }
 
-
 [data-icon="Next.js"] svg {
   fill: var(--heading-color);
 }
@@ -526,7 +528,6 @@ form input:focus {
   fill: var(--heading-color);
 } */
 
-
 .stack-name {
   font-family: ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 13px;
@@ -534,7 +535,7 @@ form input:focus {
 }
 
 /* Override scroll progress */
-.writing-progress>div {
+.writing-progress > div {
   background: var(--highlight-color) !important;
   margin: 0 -8px !important;
 }

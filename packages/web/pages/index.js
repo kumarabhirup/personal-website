@@ -1,34 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import simpleIcons from 'simple-icons'
 import { Row, Col } from 'react-flexbox-grid'
 import dynamic from 'next/dynamic'
 import { config } from 'react-spring'
 
-import Layout from '../components/Layout'
+import Layout, { Icon } from '../components/Layout'
 import { META, ELEMENTS } from '../constants/Meta'
 import { TECH, SKILLS, SOCIAL, PROJECTS } from '../constants/Stack'
 
 const TextTransition = dynamic(() => import('react-text-transition'), {
   ssr: false,
 })
-
-const Icon = ({ stack, style }) => {
-  const icon = simpleIcons.get(stack)
-
-  return (
-    <div
-      data-icon={stack}
-      style={{
-        fill: `#${icon.hex}`,
-        display: 'inline-block',
-        width: '50px',
-        margin: '0 auto',
-        ...style,
-      }}
-      dangerouslySetInnerHTML={{ __html: icon.svg }}
-    />
-  )
-}
 
 function About() {
   const [index, setIndex] = useState(0)
