@@ -471,9 +471,43 @@ form input:focus {
   border-bottom: 1px var(--heading-color) dashed;
 }
 
+
 [data-icon="Next.js"] svg {
   fill: var(--heading-color);
 }
+
+[data-icon="Apollo GraphQL"] svg {
+  fill: var(--heading-color);
+}
+
+[data-icon="GitHub"] svg {
+  fill: var(--heading-color);
+}
+
+[data-icon="ZEIT"] svg {
+  fill: var(--heading-color);
+}
+
+[data-icon="DEV.TO"] svg {
+  fill: var(--heading-color);
+}
+
+/* [data-icon="LinkedIn"] svg {
+  fill: var(--heading-color);
+} */
+
+/* [data-icon="Twitter"] svg {
+  fill: var(--heading-color);
+} */
+
+/* [data-icon="YouTube"] svg {
+  fill: var(--heading-color);
+} */
+
+/* [data-icon="Facebook"] svg {
+  fill: var(--heading-color);
+} */
+
 
 .stack-name {
   font-family: ibm-plex-mono, Monaco, "Lucida Console";
