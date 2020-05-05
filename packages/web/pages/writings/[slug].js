@@ -57,7 +57,7 @@ function Writing({ content, data, slug }) {
             <div className="twitter-follow">
               Make sure you follow me on{' '}
               <a
-                href={`https://twitter.com/${META.social.twitter}`}
+                href={`https://twitter.com/${author.twitter}`}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -70,7 +70,11 @@ function Writing({ content, data, slug }) {
             <br />
 
             <ReactMarkdown
-              source={`${content}${ELEMENTS.belowArticle}`}
+              source={`${content}${
+                author.twitter === META.social.twitter
+                  ? ELEMENTS.belowArticle
+                  : ''
+              }`}
               escapeHtml={false}
               renderers={{
                 code: CodeBlock,

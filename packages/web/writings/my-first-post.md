@@ -46,4 +46,4 @@ I used that open source project in my website. You'll see many similarities in h
 
 From now on, I am gonna post my content on this fine good-looking website.
 
-If you like what I tweet, you'll surely like what I email you. So, make sure you subscribe for updates below 👇
+If you like what I tweet, you'll surely like what I email you. So, make sure you subscribe for updates [here](https://tinyletter.com/kumar_abhirup/subscribe).
