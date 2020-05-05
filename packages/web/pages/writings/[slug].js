@@ -27,7 +27,7 @@ function Writing({ content, data, slug }) {
         <div style={{ marginTop: 50 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Link href="/" as="/">
-              <a className="back-button">⏪ back</a>
+              <a className="back-button">back</a>
             </Link>
 
             <a
@@ -36,7 +36,7 @@ function Writing({ content, data, slug }) {
               target="_blank"
               rel="noreferrer noopener"
             >
-              edit this article 📝
+              edit this article
             </a>
           </div>
 
