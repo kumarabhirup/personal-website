@@ -40,6 +40,8 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
+  margin: 0;
+  padding: 0;
 }
 
 * {

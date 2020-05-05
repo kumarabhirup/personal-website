@@ -30,10 +30,10 @@ export function DiscordInviteBox() {
   )
 }
 
-function SubscribePage() {
+function SubscribePage({ noColorModeChange }) {
   return (
     <>
-      <Layout>
+      <Layout noColorModeChange={noColorModeChange}>
         <Row>
           <Col md={12}>
             <div className="card">

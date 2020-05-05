@@ -46,6 +46,7 @@ function Layout({
   isHomepage,
   secondaryPage,
   pageTitle,
+  noColorModeChange,
   noHead = false,
 }) {
   const router = useRouter()
@@ -94,7 +95,7 @@ function Layout({
       <div className="top-menu">
         <Row>
           <Col className="menubar" xs={6}>
-            <ul style={{ marginLeft: '-5px' }}>
+            <ul style={{ marginLeft: '5px', marginTop: '-5px' }}>
               {menu.map(({ path, name, newTab }) => (
                 <li key={name}>
                   <Link href={path} as={path}>
@@ -105,7 +106,7 @@ function Layout({
             </ul>
           </Col>
 
-          <Col xs={6} style={{ textAlign: 'right' }}>
+          <Col xs={6} style={{ textAlign: 'right', marginTop: '-3px' }}>
             <a
               className="theme-switch-button"
               href={`https://twitter.com/${META.social.twitter}`}
@@ -121,13 +122,15 @@ function Layout({
               />
             </a>
 
-            <button
-              type="button"
-              className="theme-switch-button"
-              onClick={() => switchTheme()}
-            >
-              {theme === 'dark' ? <Sun /> : <Moon />}
-            </button>
+            {!noColorModeChange && (
+              <button
+                type="button"
+                className="theme-switch-button"
+                onClick={() => switchTheme()}
+              >
+                {theme === 'dark' ? <Sun /> : <Moon />}
+              </button>
+            )}
           </Col>
         </Row>
       </div>
