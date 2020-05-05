@@ -109,6 +109,7 @@ function Layout({ children, isHomepage, secondaryPage, noHead = false }) {
         Code hosted on{' '}
         <a
           href={`https://github.com/${META.social.github}/personal-website`}
+          target="_blank"
           rel="noopener noreferrer nofollow"
         >
           GitHub
