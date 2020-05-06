@@ -5,7 +5,7 @@ export const META = {
   name: 'Kumar Abhirup',
   fname: 'Kumar',
   lname: 'Abhirup',
-  website: 'https://kumar.now.sh',
+  website: 'https://kumarabhirup.me',
   social: {
     twitter: 'kumar_abhirup',
     linkedin: 'kumar-abhirup',
