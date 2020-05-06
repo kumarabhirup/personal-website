@@ -165,7 +165,7 @@ function Layout({
         </Row>
       </div>
 
-      <Grid>
+      <Grid style={{ padding: '0 14px' }}>
         <Row>
           <Col {...containerProps}>
             {!secondaryPage && (
