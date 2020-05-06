@@ -51,7 +51,7 @@ function Uses({ og }) {
 Uses.getInitialProps = () => ({
   data: {
     og: {
-      description: `What ${META.fname} uses on a daily basis.`,
+      description: `Here's a list of everything that ${META.fname} ${META.lname} uses!`,
       image: META.pageOgs.uses,
     },
   },

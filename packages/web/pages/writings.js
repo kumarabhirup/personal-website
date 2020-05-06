@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Row, Col } from 'react-flexbox-grid'
 
 import Layout from '../components/Layout'
+import { META } from '../constants/Meta'
 
 function formatDate(date) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -12,7 +13,7 @@ function formatDate(date) {
   return today.toLocaleDateString('en-US', options)
 }
 
-function Homepage({ writings }) {
+function Homepage({ writings, og }) {
   return (
     <>
       <Layout isHomepage>
@@ -81,6 +82,12 @@ Homepage.getInitialProps = async context => {
 
   return {
     writings,
+    data: {
+      og: {
+        description: `${META.fname} writes a lot. You can read it all here. :)`,
+        image: META.pageOgs.writings,
+      },
+    },
   }
 }
 export default Homepage

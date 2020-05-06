@@ -18,9 +18,12 @@ export const META = {
   },
   description:
     'Kumar is a Full-Stack JavaScript Developer from India who builds new stuff. Say hi 👋 to him!',
-  thumbnail: 'https://i.ibb.co/k5cMnNm/default.jpg', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
+  thumbnail: 'https://i.ibb.co/D7PL6kG/Kumar-Abhirup.jpg', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
   pageOgs: {
-    uses: 'https://i.ibb.co/9t04yDL/uses.jpg',
+    uses: 'https://i.ibb.co/dMmq8Vx/Kumar-Uses.jpg',
+    writings: 'https://i.ibb.co/zPyzXxF/Kumar-Blog.jpg',
+    subscribe: 'https://i.ibb.co/F5CGf8X/Subscribe-Kumar.jpg',
+    live: 'https://i.ibb.co/6bjVnJp/Kumar-Join-Live-Stream.jpg',
   },
   email: 'kumarabhirup5@gmail.com',
   resume:

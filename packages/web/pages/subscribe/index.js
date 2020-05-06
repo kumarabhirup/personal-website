@@ -51,4 +51,13 @@ function SubscribePage({ noColorModeChange, noLiveShow }) {
   )
 }
 
+SubscribePage.getInitialProps = () => ({
+  data: {
+    og: {
+      description: `Subscribe to ${META.fname}'s newsletter! No spam, promise!`,
+      image: META.pageOgs.subscribe,
+    },
+  },
+})
+
 export default SubscribePage

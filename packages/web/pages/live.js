@@ -26,4 +26,13 @@ function LivePage() {
   )
 }
 
+LivePage.getInitialProps = () => ({
+  data: {
+    og: {
+      description: `${META.fname} is LIVE NOW. Join the live stream!`,
+      image: META.pageOgs.live,
+    },
+  },
+})
+
 export default LivePage
