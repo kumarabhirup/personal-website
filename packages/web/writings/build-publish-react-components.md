@@ -180,8 +180,8 @@ To unlink, do `$ npm unlink <COMPONENT_NAME>` from the project directory.
 
 # Links
 
-[https://github.com/transitive-bullshit/create-react-library](https://github.com/transitive-bullshit/create-react-library)
-[https://codurance.com/2016/12/21/how-to-use-npm-link](https://codurance.com/2016/12/21/how-to-use-npm-link)
+- [create-react-library](https://github.com/transitive-bullshit/create-react-library)
+- [how-to-use-npm-link](https://codurance.com/2016/12/21/how-to-use-npm-link)
 
 # Conclusion
 

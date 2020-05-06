@@ -71,11 +71,9 @@ function Writing({ content, data, slug }) {
             <br />
 
             <ReactMarkdown
-              source={`${content}${
-                author.twitter === META.social.twitter
-                  ? ELEMENTS.belowArticle
-                  : ''
-              }`}
+              source={`${content}${`
+[Discuss on Twitter](https://twitter.com/search?q=${META.website}/writings/${slug})  ﹒  [Edit this article](https://github.com/${META.githubUrl}/edit/master/packages/web/writings/${slug}.md)
+`}${author.twitter === META.social.twitter ? ELEMENTS.belowArticle : ''}`}
               escapeHtml={false}
               renderers={{
                 code: CodeBlock,
