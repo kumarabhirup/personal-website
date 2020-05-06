@@ -72,7 +72,8 @@ function Writing({ content, data, slug }) {
 
             <ReactMarkdown
               source={`${content}${`
-[Discuss on Twitter](https://twitter.com/search?q=${META.website}/writings/${slug})  ﹒  [Edit this article](https://github.com/${META.githubUrl}/edit/master/packages/web/writings/${slug}.md)
+---
+[Discuss on Twitter](https://twitter.com/search?q=${META.website}/writings/${slug})  ﹒  [Edit this article](https://github.com/${META.githubUrl}/edit/master/packages/web/writings/${slug}.md)  ﹒  [Connect with me on Discord](${META.discordLink})
 `}${author.twitter === META.social.twitter ? ELEMENTS.belowArticle : ''}`}
               escapeHtml={false}
               renderers={{
