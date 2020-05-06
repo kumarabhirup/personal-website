@@ -78,6 +78,8 @@ console.log("Done Last.")
 
 Just like in the below snippet. It just works!
 
+Await tells JavaScript, "Wait until this is finished, then move to the next line".
+
 Wondering what's the `async` part in the below snippet?
 
 ![Code Snippet](https://i.ibb.co/zs8X16s/3.png)
