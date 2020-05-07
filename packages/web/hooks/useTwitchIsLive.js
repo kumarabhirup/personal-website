@@ -12,13 +12,14 @@ function useTwitchIsLive() {
         {
           headers: {
             'Client-ID': process.env.TWITCH_CLIENT_ID,
+            Authorization: `Bearer ${process.env.TWITCH_OAUTH_ID}`,
           },
         }
       )
         .then(res => res.json())
         .catch(e => {})
 
-      if (data && data.data[0]) {
+      if (data && data?.data && data?.data[0]) {
         setIsLive(true)
       } else {
         setIsLive(false)
