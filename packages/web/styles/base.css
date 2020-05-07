@@ -260,7 +260,7 @@ span.darker {
   color: var(--writing-body);
 }
 
-.writing-container > blockquote {
+.writing-container>blockquote {
   border-left: 5px var(--highlight-color) solid;
   background: var(--highlight-color);
   font-style: italic;
@@ -271,14 +271,14 @@ span.darker {
   line-height: 40px;
 }
 
-.writing-container > p {
+.writing-container>p {
   line-height: 1.8em;
   margin-bottom: 40px;
   font-size: 20px;
   color: var(--writing-body);
 }
 
-.writing-container *:not(pre) > code {
+.writing-container *:not(pre)>code {
   font-family: ibm-plex-mono, Monaco, "Lucida Console";
   background: var(--highlight-color);
   color: var(--heading-color);
@@ -350,7 +350,7 @@ footer {
   color: var(--secondary-color);
 }
 
-footer > a {
+footer>a {
   text-align: center;
   font-size: 13px;
   color: var(--heading-color);
@@ -474,7 +474,7 @@ form input:focus {
 .uses-list {
   list-style: none;
   margin: 40px 0 80px;
-  padding: 0;
+  padding: 0 15px;
   font-family: ibm-plex-mono, Monaco, "Lucida Console";
 }
 
@@ -556,7 +556,7 @@ form input:focus {
 }
 
 /* Override scroll progress */
-.writing-progress > div {
+.writing-progress>div {
   background: var(--highlight-color) !important;
   margin: 0 -8px !important;
 }

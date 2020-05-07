@@ -10,7 +10,7 @@ function About() {
   return (
     <>
       <Layout secondaryPage>
-        <div style={{ marginTop: 50 }}>
+        <div style={{ marginTop: 50, paddingLeft: '3px', paddingRight: '3px' }}>
           <h1 className="about-h1">
             {META.fname} {META.lname}
             {/* <TextTransitionAnimation /> */}
