@@ -3,7 +3,7 @@ title: "A starter guide to create a command-line app in Node.js"
 date: "2020-05-10"
 og:
   description: "Many developers use command-line apps on a daily basis. Today, we will learn how to create Command-Line Apps in Node."
-  image: "https://twilio-cms-prod.s3.amazonaws.com/images/atZ3n9vMFjjXDl_XxDtL_FCRSOt6EF0d8LnbMRCCJQUesM.width-808.png"
+  image: "https://i.ibb.co/hcsVt1t/thumbnails-001.png"
 author:
   twitter: "kumar_abhirup"
   name: "Kumar Abhirup"
