@@ -5,16 +5,18 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 import ProgressBar from 'react-scroll-progress-bar'
+import readingTime from 'reading-time'
 
 import { META, ELEMENTS } from '../../constants/Meta'
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
 import Subscribe from '../../components/Subscribe'
 import { DiscordInviteBox } from '../subscribe'
+import { formatDate } from '../writings'
 
 function Writing({ content, data, slug }) {
   const frontmatter = data
-  const { title, author, og } = frontmatter
+  const { title, author, og, date } = frontmatter
 
   const imageTypeOnArticle =
     og?.imageTypeOnArticle === null || og?.imageTypeOnArticle === undefined
@@ -66,7 +68,8 @@ function Writing({ content, data, slug }) {
               rel="noopener noreferrer nofollow"
             >
               <img src={avatar} alt="Avatar" />
-              {author.name}
+              {author.name} &nbsp;🔥&nbsp; {formatDate(date)} &nbsp;🔥&nbsp;{' '}
+              {Math.floor(readingTime(content).minutes) + 1} minute read
             </a>
           </div>
 

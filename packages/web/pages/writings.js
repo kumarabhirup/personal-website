@@ -6,7 +6,7 @@ import { Row, Col } from 'react-flexbox-grid'
 import Layout from '../components/Layout'
 import { META } from '../constants/Meta'
 
-function formatDate(date) {
+export function formatDate(date) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' }
   const today = new Date(date)
 
