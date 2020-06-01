@@ -23,7 +23,7 @@ export default function Subscribe() {
       <p className="style">
         If you like what I write on my blog and twitter, <br />I bet you gonna
         love the stuff I'll be mailing you!
-        <br />I don't spam. Pinky Promise.
+        <br />I don't spam, really!
       </p>
       <p>
         <input

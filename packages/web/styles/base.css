@@ -221,6 +221,22 @@ h6 {
   margin: 50px 0 30px;
 }
 
+@media (max-width: 400px){
+  .writing-title-h1,
+  .uses-h1,
+  .about-h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 300px){
+  .writing-title-h1,
+  .uses-h1,
+  .about-h1 {
+    font-size: 40px;
+  }
+}
+
 .about-h1 {
   margin-bottom: 60px;
   font-size: 72px;

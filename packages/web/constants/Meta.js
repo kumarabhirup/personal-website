@@ -25,11 +25,11 @@ export const META = {
     subscribe: 'https://i.ibb.co/F5CGf8X/Subscribe-Kumar.jpg',
     live: 'https://i.ibb.co/6bjVnJp/Kumar-Join-Live-Stream.jpg',
   },
-  email: 'kumarabhirup5@gmail.com',
+  email: 'hello@kumarabhirup.me',
   resume:
     'https://github.com/KumarAbhirup/resume/blob/master/Kumar%20Abhirup%20CV.pdf',
   githubUrl: 'KumarAbhirup/personal-website',
-  discordLink: 'https://discord.gg/Ub9WWU4',
+  discordLink: 'https://discord.gg/uS2qkhe',
 }
 
 export const ELEMENTS = {
