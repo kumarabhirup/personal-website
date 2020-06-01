@@ -43,6 +43,7 @@ function Homepage({ writings, og }) {
                               className="nice writings"
                               src={image}
                               alt={title}
+                              loading="lazy"
                             />
                           </a>
                         </Link>
