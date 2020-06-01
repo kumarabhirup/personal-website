@@ -4,6 +4,7 @@ date: "2020-05-07"
 og:
   description: "There are many magic scripts available for use by the Node Package Manager ecosystem, that beginners yet don't use."
   image: "https://res.cloudinary.com/practicaldev/image/fetch/s--WMWUiYbE--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--PLhINg-k--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/5iy792219yylpm6chzf9.png"
+  imageTypeOnArticle: "NORMAL"
 author:
   twitter: "kumar_abhirup"
   name: "Kumar Abhirup"

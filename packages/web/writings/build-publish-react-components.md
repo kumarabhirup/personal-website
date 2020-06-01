@@ -4,6 +4,7 @@ date: "2020-05-05"
 og:
   description: "A brief guide about publishing react components to NPM using the best practises."
   image: "https://res.cloudinary.com/practicaldev/image/fetch/s--U98S70Pc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/ih3qpm4vxhpscgdk24fg.png"
+  imageTypeOnArticle: "NORMAL"
 author:
   twitter: "kumar_abhirup"
   name: "Kumar Abhirup"

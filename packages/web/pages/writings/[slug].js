@@ -14,7 +14,12 @@ import { DiscordInviteBox } from '../subscribe'
 
 function Writing({ content, data, slug }) {
   const frontmatter = data
-  const { title, author } = frontmatter
+  const { title, author, og } = frontmatter
+
+  const imageTypeOnArticle =
+    og?.imageTypeOnArticle === null || og?.imageTypeOnArticle === undefined
+      ? 'LEADERBOARD'
+      : og?.imageTypeOnArticle
 
   const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${author.twitter}&w=40`
 
@@ -23,6 +28,10 @@ function Writing({ content, data, slug }) {
       <div className="writing-progress">
         <ProgressBar height="5px" />
       </div>
+
+      {!og?.noImageOnArticle && imageTypeOnArticle === 'LEADERBOARD' && (
+        <img className="writing-image featured" src={og.image} alt={title} />
+      )}
 
       <Layout secondaryPage noHead>
         <div style={{ marginTop: 50 }}>
@@ -40,6 +49,13 @@ function Writing({ content, data, slug }) {
               edit this article
             </a>
           </div>
+
+          <br />
+          <br />
+
+          {!og?.noImageOnArticle && imageTypeOnArticle === 'NORMAL' && (
+            <img className="nice" src={og.image} alt={title} />
+          )}
 
           <h1 className="writing-title-h1">{title}</h1>
 
