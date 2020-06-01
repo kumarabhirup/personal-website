@@ -222,7 +222,6 @@ h6 {
 }
 
 @media (max-width: 400px) {
-
   .writing-title-h1,
   .uses-h1,
   .about-h1 {
@@ -231,7 +230,6 @@ h6 {
 }
 
 @media (max-width: 300px) {
-
   .writing-title-h1,
   .uses-h1,
   .about-h1 {
@@ -257,6 +255,10 @@ h6 {
   letter-spacing: -1px;
 }
 
+img.writings {
+  margin: 15px 0px;
+}
+
 .writing-container img,
 img.nice {
   width: 100%;
@@ -270,11 +272,11 @@ img.nice {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
-  transition: all .6s;
-  -webkit-transition: all .6s;
-  -moz-transition: all .6s;
-  -ms-transition: all .6s;
-  -o-transition: all .6s;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
 }
 
 .writing-container img:hover,
@@ -304,7 +306,7 @@ span.darker {
   color: var(--writing-body);
 }
 
-.writing-container>blockquote {
+.writing-container > blockquote {
   border-left: 5px var(--highlight-color) solid;
   background: var(--highlight-color);
   font-style: italic;
@@ -315,14 +317,14 @@ span.darker {
   line-height: 40px;
 }
 
-.writing-container>p {
+.writing-container > p {
   line-height: 1.8em;
   margin-bottom: 40px;
   font-size: 20px;
   color: var(--writing-body);
 }
 
-.writing-container *:not(pre)>code {
+.writing-container *:not(pre) > code {
   font-family: ibm-plex-mono, Monaco, "Lucida Console";
   background: var(--highlight-color);
   color: var(--heading-color);
@@ -394,7 +396,7 @@ footer {
   color: var(--secondary-color);
 }
 
-footer>a {
+footer > a {
   text-align: center;
   font-size: 13px;
   color: var(--heading-color);
@@ -616,7 +618,7 @@ form input:focus {
 }
 
 /* Override scroll progress */
-.writing-progress>div {
+.writing-progress > div {
   background: var(--highlight-color) !important;
   margin: 0 -8px !important;
 }
@@ -651,4 +653,15 @@ form input:focus {
   .writing-row a {
     margin-top: 0;
   }
+}
+
+.writing-row {
+  background: var(--bg-color);
+  /* border: 1px solid var(--writing-body); */
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  margin-top: 20px;
 }

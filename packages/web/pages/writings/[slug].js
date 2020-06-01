@@ -31,9 +31,11 @@ function Writing({ content, data, slug }) {
         <ProgressBar height="5px" />
       </div>
 
-      {!og?.noImageOnArticle && imageTypeOnArticle === 'LEADERBOARD' && (
-        <img className="writing-image featured" src={og.image} alt={title} />
-      )}
+      {og.image &&
+        !og?.noImageOnArticle &&
+        imageTypeOnArticle === 'LEADERBOARD' && (
+          <img className="writing-image featured" src={og.image} alt={title} />
+        )}
 
       <Layout secondaryPage noHead>
         <div style={{ marginTop: 50 }}>
@@ -55,9 +57,11 @@ function Writing({ content, data, slug }) {
           <br />
           <br />
 
-          {!og?.noImageOnArticle && imageTypeOnArticle === 'NORMAL' && (
-            <img className="nice" src={og.image} alt={title} />
-          )}
+          {og.image &&
+            !og?.noImageOnArticle &&
+            imageTypeOnArticle === 'NORMAL' && (
+              <img className="nice" src={og.image} alt={title} />
+            )}
 
           <h1 className="writing-title-h1">{title}</h1>
 

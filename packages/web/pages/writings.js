@@ -20,7 +20,11 @@ function Homepage({ writings, og }) {
         <Row>
           {writings.map(({ document, slug }) => {
             const {
-              data: { title, date },
+              data: {
+                title,
+                date,
+                og: { image },
+              },
             } = document
 
             return (
@@ -30,6 +34,20 @@ function Homepage({ writings, og }) {
                     <Col md={12}>
                       <div className="writing-date">{formatDate(date)}</div>
                     </Col>
+
+                    {image && (
+                      <Col md={12}>
+                        <Link href="/writings/[slug]" as={`/writings/${slug}`}>
+                          <a>
+                            <img
+                              className="nice writings"
+                              src={image}
+                              alt={title}
+                            />
+                          </a>
+                        </Link>
+                      </Col>
+                    )}
 
                     <Col md={12}>
                       <Link href="/writings/[slug]" as={`/writings/${slug}`}>
