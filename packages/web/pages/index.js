@@ -5,6 +5,8 @@ import Layout, { Icon } from '../components/Layout'
 import { META, ELEMENTS } from '../constants/Meta'
 import { TECH, SOCIAL, PROJECTS } from '../constants/Stack'
 import TextTransitionAnimation from '../components/TextTransitionAnimation'
+import Subscribe from '../components/Subscribe'
+import { DiscordInviteBox } from './subscribe'
 
 function About() {
   return (
@@ -98,16 +100,28 @@ function About() {
                 ))}
               </Row>
             </>
+
+            <DiscordInviteBox />
+
+            <br />
+
+            <div className="card">
+              <Subscribe />
+            </div>
+
             <hr />
-            Follow me on{' '}
-            <a
-              href={`https://twitter.com/${META.social.twitter}`}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              Twitter
-            </a>
-            . That's where I usually hangout.
+
+            <center>
+              Follow me on{' '}
+              <a
+                href={`https://twitter.com/${META.social.twitter}`}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Twitter
+              </a>
+              . That's where I usually hangout.
+            </center>
           </div>
         </div>
       </Layout>
