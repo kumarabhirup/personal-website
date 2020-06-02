@@ -9,6 +9,8 @@ author:
   name: "Kumar Abhirup"
 ---
 
+> The thumbnail of this article is from [Google reCAPTCHA's official landing page](https://www.google.com/recaptcha/intro/v3.html).
+
 In this tutorial, we will learn how to use reCAPTCHA v2 with React and Node.
 
 Most of the tutorials online only cover the frontend part of this technology. The truth is, **your captcha solution can only be useful, if it validates the input on backend.**
