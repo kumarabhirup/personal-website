@@ -8,11 +8,17 @@ module.exports = withCSS(
   withSass(
     withTM({
       transpileModules: ['react-flexbox-grid', 'react-syntax-highlighter'],
-      webpack(config) {
+      webpack(config, { isServer }) {
+        if (isServer) {
+          // eslint-disable-next-line global-require
+          require('./scripts/generateSitemap')
+        }
+
         config.module.rules.push({
           test: /\.md$/,
           use: 'raw-loader',
         })
+
         return config
       },
       target: 'serverless',

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kumarabhirup.me/</loc>
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/live</loc>
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/uses</loc>
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/writings</loc>
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/subscribe/</loc>
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/writings/async-await-crash-course</loc>
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/writings/build-publish-react-components</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://kumarabhirup.me/writings/five-package-json-scripts-you-dont-use</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/writings/my-first-post</loc>
+  </url>
+
+  <url>
+    <loc>https://kumarabhirup.me/writings/next-js-docker-made-easy</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://kumarabhirup.me/writings/pkgreview-dev-ratings-review-website-npm-packages</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://kumarabhirup.me/writings/starter-guide-create-command-line-app-node-js</loc
+    >
+  </url>
+</urlset>

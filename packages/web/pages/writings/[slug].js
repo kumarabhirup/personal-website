@@ -54,13 +54,15 @@ function Writing({ content, data, slug }) {
             </a>
           </div>
 
-          <br />
-          <br />
-
           {og.image &&
             !og?.noImageOnArticle &&
             imageTypeOnArticle === 'NORMAL' && (
-              <img className="nice" src={og.image} alt={title} />
+              <>
+                <br />
+                <br />
+                <br />
+                <img className="nice" src={og.image} alt={title} />
+              </>
             )}
 
           <h1 className="writing-title-h1">{title}</h1>
