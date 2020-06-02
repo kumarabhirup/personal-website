@@ -63,6 +63,6 @@ I am **Kumar Abhirup, a 16-year-old JavaScript React developer** from India who 
 
 - [Connect with me on Twitter 🐦](https://twitter.com/kumar_abhirup)
 
-_Love what I write? Subscribe to **KumarWrites** and stay updated about the tech community, me and coding in general._
+_Love what I write? Subscribe to **Kumar&Thoughts** and stay updated about the tech community, me and coding in general._
   `,
 }
