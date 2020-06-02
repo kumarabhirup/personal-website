@@ -90,7 +90,7 @@ function Layout({
     ...(!isHomepage && { md: 8, mdOffset: 2 }),
   }
 
-  if (!mounted) return <div />
+  // if (!mounted) return <div />
 
   return (
     <>
