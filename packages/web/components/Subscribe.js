@@ -36,7 +36,7 @@ export default function Subscribe() {
         />
       </p>
       <input type="hidden" value="1" name="embed" />
-      <input type="submit" value="Welcome to the club!" />
+      <input type="submit" value="Welcome to the club 🔥" />
     </form>
   )
 }
