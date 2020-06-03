@@ -36,5 +36,15 @@
       "dest": "packages/web$1",
       "continue": true
     }
+  ],
+  "redirects": [
+    {
+      "source": "/view-source",
+      "destination": "https://github.com/KumarAbhirup/personal-website"
+    },
+    {
+      "source": "https://kumar.now.sh",
+      "destination": "https://kumarabhirup.me"
+    }
   ]
 }
