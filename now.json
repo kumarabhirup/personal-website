@@ -35,16 +35,14 @@
       "src": "(.*)",
       "dest": "packages/web$1",
       "continue": true
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/view-source",
-      "destination": "https://github.com/KumarAbhirup/personal-website"
     },
     {
-      "source": "https://kumar.now.sh",
-      "destination": "https://kumarabhirup.me"
+      "src": "/view-source",
+      "dest": "https://github.com/KumarAbhirup/personal-website"
+    },
+    {
+      "src": "https://kumar.now.sh",
+      "dest": "https://kumarabhirup.me"
     }
   ]
 }
