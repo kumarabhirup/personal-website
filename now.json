@@ -38,11 +38,17 @@
     },
     {
       "src": "/view-source",
-      "dest": "https://github.com/KumarAbhirup/personal-website"
+      "status": 308,
+      "headers": {
+        "Location": "https://github.com/KumarAbhirup/personal-website"
+      }
     },
     {
       "src": "https://kumar.now.sh",
-      "dest": "https://kumarabhirup.me"
+      "status": 308,
+      "headers": {
+        "Location": "https://kumarabhirup.me"
+      }
     }
   ]
 }
