@@ -2,7 +2,7 @@
   "version": 2,
   "name": "personal-website",
   "public": true,
-  "alias": ["kumar", "kumarabhirup.me"],
+  "alias": ["kumarabhirup.me", "www.kumarabhirup.me"],
   "scope": "kumarabhirup",
   "build": {
     "env": {
@@ -35,20 +35,6 @@
       "src": "(.*)",
       "dest": "packages/web$1",
       "continue": true
-    },
-    {
-      "src": "/view-source",
-      "status": 308,
-      "headers": {
-        "Location": "https://github.com/KumarAbhirup/personal-website"
-      }
-    },
-    {
-      "src": "https://kumar.now.sh",
-      "status": 308,
-      "headers": {
-        "Location": "https://kumarabhirup.me"
-      }
     }
   ]
 }
