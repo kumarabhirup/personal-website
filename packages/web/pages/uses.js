@@ -50,6 +50,7 @@ function Uses({ og }) {
 
 Uses.getInitialProps = () => ({
   data: {
+    title: `Things Kumar uses`,
     og: {
       description: `Here's a list of everything that ${META.fname} ${META.lname} uses!`,
       image: META.pageOgs.uses,
