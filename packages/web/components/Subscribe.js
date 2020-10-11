@@ -7,16 +7,16 @@ import { META } from '../constants/Meta'
 
 export default function Subscribe() {
   const toSubmitEmail = e => {
-    e.preventDefault();
+    e.preventDefault()
 
-    let email = document.getElementById("paemail").value;
+    let email = document.getElementById("paemail").value
 
     window.open(
       'https://propagate.at/share/kumar/email/' + email,
       "_blank"
-    );
+    )
 
-    return false;
+    return false
   }
 
   return (
