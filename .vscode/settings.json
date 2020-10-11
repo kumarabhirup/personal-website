@@ -23,5 +23,9 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.workingDirectories": ["packages/web", "packages/backend"]
+  "eslint.workingDirectories": [
+    "packages/web",
+    "packages/backend"
+  ],
+  "editor.autoSave": "off"
 }

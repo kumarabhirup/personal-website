@@ -6,19 +6,30 @@ import React from 'react'
 import { META } from '../constants/Meta'
 
 export default function Subscribe() {
+  const toSubmitEmail = e => {
+    e.preventDefault();
+
+    let email = document.getElementById("paemail").value;
+
+    window.open(
+      'https://propagate.at/share/kumar/email/' + email,
+      "_blank"
+    );
+
+    return false;
+  }
+
   return (
+    <>
     <form
       style={{
         textAlign: 'center',
         height: '100%',
       }}
-      action={`https://tinyletter.com/${META.social.tinyletter}`}
-      method="post"
-      target="popupwindow"
-      onSubmit={`window.open('https://tinyletter.com/${META.social.tinyletter}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true`}
+      onSubmit={toSubmitEmail}
     >
       <h1 style={{ lineHeight: '50px' }}>
-        <label htmlFor="tlemail">Stay Updated</label>
+        <label htmlFor="paemail">Stay Updated</label>
       </h1>
       <p className="style">
         If you like what I write on my blog and twitter, <br />I bet you gonna
@@ -30,7 +41,7 @@ export default function Subscribe() {
           type="email"
           style={{ width: '140px' }}
           name="email"
-          id="tlemail"
+          id="paemail"
           placeholder="Your awesome email address!"
           required
         />
@@ -38,5 +49,6 @@ export default function Subscribe() {
       <input type="hidden" value="1" name="embed" />
       <input type="submit" value="Welcome to the club 🔥" />
     </form>
+    </>
   )
 }
