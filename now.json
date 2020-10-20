@@ -33,7 +33,7 @@
     },
     {
       "src": "(.*)",
-      "dest": "packages/web/next.config.js",
+      "dest": "packages/web/$1",
       "continue": true
     }
   ]
