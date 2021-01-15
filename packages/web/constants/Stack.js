@@ -55,6 +55,20 @@ export const PROJECTS = {
   title: 'Projects I have worked on',
   data: [
     {
+      image: 'https://i.ibb.co/48V7PYd/logo-transparent.png',
+      width: 100,
+      name: 'PropagateAt',
+      link: 'https://propagate.at',
+      description: (
+        <>
+          It is the Substack for SMS. It is a SaaS service that enables
+          companies and creators to connect to their fans on text, and also
+          enables them to earn money via subscriptions. <br /> <br /> It is my
+          biggest project so far :)
+        </>
+      ),
+    },
+    {
       image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
       name: 'pkgreview.dev',
       link: 'https://pkgreview.dev',

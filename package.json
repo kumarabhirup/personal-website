@@ -19,13 +19,13 @@
     "postinstall": "lerna bootstrap"
   },
   "main": "index.js",
-  "repository": "git@github.com:iqubex-technologies/adify.git",
+  "repository": "git@github.com:KumarAbhirup/personal-website.git",
   "author": "Kumar Abhirup",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^3.16.4"
   },
   "engines": {
-    "node": "12.x"
+    "node": ">=12.x"
   }
 }

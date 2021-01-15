@@ -47,31 +47,33 @@ function About() {
                   className="uses-list"
                   style={{ marginTop: '0px', marginBottom: '0px' }}
                 >
-                  {PROJECTS.data.map(({ image, name, description, link }) => (
-                    <div key={link}>
-                      <img
-                        src={image}
-                        alt={`Project - ${name}`}
-                        style={{
-                          width: '200px',
-                          marginLeft: '10px',
-                        }}
-                      />
-                      <li key={name}>
-                        <a
-                          href={link}
-                          target="_blank"
-                          rel="noopener noreferrer nofollow"
-                        >
-                          {name}
-                        </a>
-                        <br />
-                        <br />
-                        <span className="darker">{description}</span>
-                      </li>
-                      <hr />
-                    </div>
-                  ))}
+                  {PROJECTS.data.map(
+                    ({ image, name, description, link, width }) => (
+                      <div key={link}>
+                        <img
+                          src={image}
+                          alt={`Project - ${name}`}
+                          style={{
+                            width: width ? `${width}px` : '200px',
+                            marginLeft: '10px',
+                          }}
+                        />
+                        <li key={name}>
+                          <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                          >
+                            {name}
+                          </a>
+                          <br />
+                          <br />
+                          <span className="darker">{description}</span>
+                        </li>
+                        <hr />
+                      </div>
+                    )
+                  )}
                 </ul>
               </Row>
             </>

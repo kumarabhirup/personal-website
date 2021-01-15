@@ -40,16 +40,22 @@ export const ELEMENTS = {
   ),
   about: (
     <>
-      I am a Full-Stack JavaScript Developer from India 🇮🇳 who loves to code and
-      create cool projects. I am specialized in building full stack applications
-      that use React in frontend and Node.js, GraphQL in the backend.
+      I am a Full-Stack JavaScript Developer who loves to code and create cool
+      projects. I am specialized in building full stack applications that use
+      React in frontend and Node.js, GraphQL in the backend.
       <br />
+      <br />I am in the evergreen process of learning, and I am loving it!
       <br />
-      I am in the evergreen process of learning, and I am loving it!
+      Currently running{' '}
+      {/* eslint-disable-next-line react/jsx-no-target-blank */}
+      <a href="https://propagate.at" target="_blank" rel="noopener">
+        PropagateAt, the Substack for SMS.
+      </a>
       <br />
       <br />
       <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
-      <a href={`${META.resume}`} target="_blank" rel="noopener noreferrer">
+      {/* eslint-disable-next-line react/jsx-no-target-blank */}
+      <a href={`${META.resume}`} target="_blank" rel="noopener">
         Resume
       </a>
     </>
@@ -59,7 +65,7 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am **Kumar Abhirup, a 16-year-old JavaScript React developer** from India who keeps learning a new thing every single day.
+I am **Kumar Abhirup, a 17-year-old JavaScript Developer**, founder of [PropagateAt](https://propagate.at). I like to learn a new thing every single day.
 
 - [Connect with me on Twitter 🐦](https://twitter.com/kumar_abhirup)
 
