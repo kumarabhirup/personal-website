@@ -15,7 +15,7 @@ My old portfolio website looked like this 👇
 
 Yea, I see it looks nice and cool, but I had to change it all.
 
-That website was bloated with a combination of jQuery and React 😂 Can you beleive it?
+That website was bloated with a combination of jQuery and React 😂 Can you believe it?
 
 Also, it didn't have a blog. I tried adding it there, but it was a failed attempt.
 

@@ -27,10 +27,17 @@ function MyApp({ Component, pageProps }) {
         <meta name="copyright" content={META.name} />
         <meta name="robots" content="index,follow" />
         <meta name="author" content={`${META.name}, ${META.email}`} />
-        <meta name="url" content={`${META.website}/${router.asPath}`} />
+        <meta
+          name="url"
+          content={`${META.website}${
+            router.asPath?.length ? `/${router.asPath}` : ''
+          }`}
+        />
         <meta
           name="identifier-URL"
-          content={`${META.website}/${router.asPath}`}
+          content={`${META.website}${
+            router.asPath?.length ? `/${router.asPath}` : ''
+          }`}
         />
         <meta name="coverage" content="Worldwide" />
         <meta name="distribution" content="Global" />
@@ -43,7 +50,12 @@ function MyApp({ Component, pageProps }) {
         />
         <meta property="og:site_name" content={META.title} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${META.website}/${router.asPath}`} />
+        <meta
+          property="og:url"
+          content={`${META.website}${
+            router.asPath?.length ? `/${router.asPath}` : ''
+          }`}
+        />
         <meta property="og:image" content={og ? og.image : META.thumbnail} />
 
         <meta name="twitter:title" content={title || META.title} />

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "personal-website",
+  "name": "personal-website-deployed",
   "public": true,
   "alias": ["kumarabhirup.me", "www.kumarabhirup.me"],
   "scope": "kumarabhirup",
@@ -11,30 +11,5 @@
       "TWITCH_OAUTH_ID": "@kumartwitchoauthid",
       "GA_TRACKING_ID": "@kumargatrackingid"
     }
-  },
-  "env": {
-    "PRISMA_SECRET": "@kumarprismasecret",
-    "RECAPTCHA_SERVER_KEY": "@kumarrecaptchaserverkey"
-  },
-  "builds": [
-    {
-      "src": "packages/web/package.json",
-      "use": "@now/next"
-    },
-    {
-      "src": "packages/backend/src/index.ts",
-      "use": "@now/node-server"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "packages/backend/src/index.ts"
-    },
-    {
-      "src": "(.*)*",
-      "dest": "packages/web/$1",
-      "continue": true
-    }
-  ]
+  }
 }
