@@ -32,7 +32,7 @@
       "dest": "packages/backend/src/index.ts"
     },
     {
-      "src": "(.*)",
+      "src": "(.*)*",
       "dest": "packages/web/$1",
       "continue": true
     }
