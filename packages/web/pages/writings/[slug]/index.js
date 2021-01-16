@@ -7,12 +7,12 @@ import Link from 'next/link'
 import ProgressBar from 'react-scroll-progress-bar'
 import readingTime from 'reading-time'
 
-import { META, ELEMENTS } from '../../constants/Meta'
-import Layout from '../../components/Layout'
-import CodeBlock from '../../components/CodeBlock'
-import Subscribe from '../../components/Subscribe'
-import { DiscordInviteBox } from '../subscribe'
-import { formatDate } from '../writings'
+import { META, ELEMENTS } from '../../../constants/Meta'
+import Layout from '../../../components/Layout'
+import CodeBlock from '../../../components/CodeBlock'
+import Subscribe from '../../../components/Subscribe'
+import { DiscordInviteBox } from '../../subscribe'
+import { formatDate } from '../../writings'
 
 function Writing({ content, data, slug }) {
   const frontmatter = data
@@ -142,7 +142,7 @@ function Writing({ content, data, slug }) {
 
 Writing.getInitialProps = async context => {
   const { slug } = context.query
-  const content = await import(`../../writings/${slug}.md`)
+  const content = await import(`../../../writings/${slug}.md`)
   const data = matter(content.default)
 
   return { ...data, slug }
