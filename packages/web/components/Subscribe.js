@@ -3,18 +3,20 @@
 /* eslint-disable react/destructuring-assignment */
 
 import React from 'react'
-import { META } from '../constants/Meta'
+// import { META } from '../constants/Meta'
 
 export default function Subscribe() {
-  const toSubmitEmail = e => {
-    e.preventDefault()
+  // const toSubmitEmail = e => {
+  //   e.preventDefault()
 
-    const email = document.getElementById('paemail').value
+  //   // const email = document.getElementById('paemail').value
 
-    window.open(`https://propagate.at/share/kumar/email/${email}`, '_blank')
+  //   // window.open(`https://propagate.at/share/kumar/email/${email}`, '_blank')
 
-    return false
-  }
+  //   window.open('https://buttondown.email/kumar', 'popupwindow')
+
+  //   return false
+  // }
 
   return (
     <>
@@ -23,7 +25,11 @@ export default function Subscribe() {
           textAlign: 'center',
           height: '100%',
         }}
-        onSubmit={toSubmitEmail}
+        action="https://buttondown.email/api/emails/embed-subscribe/kumar"
+        method="post"
+        target="popupwindow"
+        // onSubmit={toSubmitEmail}
+        class="embeddable-buttondown-form"
       >
         <h1 style={{ lineHeight: '50px' }}>
           <label htmlFor="paemail">Stay Updated</label>
@@ -37,8 +43,10 @@ export default function Subscribe() {
           <input
             type="email"
             style={{ width: '140px' }}
-            name="email"
-            id="paemail"
+            // name="email"
+            // id="paemail"
+            name="email" 
+            id="bd-email"
             placeholder="Your awesome email address!"
             required
           />

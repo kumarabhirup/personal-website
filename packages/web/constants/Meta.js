@@ -10,14 +10,14 @@ export const META = {
     twitter: 'kumar_abhirup',
     linkedin: 'kumar-abhirup',
     github: 'KumarAbhirup',
-    youtube: 'c/IQubex',
+    youtube: 'c/kumarabhirupz',
     dev: 'kumar_abhirup',
     facebook: 'krish.abhirup',
     tinyletter: 'kumar_abhirup',
     twitch: 'kumar_abhirup',
   },
   description:
-    'Kumar is a Full-Stack JavaScript Developer from India who builds new stuff. Say hi 👋 to him!',
+    'Kumar is a Full-Stack JavaScript Developer from India who builds new stuff. Founder @ Beam. Say hi 👋 to him!',
   thumbnail: 'https://i.ibb.co/D7PL6kG/Kumar-Abhirup.jpg', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
   pageOgs: {
     uses: 'https://i.ibb.co/dMmq8Vx/Kumar-Uses.jpg',
@@ -49,7 +49,7 @@ export const ELEMENTS = {
       Currently running{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a href="https://propagate.at" target="_blank" rel="noopener">
-        PropagateAt, the Substack for SMS.
+        Beam, the Substack for SMS.
       </a>
       <br />
       <br />

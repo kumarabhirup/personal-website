@@ -52,17 +52,17 @@ export const SOCIAL = {
 }
 
 export const PROJECTS = {
-  title: 'Projects I have worked on',
+  title: 'Work Experience',
   data: [
     {
-      image: 'https://i.ibb.co/48V7PYd/logo-transparent.png',
-      width: 100,
-      name: 'PropagateAt',
-      link: 'https://propagate.at',
+      image: 'https://i.ibb.co/F0hmv9N/Beam-Community.jpg',
+      // width: 100,
+      name: 'Beam Community, Inc.',
+      link: 'https://itsbeam.com',
       description: (
         <>
-          It is the Substack for SMS. It is a SaaS service that enables
-          companies and creators to connect to their fans on text, and also
+          <span style={{filter: "opacity(0.5)"}}>Founder, March 2020 - Present</span>. <br /> It is the Substack for SMS. It is a SaaS service that enables
+          companies and creators to connect to their fans via text, and also
           enables them to earn money via subscriptions. <br /> <br /> It is my
           biggest project so far :)
         </>
@@ -71,16 +71,16 @@ export const PROJECTS = {
     {
       image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
       name: 'pkgreview.dev',
-      link: 'https://pkgreview.dev',
+      link: 'https://pkgreview.now.sh',
       description:
-        'A lot of people find it very difficult to decide what NPM Package to use. pkgreview.dev helps developers in the JavaScript Community review and analyze each module before they start using it.',
+        <><span style={{filter: "opacity(0.5)"}}>Maintainer, February 2020 - June 2020</span>. <br /> A lot of people find it very difficult to decide what NPM Package to use. pkgreview.dev helps developers in the JavaScript Community review and analyze each module before they start using it.</>,
     },
     {
       image: 'https://i.ibb.co/fd2rF97/favicon.jpg',
       name: 'JoinMyCall',
       link: 'https://joinmycall.now.sh',
       description:
-        'This app makes your colleagues take a connection/camera/mic test before joining a call. Hosts can create infinite JoinMyCall links to invite guests in meeting. Guests can either skip or do the connection test.',
+        <><span style={{filter: "opacity(0.5)"}}>Co-Maintainer, June 2019 - August 2019</span>. <br /> This app makes your colleagues take a connection/camera/mic test before joining a call. Hosts can create infinite JoinMyCall links to invite guests in meeting. Guests can either skip or do the connection test.</>,
     },
     {
       image:
@@ -88,7 +88,7 @@ export const PROJECTS = {
       name: 'bulk-mail-cli',
       link: 'https://bulkmail.now.sh',
       description:
-        'A command line interface (cli) application that sends automated and dynamic emails to the list.',
+        <><span style={{filter: "opacity(0.5)"}}>Maintainer, December 2018 - March 2020</span>. <br /> A command line interface (cli) application that sends automated and dynamic emails to the list.</>,
     },
   ],
 }
