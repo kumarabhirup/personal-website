@@ -65,10 +65,8 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am **Kumar Abhirup, a 17-year-old JavaScript Developer**, founder of [PropagateAt](https://propagate.at). I like to learn a new thing every single day.
+I am **Kumar Abhirup, a 17-year-old JavaScript Developer**, founder of [Beam](https://itsbeam.com). <br /> To connect, you may DM me on [twitter](https://twitter.com/kumar_abhirup).
 
-- [Connect with me on Twitter 🐦](https://twitter.com/kumar_abhirup)
-
-_Love what I write? [Subscribe to **Kumar&Thoughts**](https://kumarabhirup.me/subscribe) and stay updated about the tech community, me and coding in general._
+_Love what I write? [Subscribe to **Kumar & Thoughts**](https://kumarabhirup.me/subscribe) and stay updated about my content in general, lol._
   `,
 }
