@@ -68,6 +68,11 @@ module.exports = withCSS(
             permanent: true,
           },
           {
+            source: '/resume',
+            destination: `${META.resume}`,
+            permanent: true,
+          },
+          {
             source: '/email/:body',
             destination: `mailto:${META.email}?body=:body`,
             permanent: true,
