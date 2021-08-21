@@ -449,6 +449,22 @@ footer > a {
   -o-border-radius: 25px;
 }
 
+.substackIframe {
+  background: var(--highlight-color);
+  color: var(--heading-color) !important;
+  /* box-shadow: 3px 3px 20px var(--highlight-color) !important; */
+  /* padding: 30px 40px; */
+  border-radius: 25px;
+  border: 3px solid var(--highlight-color) !important;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.9em;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
 .card h1 {
   margin-top: 0px;
   margin-bottom: 0px;

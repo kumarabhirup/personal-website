@@ -39,7 +39,7 @@ export const USES = [
         link: 'https://www.apple.com/macbook-air',
       },
       {
-        name: 'Samsung M31',
+        name: 'Redmi Note 8 Pro',
         description: "No, I don't use iPhone.",
       },
       {

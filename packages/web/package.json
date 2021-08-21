@@ -34,7 +34,7 @@
     "react-text-transition": "^1.0.2",
     "react-twitch-embed-video": "^2.0.2",
     "reading-time": "^1.2.0",
-    "simple-icons": "^2.9.0",
+    "simple-icons": "^5.10.0",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {

@@ -17,15 +17,16 @@ export function DiscordInviteBox() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      Chat with me and my friends at{' '}
+      I have a Discord server called{' '}
       <a
         href={META.discordLink}
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
-        Kumar on Discord
+        kumar & friends
       </a>
-      . It's a fun community of learners, that I am building ✌️
+      . It's a fun community of learners, that I am building ✌️ It's super small
+      as of now, glad to have you in!
     </div>
   )
 }
@@ -36,9 +37,9 @@ function SubscribePage({ noColorModeChange, noLiveShow }) {
       <Layout noColorModeChange={noColorModeChange} noLiveShow={noLiveShow}>
         <Row>
           <Col md={12}>
-            <div className="card">
-              <Subscribe />
-            </div>
+            {/* <div className="card"> */}
+            <Subscribe />
+            {/* </div> */}
 
             <br />
             <br />

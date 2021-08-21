@@ -8,19 +8,29 @@ import React from 'react'
 export default function Subscribe() {
   // const toSubmitEmail = e => {
   //   e.preventDefault()
-
   //   // const email = document.getElementById('paemail').value
-
   //   // window.open(`https://propagate.at/share/kumar/email/${email}`, '_blank')
-
   //   window.open('https://buttondown.email/kumar', 'popupwindow')
-
   //   return false
   // }
 
   return (
     <>
-      <form
+      <iframe
+        className="substackIframe"
+        src="https://kumarz.substack.com/embed"
+        style={{
+          width: '100%',
+          height: '400px',
+          // border: '1px solid #EEE',
+          // background: 'white',
+          borderRadius: '25px',
+        }}
+        frameBorder="0"
+        scrolling="no"
+        title="Kumar's Substack Newsletter"
+      />
+      {/* <form
         style={{
           textAlign: 'center',
           height: '100%',
@@ -29,7 +39,7 @@ export default function Subscribe() {
         method="post"
         target="popupwindow"
         // onSubmit={toSubmitEmail}
-        class="embeddable-buttondown-form"
+        className="embeddable-buttondown-form"
       >
         <h1 style={{ lineHeight: '50px' }}>
           <label htmlFor="paemail">Stay Updated</label>
@@ -45,7 +55,7 @@ export default function Subscribe() {
             style={{ width: '140px' }}
             // name="email"
             // id="paemail"
-            name="email" 
+            name="email"
             id="bd-email"
             placeholder="Your awesome email address!"
             required
@@ -53,7 +63,7 @@ export default function Subscribe() {
         </p>
         <input type="hidden" value="1" name="embed" />
         <input type="submit" value="Welcome to the club 🔥" />
-      </form>
+      </form> */}
     </>
   )
 }

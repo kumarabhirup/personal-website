@@ -13,6 +13,7 @@ export const META = {
     youtube: 'c/kumarabhirupz',
     dev: 'kumar_abhirup',
     facebook: 'krish.abhirup',
+    instagram: 'kumarzup',
     tinyletter: 'kumar_abhirup',
     twitch: 'kumar_abhirup',
   },
@@ -29,13 +30,13 @@ export const META = {
   resume:
     'https://github.com/KumarAbhirup/resume/blob/master/Kumar%20Abhirup%20CV.pdf',
   githubUrl: 'KumarAbhirup/personal-website',
-  discordLink: 'https://discord.gg/uS2qkhe',
+  discordLink: 'https://discord.gg/CCjJ2Ndh4S',
 }
 
 export const ELEMENTS = {
   mainText: (
     <>
-      Kumar <span className="amp">&</span> Thoughts
+      Essays <span className="amp">&</span> Writings
     </>
   ),
   about: (
@@ -65,8 +66,8 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am **Kumar Abhirup, a 17-year-old JavaScript Developer**, founder of [Beam](https://itsbeam.com). <br /> To connect, you may DM me on [twitter](https://twitter.com/kumar_abhirup).
+I am **Kumar Abhirup, an 18-year-old Software Developer**, founder of [Beam](https://itsbeam.com). <br /> To connect, you may DM me on [twitter](https://twitter.com/kumar_abhirup).
 
-_Love what I write? [Subscribe to **Kumar & Thoughts**](https://kumarabhirup.me/subscribe) and stay updated about my content in general, lol._
+_Love what I write? [Subscribe to **my newsletter**](https://kumarabhirup.me/subscribe) and stay updated about my content in general, lol._
   `,
 }

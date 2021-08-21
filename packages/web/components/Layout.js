@@ -20,7 +20,7 @@ export const Icon = ({ stack, style }) => {
     <div
       data-icon={stack}
       style={{
-        fill: `#${icon.hex}`,
+        fill: `#${icon?.hex || '000'}`,
         display: 'inline-block',
         width: '50px',
         margin: '0 auto',
@@ -38,7 +38,7 @@ const menu = [
   },
   {
     path: '/writings',
-    name: 'blog',
+    name: 'essays',
   },
   { path: META.discordLink, name: 'discord', newTab: true },
   {

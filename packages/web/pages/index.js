@@ -30,11 +30,35 @@ function About() {
                   <Col
                     md={2}
                     xs={4}
-                    key={s}
+                    key={s?.title || s}
                     style={{ textAlign: 'center', marginBottom: 40 }}
                   >
-                    <Icon stack={s} />
-                    <div className="stack-name">{s}</div>
+                    {(() => {
+                      if (s?.svg && s?.title) {
+                        return (
+                          <>
+                            <div
+                              data-icon={s?.title}
+                              style={{
+                                fill: `${s?.hex || '#000'}`,
+                                display: 'inline-block',
+                                width: '50px',
+                                margin: '0 auto',
+                              }}
+                              dangerouslySetInnerHTML={{ __html: s?.svg }}
+                            />
+                            <div className="stack-name">{s?.title}</div>
+                          </>
+                        )
+                      }
+
+                      return (
+                        <>
+                          <Icon stack={s} />
+                          <div className="stack-name">{s}</div>
+                        </>
+                      )
+                    })()}
                   </Col>
                 ))}
               </Row>
@@ -107,9 +131,9 @@ function About() {
 
             <br />
 
-            <div className="card">
-              <Subscribe />
-            </div>
+            {/* <div className="card"> */}
+            <Subscribe />
+            {/* </div> */}
 
             <hr />
 
