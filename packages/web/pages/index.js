@@ -112,14 +112,14 @@ function About() {
                     key={s.link}
                     style={{ textAlign: 'center', marginBottom: 40 }}
                   >
-                    <Icon stack={s.platform} />
+                    <Icon stack={s?.platform} />
                     <div className="stack-name">
                       <a
-                        href={s.link}
+                        href={s?.link}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {s.platform}
+                        {s?.platform}
                       </a>
                     </div>
                   </Col>

@@ -26,7 +26,7 @@ export const Icon = ({ stack, style }) => {
         margin: '0 auto',
         ...style,
       }}
-      dangerouslySetInnerHTML={{ __html: icon.svg }}
+      dangerouslySetInnerHTML={{ __html: icon?.svg || `` }}
     />
   )
 }
