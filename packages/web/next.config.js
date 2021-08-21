@@ -3,6 +3,7 @@ require('dotenv').config()
 const withSass = require('@zeit/next-sass')
 const withCSS = require('@zeit/next-css')
 const withTM = require('next-transpile-modules')
+const { META } = require('./constants/Meta')
 
 module.exports = withCSS(
   withSass(
@@ -28,6 +29,55 @@ module.exports = withCSS(
         TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID,
         TWITCH_OAUTH_ID: process.env.TWITCH_OAUTH_ID,
         KUMAR_BACKEND_URL: process.env.KUMAR_BACKEND_URL,
+      },
+      async redirects() {
+        return [
+          {
+            source: '/twitter',
+            destination: `https://twitter.com/${META.social.twitter}`,
+            permanent: true,
+          },
+          {
+            source: '/linkedin',
+            destination: `https://linkedin.com/in/${META.social.linkedin}`,
+            permanent: true,
+          },
+          {
+            source: '/instagram',
+            destination: `https://instagram.com/${META.social.instagram}`,
+            permanent: true,
+          },
+          {
+            source: '/youtube',
+            destination: `https://youtube.com/${META.social.youtube}`,
+            permanent: true,
+          },
+          {
+            source: '/github',
+            destination: `https://github.com/${META.social.github}`,
+            permanent: true,
+          },
+          {
+            source: '/twitch',
+            destination: `https://twitch.tv/${META.social.twitch}`,
+            permanent: true,
+          },
+          {
+            source: '/facebook',
+            destination: `https://facebook.com/${META.social.facebook}`,
+            permanent: true,
+          },
+          {
+            source: '/email/:body',
+            destination: `mailto:${META.email}?body=:body`,
+            permanent: true,
+          },
+          {
+            source: '/email',
+            destination: `mailto:${META.email}`,
+            permanent: true,
+          },
+        ]
       },
     })
   )
