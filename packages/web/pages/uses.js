@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 import { USES } from '../constants/Uses'
-import { META } from '../constants/Meta'
+import { META } from '../constants/metadata'
 
 function Uses({ og }) {
   return (

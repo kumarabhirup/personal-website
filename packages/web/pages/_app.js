@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-import { META } from '../constants/Meta'
+import { META } from '../constants/metadata'
 
 import '../styles/base.css'
 

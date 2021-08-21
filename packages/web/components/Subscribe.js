@@ -3,7 +3,7 @@
 /* eslint-disable react/destructuring-assignment */
 
 import React from 'react'
-// import { META } from '../constants/Meta'
+// import { META } from '../constants/metadata'
 
 export default function Subscribe() {
   // const toSubmitEmail = e => {

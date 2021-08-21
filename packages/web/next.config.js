@@ -3,7 +3,7 @@ require('dotenv').config()
 const withSass = require('@zeit/next-sass')
 const withCSS = require('@zeit/next-css')
 const withTM = require('next-transpile-modules')
-const { META } = require('./constants/Meta')
+const { META } = require('./constants/metadata')
 
 module.exports = withCSS(
   withSass(
@@ -75,6 +75,16 @@ module.exports = withCSS(
           {
             source: '/email',
             destination: `mailto:${META.email}`,
+            permanent: true,
+          },
+          {
+            source: '/devto',
+            destination: `https://dev.to/${META.social.dev}`,
+            permanent: true,
+          },
+          {
+            source: '/discord',
+            destination: `${META.discordLink}`,
             permanent: true,
           },
         ]

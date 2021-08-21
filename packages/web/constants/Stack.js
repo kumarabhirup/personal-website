@@ -1,4 +1,4 @@
-import { META } from './Meta'
+import { META } from './metadata'
 
 export const TECH = {
   title: 'Technologies I work with',

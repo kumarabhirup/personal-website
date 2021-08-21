@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { META } from '../constants/Meta'
+import { META } from '../constants/metadata'
 
 function useTwitchIsLive() {
   const [isLive, setIsLive] = useState(false)

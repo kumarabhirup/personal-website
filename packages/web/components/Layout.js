@@ -5,7 +5,8 @@ import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
-import { ELEMENTS, META } from '../constants/Meta'
+import { ELEMENTS } from '../constants/Meta'
+import { META } from '../constants/metadata'
 import useTwitchIsLive from '../hooks/useTwitchIsLive'
 
 const ReactTwitchEmbedVideo = dynamic(

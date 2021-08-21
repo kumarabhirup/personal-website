@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Row, Col } from 'react-flexbox-grid'
 
 import Layout from '../components/Layout'
-import { META } from '../constants/Meta'
+import { META } from '../constants/metadata'
 
 export function formatDate(date) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' }

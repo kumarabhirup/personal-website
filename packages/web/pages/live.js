@@ -1,7 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 
-import { META } from '../constants/Meta'
+import { META } from '../constants/metadata'
 import SubscribePage from './subscribe'
 
 const ReactTwitchEmbedVideo = dynamic(

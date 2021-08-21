@@ -3,7 +3,7 @@ import { Row, Col } from 'react-flexbox-grid'
 
 import Layout from '../../components/Layout'
 import Subscribe from '../../components/Subscribe'
-import { META } from '../../constants/Meta'
+import { META } from '../../constants/metadata'
 
 export function DiscordInviteBox() {
   return (
