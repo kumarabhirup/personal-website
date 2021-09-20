@@ -441,12 +441,24 @@ footer > a {
   padding: 30px 40px;
   border-radius: 25px;
   font-size: 18px;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1.9em;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+
+.card .revue-form-group {
+  padding: 10px 0;
+}
+
+.card form {
+  margin-top: -10px;
+}
+
+.revue-embed label {
+  font-weight: 100 !important;
 }
 
 .substackIframe {
