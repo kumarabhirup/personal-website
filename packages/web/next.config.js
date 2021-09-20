@@ -92,6 +92,16 @@ module.exports = withCSS(
             destination: `${META.discordLink}`,
             permanent: true,
           },
+          {
+            source: '/schedule',
+            destination: `https://calendly.com/kumar_abhirup/chat`,
+            permanent: true,
+          },
+          {
+            source: '/calendly',
+            destination: `https://calendly.com/kumar_abhirup/chat`,
+            permanent: true,
+          },
         ]
       },
     })
