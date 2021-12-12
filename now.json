@@ -2,7 +2,6 @@
   "version": 2,
   "name": "personal-website-deployed",
   "public": true,
-  "alias": ["kumarabhirup.me", "www.kumarabhirup.me"],
   "scope": "kumarabhirup",
   "build": {
     "env": {

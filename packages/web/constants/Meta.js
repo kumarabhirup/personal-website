@@ -34,8 +34,8 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am **Kumar Abhirup, an 18-year-old Software Developer**, founder of [Beam](https://itsbeam.com). <br /> To connect, you may DM me on [twitter](https://kumarabhirup.me/twitter).
+I am **Kumar Abhirup, an 18-year-old Software Developer**, founder of [Beam](https://itsbeam.com). <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
 
-_Love what I write? [Subscribe to **my newsletter**](https://kumarabhirup.me/subscribe) and stay updated about my content in general, lol._
+_Love what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe) and stay updated about my content in general, lol._
   `,
 }

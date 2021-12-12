@@ -3,7 +3,7 @@ const META = {
   name: 'Kumar Abhirup',
   fname: 'Kumar',
   lname: 'Abhirup',
-  website: 'https://kumarabhirup.me',
+  website: 'https://kumareth.com',
   social: {
     twitter: 'kumareth',
     linkedin: 'kumareth',
@@ -24,7 +24,7 @@ const META = {
     subscribe: 'https://i.ibb.co/F5CGf8X/Subscribe-Kumar.jpg',
     live: 'https://i.ibb.co/6bjVnJp/Kumar-Join-Live-Stream.jpg',
   },
-  email: 'hello@kumarabhirup.me',
+  email: 'hey@kumareth.com',
   resume:
     'https://github.com/KumarAbhirup/resume/blob/master/Kumar%20Abhirup%20CV.pdf',
   githubUrl: 'KumarAbhirup/personal-website',
