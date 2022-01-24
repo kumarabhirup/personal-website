@@ -15,10 +15,10 @@ export const ELEMENTS = {
       <br />
       <br />I am in the evergreen process of learning, and I am loving it!
       <br />
-      Currently running{' '}
+      Currently working as a{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      <a href="https://itsbeam.com" target="_blank" rel="noopener">
-        Beam, the Substack for SMS.
+      <a href="https://monument.app" target="_blank" rel="noopener">
+        Product Manager at Monument Labs, Inc.
       </a>
       <br />
       <br />
@@ -34,7 +34,7 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am **Kumar Abhirup, an 18-year-old Software Developer**, founder of [Beam](https://itsbeam.com). <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
+I am **Kumar Abhirup, an 18-year-old Software Developer**, founder of [Beam](https://itsbeam.com). Currently working as Product Manager at [Monument Labs, Inc.](https://monument.app) <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
 
 _Love what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe) and stay updated about my content in general, lol._
   `,

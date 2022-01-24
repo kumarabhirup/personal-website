@@ -93,8 +93,8 @@ export const SOCIAL = {
       link: `https://www.youtube.com/${META.social.youtube}`,
     },
     {
-      platform: 'DEV.TO',
-      link: `https://dev.to/${META.social.dev}`,
+      platform: 'Twitch',
+      link: `/twitch`,
     },
     {
       platform: 'Instagram',
@@ -111,6 +111,35 @@ export const PROJECTS = {
   title: 'Work Experience',
   data: [
     {
+      image:
+        'https://pbs.twimg.com/profile_images/1460721641084768260/nbMf9_r1_400x400.jpg',
+      // width: 100,
+      name: 'Monument Labs, Inc.',
+      link: 'https://monument.app',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Product Manager</strong> &{' '}
+            <strong>Web 3.0 Developer</strong>, December 2021 - Present
+          </span>
+          <br /> Monument.app is a Blockchain Start-up, which helps create
+          collections of significant moments within a creator's journey. Each
+          moment is represented by a collectible NFT that can be bought and
+          owned by a creator's closest supporters. Creators share their stories
+          through minting new moments, financially enabling them to pursue their
+          dreams. <br /> <br /> As a Full-stack Web 3.0 Developer, I helped
+          create all the Monument Smart Contracts currently deployed on the
+          Ethereum Mainnet. Wrote and thoroughly tested the Monument ERC721 NFT
+          Contract, and the Monument Marketplace Contract that supports buying &
+          selling of NFTs and manages its auctions in a secure fashion. <br />{' '}
+          <br /> As a Product Manager, I managed a team of 5 developers working
+          on the Frontend, Backend, Web3 & the Monument iOS App. I brought order
+          in chaotic times, and helped the company ship its MVP in a month using
+          Scrum & Agile methodologies.
+        </>
+      ),
+    },
+    {
       image: 'https://i.ibb.co/F0hmv9N/Beam-Community.jpg',
       // width: 100,
       name: 'Beam Community, Inc.',
@@ -118,12 +147,16 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            Founder, March 2020 - Present
+            <strong>Founder</strong>, March 2020 - Present
           </span>
           <br /> It is the Substack for SMS. It is a SaaS service that enables
           companies and creators to connect to their fans via text, and also
-          enables them to earn money via subscriptions. <br /> <br /> It is my
-          biggest project so far :)
+          enables them to earn money via subscriptions. <br /> <br /> Built
+          entire product from start to finish, used tools like React, Node.js,
+          GraphQL, MongoDB, Websocket, Twilio, AWS EC2, AWS SES, Git, Cloudinary
+          on production. <br /> <br /> As a founder, not just managed technical
+          aspects of the company, but also Design UI/UX, Growth, and Product
+          Management.
         </>
       ),
     },
@@ -134,11 +167,13 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            Maintainer, February 2020 - June 2020
+            <strong>Maintainer</strong>, February 2020 - June 2020
           </span>
           <br /> A lot of people find it very difficult to decide what NPM
           Package to use. pkgreview.dev helps developers in the JavaScript
-          Community review and analyze each module before they start using it.
+          Community review and analyze each module before they start using it.{' '}
+          <br /> <br /> I no more maintain this project, pkgreview.dev is now
+          deprecated.
         </>
       ),
     },
@@ -149,7 +184,7 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            Co-Maintainer, June 2019 - August 2019
+            <strong>Co-Maintainer</strong>, June 2019 - August 2019
           </span>
           <br /> This app makes your colleagues take a connection/camera/mic
           test before joining a call. Hosts can create infinite JoinMyCall links
@@ -166,10 +201,10 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            Maintainer, December 2018 - March 2020
+            <strong>Maintainer</strong>, December 2018 - March 2020
           </span>
           <br /> A command line interface (cli) application that sends automated
-          and dynamic emails to the list.
+          and dynamic emails to your email list.
         </>
       ),
     },
