@@ -149,7 +149,7 @@ export const PROJECTS = {
           <span style={{ filter: 'opacity(0.5)' }}>
             <strong>Founder, Former CEO</strong>, March 2020 - July 2022
           </span>
-          <br /> Recent Edit: I found this company when I was in 10th grade, and now it recently got acquired, sold it in July 2022. I no more run this company. <br /> <br /> It is the Substack for SMS. It is a SaaS service that enables
+          <br /> <strong>Recent Update:</strong> I found this company when in 10th grade, and it has recently got acquired, sold it in July 2022. I no more run this company. <br /> <br /> It is the Substack for SMS. It is a SaaS service that enables
           companies and creators to connect to their fans via text, and also
           enables them to earn money via subscriptions. <br /> <br /> Built
           entire product from start to finish, used tools like React, Node.js,
@@ -169,7 +169,7 @@ export const PROJECTS = {
           <span style={{ filter: 'opacity(0.5)' }}>
             <strong>Maintainer</strong>, February 2020 - June 2020
           </span>
-          <br /> A lot of people find it very difficult to decide what NPM
+          <br /> <strong>Shipped ALL of it in just SEVEN DAYS.</strong> A lot of people find it very difficult to decide what NPM
           Package to use. pkgreview.dev helps developers in the JavaScript
           Community review and analyze each module before they start using it.{' '}
           <br /> <br /> I no more maintain this project, pkgreview.dev is now
