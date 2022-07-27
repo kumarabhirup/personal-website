@@ -9,6 +9,10 @@ export const ELEMENTS = {
   ),
   about: (
     <>
+      I founded my first company (Beam Community, Inc.) when I was 16, <br />
+      and successfully exited after running it for two years.
+      <br />
+      <br />
       I am a Full-Stack JavaScript Developer who loves to code and create cool
       projects. I am specialized in building full stack applications that use
       React in frontend and Node.js, GraphQL in the backend.
