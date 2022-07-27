@@ -147,9 +147,9 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Founder</strong>, March 2020 - Present
+            <strong>Founder, Former CEO</strong>, March 2020 - July 2022
           </span>
-          <br /> It is the Substack for SMS. It is a SaaS service that enables
+          <br /> Recent Edit: I found this company when I was in 10th grade, and now it recently got acquired, sold it in July 2022. I no more run this company. <br /> <br /> It is the Substack for SMS. It is a SaaS service that enables
           companies and creators to connect to their fans via text, and also
           enables them to earn money via subscriptions. <br /> <br /> Built
           entire product from start to finish, used tools like React, Node.js,
