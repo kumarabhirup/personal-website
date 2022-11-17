@@ -21,8 +21,8 @@ export const ELEMENTS = {
       <br />
       Currently working as a{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      <a href="https://monument.app" target="_blank" rel="noopener">
-        Product Manager at Monument Labs, Inc.
+      <a href="https://serendipity.lol" target="_blank" rel="noopener">
+        Software Engineer at Serendipity.
       </a>
       <br />
       <br />
@@ -38,7 +38,7 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am **Kumar Abhirup, an 18-year-old Software Developer**, founder of [Beam](https://itsbeam.com). Currently working as Product Manager at [Monument Labs, Inc.](https://monument.app) <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
+I am **Kumar Abhirup, a 19-year-old Software Developer**, founder of [Beam](https://itsbeam.com). Currently working as a Software Engineer at [Serendipity](https://serendipity.lol) <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
 
 _Love what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe) and stay updated about my content in general, lol._
   `,
