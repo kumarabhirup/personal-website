@@ -117,7 +117,7 @@ export const PROJECTS = {
           you remember the people you meet, and the things you learn from them,
           and creates you a beautiful looking network graph.
           <br />
-          {/* <br />
+          <br />
           <div
             style={{
               position: 'relative',
@@ -127,7 +127,7 @@ export const PROJECTS = {
           >
             <iframe
               title="Serendipity Demo"
-              src="https://www.loom.com/embed/fc80aec506ac405b8e0c2d92f8ff6a38"
+              src="https://www.loom.com/embed/834bd1d633be40689e1b938cbd8bfbae"
               frameBorder="0"
               webkitallowfullscreen
               mozallowfullscreen
@@ -138,9 +138,10 @@ export const PROJECTS = {
                 left: 0,
                 width: '100%',
                 height: '100%',
+                borderRadius: 15,
               }}
             />
-          </div> */}
+          </div>
           <br />
           Pair coded with my teammate, and shipped the MVP in 5 just days
           (Next.js + Node.js). It was like a hackathon on steroids. Worked on
