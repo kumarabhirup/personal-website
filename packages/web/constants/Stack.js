@@ -12,13 +12,10 @@ export const TECH = {
     'TypeScript',
     'Apollo GraphQL',
     'Node.js',
-    'WordPress',
-    'Git',
     'Docker',
     'Electron',
     'DigitalOcean',
     'Redux',
-    'Heroku',
     'MongoDB',
     {
       title: 'Vercel',
@@ -34,12 +31,7 @@ export const TECH = {
       svg: `<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Amazon AWS</title><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg>`,
     },
     {
-      title: 'Babel',
-      hex: '#F9DC3E',
-      svg: `<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Babel</title><path d="M15.76 0c-1.603.147-3.719.713-6.317 1.719a22.366 22.366 0 01-2.44 1.539l.01.158c.064 0 .136-.043.24-.096.106-.01.169.032.169.137l.168-.094.084-.011.01.074c.01.073-.566.523-1.707 1.33l.093.146-.084.012-.177-.064c0 .052-.073.085-.24.095l.01.084.189.21a.673.673 0 01-.252-.053c-.367.031-.734.303-1.09.806l.094.147c.314-.283.492-.43.544-.43l.022.23c-.052 0-.136.042-.24.094l.199.295A5.86 5.86 0 016.29 5.291c.23.063.346.125.346.209l.168-.01c1.225-.911 2.44-1.562 3.644-1.97l.012.158c-.22.335-.377.501-.461.511.01.116.052.21.115.305.021.21-.524 1.583-1.635 4.139-2.535 5.93-4.651 10.307-6.359 13.156 0 .052.041.136.094.23.419-.104.691-.197.806-.302l.096-.012.01.158.158-.011.166-.094c0 .052.063.073.168.062l.012.159c.01.157-.075.397-.274.722-.178.2-.355.607-.554 1.225l.01.074.158-.01c.68-.764 1.204-1.52 1.56-2.254 2.001-.586 3.52-1.162 4.578-1.728 1.058-.094 1.876-.365 2.42-.826l-.011-.084-.399.115-.094.01-.01-.084c.776-.116 1.32-.293 1.614-.524 1.519-1.173 2.66-2 3.435-2.492 2.4-1.76 3.531-3.457 3.395-5.07-.01-.168-.545-.828-1.582-1.98-.021-.22.345-.535 1.078-.954l2.086-1.834c.46-.597.744-1.56.838-2.89l-.031-.315c-.084-.932-.756-1.687-2.034-2.264C19.06.303 17.708.031 15.76 0zm2.525 1.037c1.55.063 2.347.335 2.389.817l-.063.158-2.326-.975zm-1.482 1.317c1.063-.016 1.617.267 1.672.863l.156-.012-.031-.398.168-.01c.408.22.627.492.648.816.021.22-.094.494-.355.819-.105.01-.168-.064-.178-.221l-.168.012-.041.47c-.702 1.048-1.205 1.582-1.52 1.614-.283.387-.462.587-.535.597-.22.262-.816.712-1.8 1.34-.325.032-1.531.493-3.616 1.404a.595.595 0 00-.334-.052l-.012-.147c-.02-.304.107-.681.41-1.142.158-.86.335-1.352.534-1.467l1.738-3.906c-.02-.241.347-.43 1.111-.555l.252-.022.02.221a50.387 50.387 0 011.394-.2c.173-.014.335-.022.487-.024zm3.619.39h.027c.139.012.288.263.446.744l.01.147c-.085.01-.24-.242-.471-.744l-.012-.147zm-9.836 2.483h.072l.022.23c-.074.01-.177.116-.303.336l-.012-.156c.147-.178.22-.316.22-.41zM5.6 5.354l.01.072c-.053 0-.136.043-.24.095l-.085.01-.01-.146.325-.031zM9.885 6.86l.031.315-.084.01-.031-.313.084-.012zm-.2.567c-.02.262-.084.397-.22.408l-.084.01c.094-.178.147-.303.137-.397l.168-.021zm-.345.816l.01.074-.147.25-.158.012-.01-.074c.157-.01.231-.093.22-.25l.085-.012zm-.358.735l-.04.386-.085.01-.03-.387.155-.01zm8.497.28l.345.212c.01.104-.042.167-.146.177-.147-.094-.262-.136-.346-.136l-.021-.23.168-.022zm-6.653.891l.012.147-.326.033-.01-.148.324-.032zm5.363.545c.23.105.347.21.358.293l.01.075c-.22.02-.42-.095-.608-.346l.24-.022zm2.6.252c.178.074.261.148.272.221l.052.617c-.073.168-.146.252-.23.252l-.094-1.09zm-4.195.065c.84-.014 1.482.184 1.922.605l.03.315c-.376 1.09-.795 1.719-1.245 1.918l-2.096 1.666c-1.56 1.026-2.4 1.538-2.525 1.548-2.483 1.373-4.032 2.075-4.63 2.127l-.095.01c.084-.293 1.185-2.555 3.322-6.808.943-.084 2.43-.525 4.452-1.32l.492-.042c.128-.01.253-.017.373-.02zm-3.055.49l.01.074-.334.031-.012-.074.336-.031zm-5.226 5.07c-.105.535-.221.808-.336.819l-.01-.075c-.021-.272.094-.513.346-.744zm7.101.336l.01.147c.01.063-.23.261-.701.607-1.394.681-2.21 1.152-2.452 1.393-1.508.523-2.252.849-2.242.974-1.34.535-2.22.923-2.638 1.164-.095.01-.241-.031-.43-.115-.021-.272.093-.494.365-.672.23-.02.463.011.672.106.251-.126.68-.274 1.299-.42l-.012-.156-.492.04c.063-.083.535-.303 1.436-.67l.251-.02.01.073c-.419.032-.66.167-.713.387.01.094.064.147.168.137.304-.21.461-.324.461-.356.608-.115 2.274-.995 5.008-2.619zm-7.584.723l.01.072c.01.105-.042.17-.147.18l-.01-.074c-.01-.095.042-.157.147-.178zm3.77.937c.089-.002.139.049.148.131-.199.021-.566.178-1.121.492l-.084.01-.01-.156a1.586 1.586 0 001.026-.47c.014-.003.028-.006.04-.007zm-3.664 1.243l.01.082c-.064 0-.138.043-.243.095l-.156.01c-.01-.073.032-.136.137-.168l.252-.02zm-1.918.953l.177.072c-.063.471-.198.713-.44.734a1.076 1.076 0 00-.513-.105l-.021-.23c-.01-.095.043-.147.158-.178.105-.01.167.061.178.218.282-.345.44-.511.46-.511Z"/></svg>`,
-    },
-    {
-      title: 'Ethereum',
+      title: 'Solidity',
       hex: '#3C3C3D',
       svg: `<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Ethereum</title><path d="M11.944 17.97L4.58 13.62 11.943 24l7.37-10.38-7.372 4.35h.003zM12.056 0L4.69 12.223l7.365 4.354 7.365-4.35L12.056 0z"/></svg>`,
     },
@@ -111,6 +103,57 @@ export const PROJECTS = {
   title: 'Work Experience',
   data: [
     {
+      image: 'https://app.serendipity.lol/favicon.ico',
+      // width: 100,
+      name: 'Serendipity',
+      link: 'https://app.serendipity.lol',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Software Engineer</strong>, August 2022 - Present
+          </span>
+          <br /> Serendipity approaches Note Taking in a whole new way, by
+          focusing on People, not just Notes. It is a note-taking app that helps
+          you remember the people you meet, and the things you learn from them,
+          and creates you a beautiful looking network graph.
+          <br />
+          {/* <br />
+          <div
+            style={{
+              position: 'relative',
+              paddingBottom: '64.5933014354067%',
+              height: 0,
+            }}
+          >
+            <iframe
+              title="Serendipity Demo"
+              src="https://www.loom.com/embed/fc80aec506ac405b8e0c2d92f8ff6a38"
+              frameBorder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }}
+            />
+          </div> */}
+          <br />
+          Pair coded with my teammate, and shipped the MVP in 5 just days
+          (Next.js + Node.js). It was like a hackathon on steroids. Worked on
+          the entire stack: the frontend, the backend, and all the business
+          logic. Shipped a Mac Desktop App for Serendipity power users.
+          <br /> <br />
+          Worked hardcore, extensively on perfecting the D3.js Advanced Network
+          Graph mechanics. Shipped insanely complex CRDT based collaborative
+          editing using a wide range of technologies.
+        </>
+      ),
+    },
+    {
       image:
         'https://pbs.twimg.com/profile_images/1460721641084768260/nbMf9_r1_400x400.jpg',
       // width: 100,
@@ -149,14 +192,16 @@ export const PROJECTS = {
           <span style={{ filter: 'opacity(0.5)' }}>
             <strong>Founder, Former CEO</strong>, March 2020 - July 2022
           </span>
-          <br /> <strong>Recent Update:</strong> I found this company when in 10th grade, and it has recently got acquired, sold it in July 2022. I no more run this company. <br /> <br /> It is the Substack for SMS. It is a SaaS service that enables
-          companies and creators to connect to their fans via text, and also
-          enables them to earn money via subscriptions. <br /> <br /> Built
-          entire product from start to finish, used tools like React, Node.js,
-          GraphQL, MongoDB, Websocket, Twilio, AWS EC2, AWS SES, Git, Cloudinary
-          on production. <br /> <br /> As a founder, not just managed technical
-          aspects of the company, but also Design UI/UX, Growth, and Product
-          Management.
+          <br /> <strong>Recent Update:</strong> I found this company when in
+          10th grade, and it has recently got acquired, sold it in July 2022. I
+          no more run this company. <br /> <br /> It is the Substack for SMS. It
+          is a SaaS service that enables companies and creators to connect to
+          their fans via text, and also enables them to earn money via
+          subscriptions. <br /> <br /> Built entire product from start to
+          finish, used tools like React, Node.js, GraphQL, MongoDB, Websocket,
+          Twilio, AWS EC2, AWS SES, Git, Cloudinary on production. <br /> <br />{' '}
+          As a founder, not just managed technical aspects of the company, but
+          also Design UI/UX, Growth, and Product Management.
         </>
       ),
     },
@@ -169,11 +214,11 @@ export const PROJECTS = {
           <span style={{ filter: 'opacity(0.5)' }}>
             <strong>Maintainer</strong>, February 2020 - June 2020
           </span>
-          <br /> <strong>Shipped ALL of it in just SEVEN DAYS.</strong> A lot of people find it very difficult to decide what NPM
-          Package to use. pkgreview.dev helps developers in the JavaScript
-          Community review and analyze each module before they start using it.{' '}
-          <br /> <br /> I no more maintain this project, pkgreview.dev is now
-          deprecated.
+          <br /> Shipped ALL of it in just SEVEN DAYS. A lot of people find it
+          very difficult to decide what NPM Package to use. pkgreview.dev helps
+          developers in the JavaScript Community review and analyze each module
+          before they start using it. <br /> <br /> I no more maintain this
+          project, <strong>pkgreview.dev is now deprecated.</strong>
         </>
       ),
     },
@@ -204,7 +249,16 @@ export const PROJECTS = {
             <strong>Maintainer</strong>, December 2018 - March 2020
           </span>
           <br /> A command line interface (cli) application that sends automated
-          and dynamic emails to your email list.
+          and dynamic emails to your email list. It recieved thousands of
+          installs on NPM, and a good response on{' '}
+          <a
+            href="https://github.com/kumarabhirup/bulk-mail-cli#readme"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          .
         </>
       ),
     },

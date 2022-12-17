@@ -14,7 +14,7 @@ const META = {
     youtube: `c/${username}`,
     dev: username,
     facebook: username,
-    instagram: username,
+    instagram: `kumarethz`,
     tinyletter: 'kumar_abhirup',
     revue: username,
     twitch: username,

@@ -19,7 +19,7 @@
   --font-color: #fff;
   --bg-color: #010101;
   --heading-color: #fff;
-  --highlight-color: #fe5e41;
+  --highlight-color: #267b9c;
   --hr-color: #222;
   --writing-body: #ccc;
 }
@@ -462,7 +462,7 @@ footer > a {
 }
 
 .substackIframe {
-  background: var(--highlight-color);
+  background: rgb(241, 241, 241);
   color: var(--heading-color) !important;
   /* box-shadow: 3px 3px 20px var(--highlight-color) !important; */
   /* padding: 30px 40px; */
