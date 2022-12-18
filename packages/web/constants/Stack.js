@@ -174,11 +174,12 @@ export const PROJECTS = {
           dreams. <br /> <br /> As a Full-stack Web 3.0 Developer, I helped
           create all the Monument Smart Contracts currently deployed on the
           Ethereum Mainnet. Wrote and thoroughly tested the Monument ERC721 NFT
-          Contract, and the Monument Marketplace Contract that supports buying &
-          selling of NFTs and manages its auctions in a secure fashion. <br />{' '}
-          <br /> As a Product Manager, I managed a team of 5 developers working
-          on the Frontend, Backend, Web3 & the Monument iOS App. I brought order
-          in chaotic times, and helped the company ship its MVP in a month using
+          Contract (got it audited back and forth by professionals), and the
+          Monument Marketplace Contract that supports buying & selling of NFTs
+          and manages its auctions in a secure fashion. <br /> <br /> As a
+          Product Manager, I managed a team of 5 developers working on the
+          Frontend, Backend, Web3 & the Monument iOS App. I brought order in
+          chaotic times, and helped the company ship its MVP in a month using
           Scrum & Agile methodologies.
         </>
       ),
