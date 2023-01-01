@@ -185,6 +185,29 @@ export const PROJECTS = {
       ),
     },
     {
+      image: 'https://judiciary.app/favicon.ico',
+      // width: 100,
+      name: 'The Judiciary Protocol (judiciary.app)',
+      link: 'https://judiciary.app',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>DAO Attorney</strong> & <strong>Protocol Architect</strong>,
+            December 2022 - Present
+          </span>
+          <br /> The on-chain contract creation & signing protocol for
+          businesses and individuals, with in-built escrow functionalities where
+          the participants can choose their judge for the escrow wallet. <br />
+          <br /> I and my team created this during the Korea Blockchain Week
+          2022 EthSeoul & Filecoin-Moralis hackathon (won $8k in grants). Teamed
+          up with a consultant from Bankless Consulting to turn this project
+          into something big. <br /> <br /> Worked on the protocol & led the
+          team entirely from idea to execution — Solidity, React, Next.js,
+          Wagmi, Ethers, Chakra UI, on all fronts.
+        </>
+      ),
+    },
+    {
       image: 'https://i.ibb.co/F0hmv9N/Beam-Community.jpg',
       // width: 100,
       name: 'Beam Community, Inc.',
