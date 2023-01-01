@@ -143,7 +143,7 @@ export const PROJECTS = {
             />
           </div>
           <br />
-          Pair coded with my teammate, and shipped the MVP in 5 just days
+          Pair coded with my teammate, and shipped the MVP in just 10 days
           (Next.js + Node.js). It was like a hackathon on steroids. Worked on
           the entire stack: the frontend, the backend, and all the business
           logic. Shipped a Mac Desktop App for Serendipity power users.
