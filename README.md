@@ -4,9 +4,7 @@
 [![emoji-log](https://cdn.jsdelivr.net/gh/ahmadawais/stuff@ca978741836412b5e33ce8561f5f95c933177067/emoji-log/flat.svg)](https://github.com/KumarAbhirup/Emoji-Log/)
 [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
 
-Open Sourced [kumar.now.sh](https://kumar.now.sh).
-
-<img align="center" width="100%" src="https://i.ibb.co/mSSkdgK/Kumar-Abhirup.jpg" alt="Hosted for Kumar Abhirup on https://kumar.now.sh">
+Open Sourced <https://kumareth.com>
 
 ## 📦 Setup
 
