@@ -25,6 +25,44 @@ function About() {
             </Row>
             <hr />
             <>
+              <h3>{PROJECTS.title}</h3>
+              <Row style={{ marginTop: 30 }}>
+                <ul
+                  className="uses-list"
+                  style={{ marginTop: '0px', marginBottom: '0px' }}
+                >
+                  {PROJECTS.data.map(
+                    ({ image, name, description, link, width }) => (
+                      <div key={link}>
+                        <img
+                          src={image}
+                          alt={`Project - ${name}`}
+                          style={{
+                            width: width ? `${width}px` : '200px',
+                            marginLeft: '10px',
+                          }}
+                        />
+                        <li key={name}>
+                          <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                          >
+                            {name}
+                          </a>
+                          <br />
+                          <br />
+                          <span className="darker">{description}</span>
+                        </li>
+                        <hr />
+                      </div>
+                    )
+                  )}
+                </ul>
+              </Row>
+            </>
+            <br />
+            <>
               <h3>{TECH.title}</h3>
               <Row style={{ marginTop: 30 }}>
                 {TECH.data.map(s => (
@@ -62,44 +100,6 @@ function About() {
                     })()}
                   </Col>
                 ))}
-              </Row>
-            </>
-            <br />
-            <>
-              <h3>{PROJECTS.title}</h3>
-              <Row style={{ marginTop: 30 }}>
-                <ul
-                  className="uses-list"
-                  style={{ marginTop: '0px', marginBottom: '0px' }}
-                >
-                  {PROJECTS.data.map(
-                    ({ image, name, description, link, width }) => (
-                      <div key={link}>
-                        <img
-                          src={image}
-                          alt={`Project - ${name}`}
-                          style={{
-                            width: width ? `${width}px` : '200px',
-                            marginLeft: '10px',
-                          }}
-                        />
-                        <li key={name}>
-                          <a
-                            href={link}
-                            target="_blank"
-                            rel="noopener noreferrer nofollow"
-                          >
-                            {name}
-                          </a>
-                          <br />
-                          <br />
-                          <span className="darker">{description}</span>
-                        </li>
-                        <hr />
-                      </div>
-                    )
-                  )}
-                </ul>
               </Row>
             </>
             <br />

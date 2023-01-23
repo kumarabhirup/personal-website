@@ -185,29 +185,6 @@ export const PROJECTS = {
       ),
     },
     {
-      image: 'https://judiciary.app/favicon.ico',
-      // width: 100,
-      name: 'The Judiciary Protocol (judiciary.app)',
-      link: 'https://judiciary.app',
-      description: (
-        <>
-          <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>DAO Attorney</strong> & <strong>Protocol Architect</strong>,
-            December 2022 - Present
-          </span>
-          <br /> The on-chain contract creation & signing protocol for
-          businesses and individuals, with in-built escrow functionalities where
-          the participants can choose their judge for the escrow wallet. <br />
-          <br /> I and my team created this during the Korea Blockchain Week
-          2022 EthSeoul & Filecoin-Moralis hackathon (won $8k in grants). Teamed
-          up with a consultant from Bankless Consulting to turn this project
-          into something big. <br /> <br /> Worked on the protocol & led the
-          team entirely from idea to execution — Solidity, React, Next.js,
-          Wagmi, Ethers, Chakra UI, on all fronts.
-        </>
-      ),
-    },
-    {
       image: 'https://i.ibb.co/F0hmv9N/Beam-Community.jpg',
       // width: 100,
       name: 'Beam Community, Inc.',
@@ -231,19 +208,70 @@ export const PROJECTS = {
       ),
     },
     {
+      image: 'https://thegenerativepress.com/favicon.ico',
+      // width: 100,
+      name: 'The Generative Press',
+      link: 'https://thegenerativepress.com',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Side-project</strong>, January 2023 - Present
+          </span>
+          <br /> The Generative Press surfs on Twitter and popular news sites,
+          also reads latest tweets by verified citizen journalists to learn
+          about latest happenings live, and then, our very own home-grown AI
+          personalities write the news after gathering all the context. It's
+          automated from beginning to the end. No editorial team, no human
+          intervention, only news. <br /> <br /> Made this with my colleague{' '}
+          <a
+            href="https://twitter.com/dkposts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Daniel
+          </a>
+          at Serendipity in a weekend.
+        </>
+      ),
+    },
+    {
+      image: 'https://judiciary.app/favicon.ico',
+      // width: 100,
+      name: 'The Judiciary Protocol (judiciary.app)',
+      link: 'https://judiciary.app',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>DAO Attorney</strong> & <strong>Protocol Architect</strong>,
+            December 2022 - Present
+          </span>
+          <br /> The on-chain contract creation & signing protocol for
+          businesses and individuals, with in-built escrow functionalities where
+          the participants can choose their judge for the escrow wallet. <br />
+          <br /> I and my team created this during the Korea Blockchain Week
+          2022 EthSeoul & Filecoin-Moralis hackathon (won $8k in grants). Teamed
+          up with a consultant from Bankless Consulting to turn this project
+          into something big. <br /> <br /> Worked on the protocol & led the
+          team entirely from idea to execution — Solidity, React, Next.js,
+          Wagmi, Ethers, Chakra UI, on all fronts.
+        </>
+      ),
+    },
+    {
       image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
       name: 'pkgreview.dev',
       link: 'https://pkgreview.now.sh',
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Maintainer</strong>, February 2020 - June 2020
+            <strong>Side-project</strong>, February 2020 - June 2020
           </span>
           <br /> Shipped ALL of it in just SEVEN DAYS. A lot of people find it
           very difficult to decide what NPM Package to use. pkgreview.dev helps
           developers in the JavaScript Community review and analyze each module
           before they start using it. <br /> <br /> I no more maintain this
-          project, <strong>pkgreview.dev is now deprecated.</strong>
+          project,{' '}
+          <strong>pkgreview.dev is now deprecated and abandoned.</strong>
         </>
       ),
     },
@@ -254,7 +282,7 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Co-Maintainer</strong>, June 2019 - August 2019
+            <strong>Side-project</strong>, June 2019 - August 2019
           </span>
           <br /> This app makes your colleagues take a connection/camera/mic
           test before joining a call. Hosts can create infinite JoinMyCall links
