@@ -248,7 +248,7 @@ export const PROJECTS = {
           <br /> The on-chain contract creation & signing protocol for
           businesses and individuals, with in-built escrow functionalities where
           the participants can choose their judge for the escrow wallet. <br />
-          <br /> I and my team created this during the Korea Blockchain Week
+          <br /> My team and I created this during the Korea Blockchain Week
           2022 EthSeoul & Filecoin-Moralis hackathon (won $8k in grants). Teamed
           up with a consultant from Bankless Consulting to turn this project
           into something big. <br /> <br /> Worked on the protocol & led the
