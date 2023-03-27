@@ -103,6 +103,21 @@ export const PROJECTS = {
   title: 'Work Experience',
   data: [
     {
+      image:
+        'https://media.licdn.com/dms/image/C4E0BAQEHs1C2gRRukA/company-logo_200_200/0/1620129594556?e=2147483647&v=beta&t=OJNnxV2Tz6cwTXmAk_Tm7P-8v7-MlLPsCsd5ugCoxFg',
+      name: 'Stealth Startup',
+      // link: 'https://app.serendipity.lol',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Software Engineer</strong>, March 2023 - Present
+          </span>
+          <br /> Working with a Web3 + AI startup, with a globally operated
+          remote team partly based in SF Bay Area.
+        </>
+      ),
+    },
+    {
       image: 'https://app.serendipity.lol/favicon.ico',
       // width: 100,
       name: 'Serendipity',
@@ -110,7 +125,7 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Software Engineer</strong>, August 2022 - Present
+            <strong>Software Engineer</strong>, August 2022 - Februrary 2023
           </span>
           <br /> Serendipity approaches Note Taking in a whole new way, by
           focusing on People, not just Notes. It is a note-taking app that helps
