@@ -19,11 +19,13 @@ export const ELEMENTS = {
       <br />
       <br />I am in the evergreen process of learning, and I am loving it!
       <br />
-      Currently working as a{' '}
+      <br />
+      Formerly worked as a{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a href="https://serendipity.lol" target="_blank" rel="noopener">
         Software Engineer at Serendipity.
-      </a>
+      </a>{' '}
+      Currently working with a stealth Web3 + AI SF Startup, remotely.
       <br />
       <br />
       <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
