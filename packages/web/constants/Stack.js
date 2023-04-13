@@ -121,7 +121,7 @@ export const PROJECTS = {
       image: 'https://i.ibb.co/Z8gmths/serendipity.jpg',
       // width: 100,
       name: 'Serendipity',
-      link: '#' // 'https://app.serendipity.lol',
+      link: '#', // 'https://app.serendipity.lol',
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
