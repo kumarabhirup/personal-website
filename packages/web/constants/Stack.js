@@ -71,7 +71,7 @@ export const TECH = {
 export const SOCIAL = {
   title: 'Available here',
   data: [
-    { platform: 'Twitter', link: `https://twitter.com/${META.social.twitter}` },
+//     { platform: 'Twitter', link: `https://twitter.com/${META.social.twitter}` },
     {
       platform: 'LinkedIn',
       link: `https://linkedin.com/in/${META.social.linkedin}`,
