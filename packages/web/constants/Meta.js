@@ -40,7 +40,7 @@ export const ELEMENTS = {
       <a href="https://serendipity.lol" target="_blank" rel="noopener">
         Software Engineer at Serendipity.
       </a>{' '}
-      Currently working with a stealth Web3 + AI Startup, remotely from India.
+      Currently working with Treyjury.
       <br />
       <br />
       <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
