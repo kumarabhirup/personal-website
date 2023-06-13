@@ -40,14 +40,14 @@ export const ELEMENTS = {
       <a href="https://serendipity.lol" target="_blank" rel="noopener">
         Software Engineer at Serendipity.
       </a>{' '}
-      Currently working with a stealth Web3 + AI SF Startup, remotely.
+      Currently working with a stealth Web3 + AI Startup, remotely from India.
       <br />
       <br />
       <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      <a href={`${META.resume}`} target="_blank" rel="noopener">
-        Resume
-      </a>
+//       <a href={`${META.resume}`} target="_blank" rel="noopener">
+//         Resume
+//       </a>
     </>
   ),
   belowArticle: `
