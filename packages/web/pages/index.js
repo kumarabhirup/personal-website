@@ -136,6 +136,7 @@ function About() {
             <Subscribe />
             {/* </div> */}
 
+            {/*
             <hr />
 
             <center>
@@ -149,6 +150,7 @@ function About() {
               </a>
               . That's where I usually hangout.
             </center>
+            */}
           </div>
         </div>
       </Layout>
