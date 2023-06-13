@@ -110,7 +110,7 @@ export const PROJECTS = {
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Consultant & Teach Lead</strong>, March 2023 - Present
+            <strong>Consultant & Tech Lead</strong>, March 2023 - Present
           </span>
           <br /> Working (in & from India) with a Web3 + AI startup, with a globally operated
           remote team.
