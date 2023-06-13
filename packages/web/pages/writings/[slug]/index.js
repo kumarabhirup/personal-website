@@ -81,6 +81,7 @@ function Writing({ content, data, slug }) {
           </div>
 
           <div className="writing-container">
+            {/*
             <div className="twitter-follow">
               Make sure you follow me on{' '}
               <a
@@ -95,6 +96,7 @@ function Writing({ content, data, slug }) {
 
             <br />
             <br />
+            */}
 
             <ReactMarkdown
               source={`${content}${`
