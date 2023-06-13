@@ -45,9 +45,11 @@ export const ELEMENTS = {
       <br />
       <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
-//       <a href={`${META.resume}`} target="_blank" rel="noopener">
-//         Resume
-//       </a>
+      {/*
+        <a href={`${META.resume}`} target="_blank" rel="noopener">
+        Resume
+        </a>
+      */}
     </>
   ),
   belowArticle: `
