@@ -71,7 +71,7 @@ export const TECH = {
 export const SOCIAL = {
   title: 'Available here',
   data: [
-//     { platform: 'Twitter', link: `https://twitter.com/${META.social.twitter}` },
+    { platform: 'Twitter', link: `https://twitter.com/${META.social.twitter}` },
     {
       platform: 'LinkedIn',
       link: `https://linkedin.com/in/${META.social.linkedin}`,
@@ -103,20 +103,35 @@ export const PROJECTS = {
   title: 'Work Experience',
   data: [
     {
-      image:
-        'https://media.licdn.com/dms/image/C4E0BAQEHs1C2gRRukA/company-logo_200_200/0/1620129594556?e=2147483647&v=beta&t=OJNnxV2Tz6cwTXmAk_Tm7P-8v7-MlLPsCsd5ugCoxFg',
-      name: 'Stealth Startup',
-      // link: 'https://app.serendipity.lol',
+      image: 'https://www.deva.me/favicon_384.png',
+      name: 'Deva.me',
+      link: 'https://deva.me/creators',
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Consultant & Tech Lead</strong>, March 2023 - Present
+            <strong>Founding Engineer</strong>, February 2023 - Present
           </span>
-          <br /> Working (in & from India) with a Web3 + AI startup, with a globally operated
-          remote team.
+          <br /> We aim to provide everyone a second voice, and create a massive
+          supply of automated representative intellect that shall transcend into
+          new learning experiences for the masses.
         </>
       ),
     },
+    // {
+    //   image:
+    //     'https://media.licdn.com/dms/image/C4E0BAQEHs1C2gRRukA/company-logo_200_200/0/1620129594556?e=2147483647&v=beta&t=OJNnxV2Tz6cwTXmAk_Tm7P-8v7-MlLPsCsd5ugCoxFg',
+    //   name: 'Stealth Startup',
+    //   // link: 'https://app.serendipity.lol',
+    //   description: (
+    //     <>
+    //       <span style={{ filter: 'opacity(0.5)' }}>
+    //         <strong>Consultant & Tech Lead</strong>, March 2023 - Present
+    //       </span>
+    //       <br /> Working (in & from India) with a Web3 + AI startup, with a
+    //       globally operated remote team.
+    //     </>
+    //   ),
+    // },
     {
       image: 'https://i.ibb.co/Z8gmths/serendipity.jpg',
       // width: 100,

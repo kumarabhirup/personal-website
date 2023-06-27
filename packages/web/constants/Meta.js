@@ -13,9 +13,9 @@ export const ELEMENTS = {
       and successfully exited after running it for two years.
       <br />
       <br />
-      I am a Full-Stack JavaScript Developer who loves to code and create cool
-      projects. I am specialized in building full stack applications that use
-      React in frontend and Node.js, GraphQL in the backend.
+      I am a 19yo Software Engineer, having built many projects in past, I am on
+      a path aiming to solve humanities' most pressing issues, in an iterative
+      fashion, starting from most trivial things imaginable.
       <br />
       <br />
       Led a hackathon team in Korea Blockchain Week in August 2022, and won 2nd
@@ -39,8 +39,17 @@ export const ELEMENTS = {
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a href="https://serendipity.lol" target="_blank" rel="noopener">
         Software Engineer at Serendipity.
+      </a>
+      <br />
+      Currently, Building{' '}
+      <a
+        href="https://deva.me/creators"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Deva.me
       </a>{' '}
-      Currently working with Treyjury.
+      ⚒️
       <br />
       <br />
       <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
@@ -57,7 +66,7 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am **Kumar Abhirup, a 19-year-old Software Developer**, founder of [Beam](https://itsbeam.com). Currently working as a Software Engineer at a stealth startup. <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
+I am Kumar Abhirup, a 19yo Software Engineer, having built many projects in past, I am on a path aiming to solve humanities' most pressing issues, in an iterative fashion, starting from most trivial things imaginable. <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
 
 _Love what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe) and stay updated about my content in general, lol._
   `,
