@@ -103,13 +103,26 @@ export const PROJECTS = {
   title: 'Work Experience',
   data: [
     {
+      image: 'https://pbs.twimg.com/profile_images/1658696039195627522/LiQoMntF_400x400.jpg',
+      name: 'Airchat',
+      link: 'https://getairchat.com',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Software Engineer</strong>, August 2023 - Present
+          </span>
+          <br /> On the web, on the iOS app, on everything, learning as much as I can in the process :)
+        </>
+      ),
+    },
+    {
       image: 'https://www.deva.me/favicon_384.png',
       name: 'Deva.me',
       link: 'https://deva.me/creators',
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Founding Engineer</strong>, February 2023 - Present
+            <strong>Founding Engineer</strong>, February - August 2023
           </span>
           <br /> We aim to provide everyone a second voice, and create a massive
           supply of automated representative intellect that shall transcend into
