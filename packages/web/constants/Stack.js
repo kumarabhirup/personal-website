@@ -207,7 +207,7 @@ export const PROJECTS = {
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
             <strong>Product Manager</strong> &{' '}
-            <strong>Web 3.0 Developer</strong>, December 2021 - Present
+            <strong>Web 3.0 Developer</strong>, December 2021 - August 2022
           </span>
           <br /> Monument.app is a Blockchain Start-up, which helps create
           collections of significant moments within a creator's journey. Each
