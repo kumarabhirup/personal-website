@@ -111,7 +111,7 @@ export const PROJECTS = {
           <span style={{ filter: 'opacity(0.5)' }}>
             <strong>Software Engineer</strong>, August 2023 - Present
           </span>
-          <br /> On the web, on the iOS app, on everything, learning as much as I can in the process :)
+          <br /> On the web, on the iOS app, on backend architecture, on everything, learning as much as I can in the process :)
         </>
       ),
     },
