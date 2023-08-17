@@ -35,30 +35,22 @@ export const ELEMENTS = {
       loving it!
       <br />
       <br />
-      Formerly worked as a{' '}
-      {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      <a href="https://serendipity.lol" target="_blank" rel="noopener">
-        Software Engineer at Serendipity.
-      </a>
-      <br />
-      Currently, Building{' '}
+      Currently, Software Engineer at{' '}
       <a
-        href="https://deva.me/creators"
+        href="https://getairchat.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Deva.me
+        Airchat
       </a>{' '}
       ⚒️
       <br />
       <br />
       <a href={`mailto:${META.email}`}>{META.email}</a> ﹒{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      {/*
-        <a href={`${META.resume}`} target="_blank" rel="noopener">
+      <a href={`${META.resume}`} target="_blank" rel="noopener">
         Resume
-        </a>
-      */}
+      </a>
     </>
   ),
   belowArticle: `
@@ -66,7 +58,7 @@ export const ELEMENTS = {
 
 # 🏆 About me
 
-I am Kumar Abhirup, a 19yo Software Engineer, having built many projects in past, I am on a path aiming to solve humanities' most pressing issues, in an iterative fashion, starting from most trivial things imaginable. <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
+I am Kumar Abhirup, a 19yo Software Engineer at Airchat, having built many projects in past, I am on a path aiming to solve humanities' most pressing issues, in an iterative fashion, starting from most trivial things imaginable. <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
 
 _Love what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe) and stay updated about my content in general, lol._
   `,
