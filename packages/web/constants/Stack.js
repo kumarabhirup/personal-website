@@ -103,15 +103,19 @@ export const PROJECTS = {
   title: 'Work Experience',
   data: [
     {
-      image: 'https://pbs.twimg.com/profile_images/1658696039195627522/LiQoMntF_400x400.jpg',
+      image:
+        'https://pbs.twimg.com/profile_images/1658696039195627522/LiQoMntF_400x400.jpg',
       name: 'Airchat',
       link: 'https://getairchat.com',
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Software Engineer</strong>, August 2023 - Present
+            <strong>Software Engineer</strong>, August 2023 - Feb 2024
           </span>
-          <br /> On the web, on the iOS app, on backend architecture, on everything, learning as much as I can in the process :)
+          <br /> Re-established and improved the Airchat Web Client, better Link
+          Previews, helped the app get 2k+ installs via CTA and its accurate
+          tracking, worked with the Java GRPC Backend, owned certain parts of
+          the Airchat iOS app :))
         </>
       ),
     },
@@ -278,10 +282,10 @@ export const PROJECTS = {
       ),
     },
     {
-      image: 'https://judiciary.app/favicon.ico',
+      image: 'https://judiciaryapp.vercel.app/favicon.ico',
       // width: 100,
       name: 'The Judiciary Protocol (judiciary.app)',
-      link: 'https://judiciary.app',
+      link: 'https://judiciaryapp.vercel.app',
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
@@ -297,40 +301,6 @@ export const PROJECTS = {
           into something big. <br /> <br /> Worked on the protocol & led the
           team entirely from idea to execution — Solidity, React, Next.js,
           Wagmi, Ethers, Chakra UI, on all fronts.
-        </>
-      ),
-    },
-    //     {
-    //       image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
-    //       name: 'pkgreview.dev',
-    //       link: 'https://pkgreview.now.sh',
-    //       description: (
-    //         <>
-    //           <span style={{ filter: 'opacity(0.5)' }}>
-    //             <strong>Side-project</strong>, February 2020 - June 2020
-    //           </span>
-    //           <br /> Shipped ALL of it in just SEVEN DAYS. A lot of people find it
-    //           very difficult to decide what NPM Package to use. pkgreview.dev helps
-    //           developers in the JavaScript Community review and analyze each module
-    //           before they start using it. <br /> <br /> I no more maintain this
-    //           project,{' '}
-    //           <strong>pkgreview.dev is now deprecated and abandoned.</strong>
-    //         </>
-    //       ),
-    //     },
-    {
-      image: 'https://i.ibb.co/fd2rF97/favicon.jpg',
-      name: 'JoinMyCall',
-      link: 'https://joinmycall.now.sh',
-      description: (
-        <>
-          <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Side-project</strong>, June 2019 - August 2019
-          </span>
-          <br /> This app makes your colleagues take a connection/camera/mic
-          test before joining a call. Hosts can create infinite JoinMyCall links
-          to invite guests in meeting. Guests can either skip or do the
-          connection test.
         </>
       ),
     },
@@ -355,6 +325,40 @@ export const PROJECTS = {
             GitHub
           </a>
           .
+        </>
+      ),
+    },
+    {
+      image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
+      name: 'pkgreview.dev',
+      link: 'https://pkgreview.vercel.app',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Side-project</strong>, February 2020 - June 2020
+          </span>
+          <br /> Shipped ALL of it in just SEVEN DAYS. A lot of people find it
+          very difficult to decide what NPM Package to use. pkgreview.dev helps
+          developers in the JavaScript Community review and analyze each module
+          before they start using it. <br /> <br /> I no more maintain this
+          project,{' '}
+          <strong>pkgreview.dev is now deprecated and abandoned.</strong>
+        </>
+      ),
+    },
+    {
+      image: 'https://i.ibb.co/fd2rF97/favicon.jpg',
+      name: 'JoinMyCall',
+      link: 'https://joinmycall.now.sh',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Side-project</strong>, June 2019 - August 2019
+          </span>
+          <br /> This app makes your colleagues take a connection/camera/mic
+          test before joining a call. Hosts can create infinite JoinMyCall links
+          to invite guests in meeting. Guests can either skip or do the
+          connection test.
         </>
       ),
     },
