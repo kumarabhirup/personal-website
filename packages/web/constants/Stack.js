@@ -328,24 +328,24 @@ export const PROJECTS = {
         </>
       ),
     },
-    {
-      image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
-      name: 'pkgreview.dev',
-      link: 'https://pkgreview.vercel.app',
-      description: (
-        <>
-          <span style={{ filter: 'opacity(0.5)' }}>
-            <strong>Side-project</strong>, February 2020 - June 2020
-          </span>
-          <br /> Shipped ALL of it in just SEVEN DAYS. A lot of people find it
-          very difficult to decide what NPM Package to use. pkgreview.dev helps
-          developers in the JavaScript Community review and analyze each module
-          before they start using it. <br /> <br /> I no more maintain this
-          project,{' '}
-          <strong>pkgreview.dev is now deprecated and abandoned.</strong>
-        </>
-      ),
-    },
+    // {
+    //   image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
+    //   name: 'pkgreview.dev',
+    //   link: 'https://pkgreview.vercel.app',
+    //   description: (
+    //     <>
+    //       <span style={{ filter: 'opacity(0.5)' }}>
+    //         <strong>Side-project</strong>, February 2020 - June 2020
+    //       </span>
+    //       <br /> Shipped ALL of it in just SEVEN DAYS. A lot of people find it
+    //       very difficult to decide what NPM Package to use. pkgreview.dev helps
+    //       developers in the JavaScript Community review and analyze each module
+    //       before they start using it. <br /> <br /> I no more maintain this
+    //       project,{' '}
+    //       <strong>pkgreview.dev is now deprecated and abandoned.</strong>
+    //     </>
+    //   ),
+    // },
     {
       image: 'https://i.ibb.co/fd2rF97/favicon.jpg',
       name: 'JoinMyCall',

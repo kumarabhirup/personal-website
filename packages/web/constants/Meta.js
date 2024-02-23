@@ -51,12 +51,15 @@ export const ELEMENTS = {
       ⚒️ */}
       <br />
       <br />
-      <a href={`mailto:${META.email}`}>{META.email}</a>
-      {/* ﹒{' '} */}
+      <a href={`mailto:${META.email}`}>{META.email}</a>﹒{' '}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      {/* <a href={`${META.resume}`} target="_blank" rel="noopener">
-        Resume
-      </a> */}
+      <a
+        href={`https://twitter.com/${META.social.twitter}`}
+        target="_blank"
+        rel="noopener"
+      >
+        Twitter
+      </a>
     </>
   ),
   belowArticle: `
