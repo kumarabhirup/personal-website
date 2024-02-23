@@ -206,7 +206,7 @@ export const PROJECTS = {
         'https://pbs.twimg.com/profile_images/1460721641084768260/nbMf9_r1_400x400.jpg',
       // width: 100,
       name: 'Monument Labs, Inc.',
-      link: 'https://monument.app',
+      // link: 'https://monument.app',
       description: (
         <>
           <span style={{ filter: 'opacity(0.5)' }}>
