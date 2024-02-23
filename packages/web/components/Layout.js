@@ -42,10 +42,10 @@ const menu = [
     name: 'essays',
   },
   // { path: META.discordLink, name: 'discord', newTab: true },
-  {
-    path: '/subscribe',
-    name: 'subscribe',
-  },
+  // {
+  //   path: '/subscribe',
+  //   name: 'subscribe',
+  // },
 ]
 
 function Layout({
@@ -121,6 +121,10 @@ function Layout({
             className="menubar"
             xs={6}
             // style={{ marginLeft: '5px', marginTop: '-2px' }}
+            style={{
+              overflowY: 'hidden',
+              overflowX: 'hidden',
+            }}
           >
             <ul>
               {menu.map(({ path, name, newTab }) => (
