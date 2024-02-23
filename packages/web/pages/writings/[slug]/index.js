@@ -24,7 +24,7 @@ function Writing({ content, data, slug }) {
       ? 'LEADERBOARD'
       : og?.imageTypeOnArticle
 
-  const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${author.twitter}&w=40`
+  const avatar = `https://images.weserv.nl/?url=https://unavatar.io/twitter/${author.twitter}&w=40`
 
   return (
     <>

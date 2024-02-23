@@ -41,7 +41,7 @@ const menu = [
     path: '/writings',
     name: 'essays',
   },
-  { path: META.discordLink, name: 'discord', newTab: true },
+  // { path: META.discordLink, name: 'discord', newTab: true },
   {
     path: '/subscribe',
     name: 'subscribe',
@@ -53,7 +53,7 @@ function Layout({
   isHomepage,
   secondaryPage,
   pageTitle,
-  noColorModeChange,
+  noColorModeChange = false,
   noLiveShow,
   noHead = false,
 }) {
@@ -108,7 +108,10 @@ function Layout({
 
       <img
         className="about-avatar"
-        src={`https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${META.social.twitter}`}
+        src={
+          // `https://pbs.twimg.com/profile_images/1722437909012430848/EZF6BJym_400x400.jpg` ||
+          `https://images.weserv.nl/?url=https://unavatar.io/twitter/${META.social.twitter}`
+        }
         alt="Avatar"
       />
 
@@ -149,7 +152,7 @@ function Layout({
               <Icon stack="twitter" style={{ width: '22px' }} />
             </a>
 
-            {!noColorModeChange && (
+            {/* {!noColorModeChange && (
               <button
                 type="button"
                 className="theme-switch-button"
@@ -161,7 +164,7 @@ function Layout({
               >
                 {theme === 'dark' ? <Sun /> : <Moon />}
               </button>
-            )}
+            )} */}
           </Col>
         </Row>
       </div>

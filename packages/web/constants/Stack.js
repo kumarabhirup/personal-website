@@ -100,7 +100,7 @@ export const SOCIAL = {
 }
 
 export const PROJECTS = {
-  title: 'Work Experience',
+  title: 'Experience',
   data: [
     {
       image:

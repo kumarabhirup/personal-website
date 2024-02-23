@@ -5,11 +5,13 @@ import Layout, { Icon } from '../components/Layout'
 import { ELEMENTS } from '../constants/Meta'
 import { META } from '../constants/metadata'
 import { TECH, SOCIAL, PROJECTS } from '../constants/Stack'
-import TextTransitionAnimation from '../components/TextTransitionAnimation'
 import Subscribe from '../components/Subscribe'
 import { DiscordInviteBox } from './subscribe'
+import useMobile from '../hooks/useMobile'
 
 function About() {
+  const isMobile = useMobile()
+
   return (
     <>
       <Layout secondaryPage>
@@ -63,48 +65,7 @@ function About() {
             </>
             <br />
             <>
-              <h3>{TECH.title}</h3>
-              <Row style={{ marginTop: 30 }}>
-                {TECH.data.map(s => (
-                  <Col
-                    md={2}
-                    xs={4}
-                    key={s?.title || s}
-                    style={{ textAlign: 'center', marginBottom: 40 }}
-                  >
-                    {(() => {
-                      if (s?.svg && s?.title) {
-                        return (
-                          <>
-                            <div
-                              data-icon={s?.title}
-                              style={{
-                                fill: `${s?.hex || '#000'}`,
-                                display: 'inline-block',
-                                width: '50px',
-                                margin: '0 auto',
-                              }}
-                              dangerouslySetInnerHTML={{ __html: s?.svg }}
-                            />
-                            <div className="stack-name">{s?.title}</div>
-                          </>
-                        )
-                      }
-
-                      return (
-                        <>
-                          <Icon stack={s} />
-                          <div className="stack-name">{s}</div>
-                        </>
-                      )
-                    })()}
-                  </Col>
-                ))}
-              </Row>
-            </>
-            <br />
-            <>
-              <h3>{SOCIAL.title}</h3>
+              {/* <h3>{SOCIAL.title}</h3> */}
               <Row style={{ marginTop: 30 }}>
                 {SOCIAL.data.map(s => (
                   <Col
@@ -132,11 +93,63 @@ function About() {
 
             <br />
 
-            {/* <div className="card"> */}
             <Subscribe />
-            {/* </div> */}
 
-            {/*
+            {false && (
+              <>
+                <Row
+                  style={{
+                    marginTop: isMobile ? -400 : 100,
+                    position: 'absolute',
+                    zIndex: -1,
+                    opacity: 0.1,
+                    left: -20,
+                    right: 0,
+                    transform: isMobile
+                      ? 'rotate(4deg) scale(1.2)'
+                      : 'rotate(5deg) scale(1.5)',
+                    userSelect: 'none',
+                  }}
+                >
+                  {TECH.data.map(s => (
+                    <Col
+                      md={2}
+                      xs={4}
+                      key={s?.title || s}
+                      style={{ textAlign: 'center', marginBottom: 40 }}
+                    >
+                      {(() => {
+                        if (s?.svg && s?.title) {
+                          return (
+                            <>
+                              <div
+                                data-icon={s?.title}
+                                style={{
+                                  fill: `${s?.hex || '#000'}`,
+                                  display: 'inline-block',
+                                  width: '50px',
+                                  margin: '0 auto',
+                                }}
+                                dangerouslySetInnerHTML={{ __html: s?.svg }}
+                              />
+                              {/* <div className="stack-name">{s?.title}</div> */}
+                            </>
+                          )
+                        }
+
+                        return (
+                          <>
+                            <Icon stack={s} />
+                            {/* <div className="stack-name">{s}</div> */}
+                          </>
+                        )
+                      })()}
+                    </Col>
+                  ))}
+                </Row>
+              </>
+            )}
+
             <hr />
 
             <center>
@@ -150,7 +163,6 @@ function About() {
               </a>
               . That's where I usually hangout.
             </center>
-            */}
           </div>
         </div>
       </Layout>

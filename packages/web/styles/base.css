@@ -559,7 +559,7 @@ form input:focus {
   z-index: -1;
   bottom: -40%;
   left: -10%;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 
 .uses-list {
