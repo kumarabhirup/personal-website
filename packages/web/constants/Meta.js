@@ -13,7 +13,7 @@ export const ELEMENTS = {
       and successfully exited after running it for two years.
       <br />
       <br />
-      I am a 20yo Serial Founder & a Software Engineer, having built many
+      I am a 20yo Founder and Engineer, having built many
       projects in past, I am on a path aiming to solve humanities' most pressing
       issues, in an iterative fashion, starting from most trivial things
       imaginable.
