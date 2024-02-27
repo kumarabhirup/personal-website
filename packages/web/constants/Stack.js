@@ -115,7 +115,7 @@ export const PROJECTS = {
           <br /> Re-established and improved the Airchat Web Client, better Link
           Previews, helped the app get 2k+ installs via CTA and its accurate
           tracking, worked with the Java GRPC Backend, owned certain parts of
-          the Airchat iOS app :))
+          the Airchat iOS app.
         </>
       ),
     },
