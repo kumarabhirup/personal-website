@@ -15,8 +15,7 @@
     "lint": "lerna run lint --parallel",
     "lint:fix": "lerna run lint:fix --parallel",
     "test": "lerna run test --parallel",
-    "test:ci": "lerna run test:ci --parallel",
-    "postinstall": "lerna bootstrap"
+    "test:ci": "lerna run test:ci --parallel"
   },
   "main": "index.js",
   "repository": "git@github.com:KumarAbhirup/personal-website.git",
