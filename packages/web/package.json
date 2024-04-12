@@ -5,7 +5,6 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "vercel-build": "yarn global add node-gyp",
     "dev": "NODE_OPTIONS='--openssl-legacy-provider' NODE_ENV=development next -p 3001",
     "start": "NODE_ENV=production next start",
     "build": "NODE_OPTIONS='--openssl-legacy-provider' NODE_ENV=production next build",
