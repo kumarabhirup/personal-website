@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-flexbox-grid'
+import { Gallery } from 'react-grid-gallery'
 
 import Layout, { Icon } from '../components/Layout'
 import { ELEMENTS } from '../constants/Meta'
@@ -8,6 +9,118 @@ import { TECH, SOCIAL, PROJECTS } from '../constants/Stack'
 import Subscribe from '../components/Subscribe'
 import { DiscordInviteBox } from './subscribe'
 import useMobile from '../hooks/useMobile'
+
+const images = [
+  {
+    src: '/images/mark rachapoom founders.JPG',
+    width: 4032,
+    height: 3024,
+  },
+  {
+    src: '/images/eric_jorgenson_2.JPG',
+    width: 4032,
+    height: 3024,
+  },
+  {
+    src: '/images/sam_hinkie.jpeg',
+    width: 2048,
+    height: 1152,
+    tags: [
+      { value: 'Sam Hinkie', title: 'Sam Hinkie' },
+      { value: 'FoundersOnly Event', title: 'FoundersOnly Event' },
+    ],
+    alt: 'Met Sam Hinkie in Austin, Texas.',
+  },
+  {
+    src: '/images/bryan_johnson.jpeg',
+    width: 2048,
+    height: 1536,
+    tags: [
+      { value: 'Bryan Johnson', title: 'Bryan Johnson' },
+      { value: "Don't Die", title: "Don't Die" },
+    ],
+  },
+  {
+    src: '/images/eric_jorgenson.jpeg',
+    width: 2048,
+    height: 1152,
+    tags: [
+      { value: 'Eric Jorgenson', title: 'Eric Jorgenon' },
+      {
+        value: 'The Almanak of Naval Ravikant',
+        title: 'The Almanak of Naval Ravikant',
+      },
+    ],
+  },
+  {
+    src: '/images/walk_with_naval.jpg',
+    width: 801,
+    height: 871,
+    caption: 'Walk with Naval in San Francisco',
+    tags: [
+      { value: 'Naval Ravikant', title: 'Naval Ravikant' },
+      // { value: 'Airchat', title: 'Airchat' },
+    ],
+  },
+  {
+    src: '/images/stanford treehacks.jpeg',
+    width: 2048,
+    height: 1152,
+    tags: [
+      { value: 'Stanford Treehacks', title: 'Stanford Treehacks' },
+      {
+        value: 'Judge',
+        title: 'Judge',
+      },
+    ],
+  },
+  {
+    src: '/images/agi house.jpeg',
+    width: 4032,
+    height: 3024,
+    tags: [
+      { value: 'AGI House', title: 'AGI House' },
+      {
+        value: 'Hackathon',
+        title: 'Hackathon',
+      },
+    ],
+  },
+  {
+    src: '/images/nonce.JPG',
+    width: 3390,
+    height: 2170,
+    tags: [
+      { value: 'Nonce', title: 'Nonce' },
+      {
+        value: 'Korea',
+        title: 'Korea',
+      },
+    ],
+  },
+  {
+    src: '/images/kumar usa.jpeg',
+    width: 4284,
+    height: 5712,
+  },
+  {
+    src: '/images/korea_dinner.jpeg',
+    width: 4032,
+    height: 2268,
+  },
+  {
+    src: '/images/arcadia dinner 2.jpeg',
+    width: 2016,
+    height: 1512,
+    tags: [
+      { value: 'Arcadia', title: 'Arcadia' },
+      {
+        value: 'Farewell',
+        title: 'Farewell',
+      },
+    ],
+  },
+]
 
 function About() {
   const isMobile = useMobile()
@@ -27,74 +140,14 @@ function About() {
             </Row>
 
             <br />
-
-            {false && (
-              <>
-                <Row
-                  style={{
-                    marginTop: isMobile ? -400 : 100,
-                    position: 'absolute',
-                    zIndex: -1,
-                    opacity: 0.1,
-                    left: -20,
-                    right: 0,
-                    transform: isMobile
-                      ? 'rotate(4deg) scale(1.2)'
-                      : 'rotate(5deg) scale(1.5)',
-                    userSelect: 'none',
-                  }}
-                >
-                  {TECH.data.map(s => (
-                    <Col
-                      md={2}
-                      xs={4}
-                      key={s?.title || s}
-                      style={{ textAlign: 'center', marginBottom: 40 }}
-                    >
-                      {(() => {
-                        if (s?.svg && s?.title) {
-                          return (
-                            <>
-                              <div
-                                data-icon={s?.title}
-                                style={{
-                                  fill: `${s?.hex || '#000'}`,
-                                  display: 'inline-block',
-                                  width: '50px',
-                                  margin: '0 auto',
-                                }}
-                                dangerouslySetInnerHTML={{ __html: s?.svg }}
-                              />
-                              {/* <div className="stack-name">{s?.title}</div> */}
-                            </>
-                          )
-                        }
-
-                        return (
-                          <>
-                            <Icon stack={s} />
-                            {/* <div className="stack-name">{s}</div> */}
-                          </>
-                        )
-                      })()}
-                    </Col>
-                  ))}
-                </Row>
-              </>
-            )}
-
             <hr />
 
             <center>
-              Follow me on{' '}
-              <a
-                href={`https://twitter.com/${META.social.twitter}`}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                Twitter
-              </a>
-              . That's where I usually hangout.
+              <Gallery
+                images={images}
+                enableImageSelection={false}
+                rowHeight={350}
+              />
             </center>
           </div>
         </div>

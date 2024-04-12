@@ -75,8 +75,8 @@ function Layout({
     //   setTheme('dark')
     // }
 
-    // always dark mode
-    setTheme('dark')
+    // always light mode
+    setTheme('light')
     setMounted(true)
   }, [])
 
@@ -159,15 +159,9 @@ function Layout({
       </Grid>
 
       <footer>
-        Code hosted on{' '}
-        <a
-          href={`https://github.com/${META.githubUrl}`}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          GitHub
-        </a>{' '}
-        😎
+        Follow me on{' '}
+        <a href={`https://twitter.com/${META.social.twitter}`}>Twitter</a>,
+        that's where I usually hangout.
       </footer>
     </>
   )
