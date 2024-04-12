@@ -23,7 +23,7 @@
   "author": "Kumar Abhirup",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "lerna": "^3.22.1"
   },
   "engines": {
     "node": ">=12.x"
