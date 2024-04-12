@@ -74,7 +74,7 @@ body {
 
 .top-menu ul li a {
   color: var(--heading-color);
-  font-family: ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: "Kode Mono", ibm-plex-mono, Monaco, "Lucida Console";
   padding: 0 0 3px;
   text-decoration: none;
   font-size: 12px;
@@ -526,17 +526,17 @@ form input:focus {
 
 .uses-intro a,
 .about-intro a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  border-bottom: 1px var(--heading-color) dashed;
-}
-
-.uses-intro a:hover,
-.about-intro a:hover {
   color: var(--heading-color);
   text-decoration: none;
   border-bottom: 1px var(--heading-color) dashed;
 }
+
+/* .uses-intro a:hover,
+.about-intro a:hover {
+  color: var(--heading-color);
+  text-decoration: none;
+  border-bottom: 1px var(--heading-color) dashed;
+} */
 
 .writing-image {
   object-fit: cover;
@@ -701,3 +701,19 @@ form input:focus {
   -o-border-radius: 13px;
   margin-top: 20px;
 }
+
+[data-testid="grid-gallery-item_viewport"] {
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+}
+
+[data-testid="grid-gallery-item_viewport"]:hover {
+  filter: grayscale(0%);
+}
+

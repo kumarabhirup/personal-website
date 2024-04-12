@@ -140,8 +140,9 @@ function About() {
             </Row>
 
             <br />
-            <hr />
+            <br />
 
+            <h2>Moments 📸</h2>
             <center>
               <Gallery
                 images={images}
