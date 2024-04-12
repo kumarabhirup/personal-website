@@ -1,0 +1,14 @@
+// vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+}
