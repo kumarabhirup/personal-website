@@ -69,13 +69,16 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:site" content={`@${META.social.twitter}`} />
         <meta name="twitter:creator" content={`@${META.social.twitter}`} />
 
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charSet="utf-8"
-        ></script>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
 
         <title>{title || META.title}</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <Component {...pageProps} />

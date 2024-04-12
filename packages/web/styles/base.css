@@ -15,9 +15,9 @@
 
 [data-theme="dark"] {
   --primary-color: #9a97f3;
-  --secondary-color: rgba(204, 204, 204, 0.863);
+  --secondary-color: rgba(204, 204, 204, 0.963);
   --font-color: #fff;
-  --bg-color: #010101;
+  --bg-color: #010101ef;
   --heading-color: #fff;
   --highlight-color: #267b9c;
   --hr-color: #222;
@@ -33,7 +33,7 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Kode Mono", "Inter", sans-serif;
   overflow-x: hidden;
 }
 
@@ -526,6 +526,13 @@ form input:focus {
 
 .uses-intro a,
 .about-intro a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-bottom: 1px var(--heading-color) dashed;
+}
+
+.uses-intro a:hover,
+.about-intro a:hover {
   color: var(--heading-color);
   text-decoration: none;
   border-bottom: 1px var(--heading-color) dashed;

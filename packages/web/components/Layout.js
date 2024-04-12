@@ -75,6 +75,8 @@ function Layout({
     //   setTheme('dark')
     // }
 
+    // always dark mode
+    setTheme('dark')
     setMounted(true)
   }, [])
 
@@ -106,14 +108,14 @@ function Layout({
         />
       )}
 
-      <img
+      {/* <img
         className="about-avatar"
         src={
           // `https://pbs.twimg.com/profile_images/1722437909012430848/EZF6BJym_400x400.jpg` ||
           `https://images.weserv.nl/?url=https://unavatar.io/twitter/${META.social.twitter}`
         }
         alt="Avatar"
-      />
+      /> */}
 
       <div className="top-menu">
         <Row>
@@ -121,10 +123,10 @@ function Layout({
             className="menubar"
             xs={6}
             // style={{ marginLeft: '5px', marginTop: '-2px' }}
-            style={{
-              overflowY: 'hidden',
-              overflowX: 'hidden',
-            }}
+            // style={{
+            //   overflowY: 'hidden',
+            //   overflowX: 'hidden',
+            // }}
           >
             <ul>
               {menu.map(({ path, name, newTab }) => (
@@ -135,40 +137,6 @@ function Layout({
                 </li>
               ))}
             </ul>
-          </Col>
-
-          <Col
-            xs={6}
-            style={{
-              textAlign: 'right',
-              marginTop: '-1px',
-            }}
-          >
-            <a
-              className="theme-switch-button"
-              href={`https://twitter.com/${META.social.twitter}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                marginRight: '30px',
-              }}
-            >
-              <Icon stack="twitter" style={{ width: '22px' }} />
-            </a>
-
-            {/* {!noColorModeChange && (
-              <button
-                type="button"
-                className="theme-switch-button"
-                onClick={() => switchTheme()}
-                style={{
-                  width: '22px',
-                  marginRight: '20px',
-                }}
-              >
-                {theme === 'dark' ? <Sun /> : <Moon />}
-              </button>
-            )} */}
           </Col>
         </Row>
       </div>

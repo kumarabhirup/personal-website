@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development next -p 3001",
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider' NODE_ENV=development next -p 3001",
     "start": "NODE_ENV=production next start",
     "build": "NODE_ENV=production next build",
     "lint": "eslint . --ext .js",
