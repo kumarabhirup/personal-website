@@ -1,4 +1,3 @@
-// vercel.json
 {
   "version": 2,
   "builds": [
