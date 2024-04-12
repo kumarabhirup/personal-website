@@ -81,28 +81,12 @@ function Writing({ content, data, slug }) {
           </div>
 
           <div className="writing-container">
-            {/*
-            <div className="twitter-follow">
-              Make sure you follow me on{' '}
-              <a
-                href={`https://twitter.com/${author.twitter}`}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                Twitter
-              </a>
-              , that's where I usually hang out ✌️
-            </div>
-
-            <br />
-            <br />
-            */}
-
             <ReactMarkdown
-              source={`${content}${`
----
-[Discuss on Twitter](https://twitter.com/search?q=${META.website}/writings/${slug})  ﹒  [Edit this article](https://github.com/${META.githubUrl}/edit/master/packages/web/writings/${slug}.md)  ﹒  [Connect with me on Discord](${META.discordLink})
-`}${author.twitter === META.social.twitter ? ELEMENTS.belowArticle : ''}`}
+              source={`${content}${
+                author.twitter === META.social.twitter
+                  ? ELEMENTS.belowArticle
+                  : ''
+              }`}
               escapeHtml={false}
               renderers={{
                 code: CodeBlock,

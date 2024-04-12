@@ -136,10 +136,10 @@ export const ELEMENTS = {
   belowArticle: `
 ---
 
-# 🏆 About me
+# Author
 
-I am Kumar Abhirup, a 20yo Serial Founder and a Software Engineer, having built many projects in past, I am on a path aiming to solve humanities' most pressing issues, in an iterative fashion, starting from most trivial things imaginable. <br /> To connect, you may DM me on [twitter](https://kumareth.com/twitter).
+I am Kumar Abhirup, a 20yo Founder and Engineer, having built many projects in past, I am on a path aiming to solve humanities' most pressing issues, in an iterative fashion, starting from most trivial things imaginable. To connect, you may DM me on [twitter](https://kumareth.com/twitter).
 
-_Love what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe) and stay updated about my content in general, lol._
+_Like what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe)._
   `,
 }
