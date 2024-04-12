@@ -2,24 +2,24 @@ import React from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import { Gallery } from 'react-grid-gallery'
 
-import Layout, { Icon } from '../components/Layout'
+import Layout from '../components/Layout'
 import { ELEMENTS } from '../constants/Meta'
 import { META } from '../constants/metadata'
-import { TECH, SOCIAL, PROJECTS } from '../constants/Stack'
-import Subscribe from '../components/Subscribe'
-import { DiscordInviteBox } from './subscribe'
-import useMobile from '../hooks/useMobile'
 
 const images = [
   {
     src: '/images/mark rachapoom founders.JPG',
     width: 4032,
     height: 3024,
+    caption: 'FoundersOnly Event with Mark Rachapoom',
+    alt: 'FoundersOnly Event with Mark Rachapoom',
   },
   {
     src: '/images/eric_jorgenson_2.JPG',
     width: 4032,
     height: 3024,
+    caption: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
+    alt: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
   },
   {
     src: '/images/sam_hinkie.jpeg',
@@ -30,6 +30,7 @@ const images = [
       { value: 'FoundersOnly Event', title: 'FoundersOnly Event' },
     ],
     alt: 'Met Sam Hinkie in Austin, Texas.',
+    caption: 'Met Sam Hinkie in Austin, Texas.',
   },
   {
     src: '/images/bryan_johnson.jpeg',
@@ -39,6 +40,8 @@ const images = [
       { value: 'Bryan Johnson', title: 'Bryan Johnson' },
       { value: "Don't Die", title: "Don't Die" },
     ],
+    alt: "Bryan Johnson, Don't Die Blueprint",
+    caption: `Bryan Johnson, Don't Die Blueprint`,
   },
   {
     src: '/images/eric_jorgenson.jpeg',
@@ -51,16 +54,17 @@ const images = [
         title: 'The Almanak of Naval Ravikant',
       },
     ],
+    alt: 'Eric Jorgenson, signing my The Almanak of Naval Ravikant',
+    caption: 'Eric Jorgenson, signing my The Almanak of Naval Ravikant',
   },
   {
     src: '/images/walk_with_naval.jpg',
     width: 801,
     height: 871,
-    caption: 'Walk with Naval in San Francisco',
-    tags: [
-      { value: 'Naval Ravikant', title: 'Naval Ravikant' },
-      // { value: 'Airchat', title: 'Airchat' },
-    ],
+    caption:
+      'A two hour walk with Naval in San Francisco, before joining Airchat.',
+    tags: [{ value: 'Naval Ravikant', title: 'Naval Ravikant' }],
+    alt: 'A two hour walk with Naval in San Francisco, before joining Airchat.',
   },
   {
     src: '/images/stanford treehacks.jpeg',
@@ -73,6 +77,8 @@ const images = [
         title: 'Judge',
       },
     ],
+    alt: 'Judging at Stanford Treehacks',
+    caption: 'Judging at Stanford Treehacks',
   },
   {
     src: '/images/agi house.jpeg',
@@ -85,6 +91,8 @@ const images = [
         title: 'Hackathon',
       },
     ],
+    alt: 'AGI House Hackathon, in Palo Alto, California.',
+    caption: 'AGI House Hackathon, in Palo Alto, California.',
   },
   {
     src: '/images/nonce.JPG',
@@ -97,16 +105,22 @@ const images = [
         title: 'Korea',
       },
     ],
+    alt: 'Nonce Korea 2022',
+    caption: 'Nonce Korea 2022',
   },
   {
     src: '/images/kumar usa.jpeg',
     width: 4284,
     height: 5712,
+    alt: 'Me, in San Francisco, CA',
+    caption: 'Me, in San Francisco, CA',
   },
   {
     src: '/images/korea_dinner.jpeg',
     width: 4032,
     height: 2268,
+    alt: 'Nonce Korea Dinner',
+    caption: 'Nonce Korea Dinner',
   },
   {
     src: '/images/arcadia dinner 2.jpeg',
@@ -119,12 +133,12 @@ const images = [
         title: 'Farewell',
       },
     ],
+    alt: 'Arcadia Farewell Dinner',
+    caption: 'Arcadia Farewell Dinner',
   },
 ]
 
 function About() {
-  const isMobile = useMobile()
-
   return (
     <>
       <Layout secondaryPage>
