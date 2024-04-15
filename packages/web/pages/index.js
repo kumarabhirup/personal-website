@@ -22,6 +22,22 @@ const images = [
     alt: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
   },
   {
+    src: '/images/walk_with_naval.jpg',
+    width: 801,
+    height: 871,
+    caption:
+      'A two hour walk with Naval in San Francisco, before joining Airchat.',
+    tags: [{ value: 'Naval Ravikant', title: 'Naval Ravikant' }],
+    alt: 'A two hour walk with Naval in San Francisco, before joining Airchat.',
+  },
+  {
+    src: '/images/kumar usa.jpeg',
+    width: 4284,
+    height: 5712,
+    alt: 'Me, in San Francisco, CA',
+    caption: 'Me, in San Francisco, CA',
+  },
+  {
     src: '/images/sam_hinkie.jpeg',
     width: 2048,
     height: 1152,
@@ -56,15 +72,6 @@ const images = [
     ],
     alt: 'Eric Jorgenson, signing my The Almanak of Naval Ravikant',
     caption: 'Eric Jorgenson, signing my The Almanak of Naval Ravikant',
-  },
-  {
-    src: '/images/walk_with_naval.jpg',
-    width: 801,
-    height: 871,
-    caption:
-      'A two hour walk with Naval in San Francisco, before joining Airchat.',
-    tags: [{ value: 'Naval Ravikant', title: 'Naval Ravikant' }],
-    alt: 'A two hour walk with Naval in San Francisco, before joining Airchat.',
   },
   {
     src: '/images/stanford treehacks.jpeg',
@@ -107,13 +114,6 @@ const images = [
     ],
     alt: 'Nonce Korea 2022',
     caption: 'Nonce Korea 2022',
-  },
-  {
-    src: '/images/kumar usa.jpeg',
-    width: 4284,
-    height: 5712,
-    alt: 'Me, in San Francisco, CA',
-    caption: 'Me, in San Francisco, CA',
   },
   {
     src: '/images/korea_dinner.jpeg',
