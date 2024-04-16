@@ -8,6 +8,15 @@ import { META } from '../constants/metadata'
 
 const images = [
   {
+    src: '/images/walk_with_naval.jpg',
+    width: 801,
+    height: 871,
+    caption:
+      'A two hour walk with Naval in San Francisco, before joining Airchat.',
+    tags: [{ value: 'Naval Ravikant', title: 'Naval Ravikant' }],
+    alt: 'A two hour walk with Naval in San Francisco, before joining Airchat.',
+  },
+  {
     src: '/images/mark rachapoom founders.JPG',
     width: 4032,
     height: 3024,
@@ -20,15 +29,6 @@ const images = [
     height: 3024,
     caption: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
     alt: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
-  },
-  {
-    src: '/images/walk_with_naval.jpg',
-    width: 801,
-    height: 871,
-    caption:
-      'A two hour walk with Naval in San Francisco, before joining Airchat.',
-    tags: [{ value: 'Naval Ravikant', title: 'Naval Ravikant' }],
-    alt: 'A two hour walk with Naval in San Francisco, before joining Airchat.',
   },
   {
     src: '/images/kumar usa.jpeg',
