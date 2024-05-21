@@ -19,8 +19,7 @@ const META = {
     revue: username,
     twitch: username,
   },
-  description:
-    'Kumar is a Full-Stack JavaScript Developer who builds new stuff. Founder @ Beam. Say hi 👋 to him!',
+  description: '',
   thumbnail: 'https://i.ibb.co/0JfTxD2/Kumar-Abhirup-kumareth.jpg', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
   pageOgs: {
     uses: 'https://i.ibb.co/xKvXWq3/Kumar-Abhirup-kumareth-uses.jpg',

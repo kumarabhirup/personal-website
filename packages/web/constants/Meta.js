@@ -52,7 +52,7 @@ export const ELEMENTS = {
       <br />
       <br />— Co-founder of{' '}
       <a href="https://merse.co" target="_blank" rel="noopener noreferrer">
-        Merse.co
+        Merse.co (YC S24)
       </a>
       <br />— Founder{' '}
       <a href="https://itsbeam.com" target="_blank" rel="noopener noreferrer">
@@ -67,7 +67,7 @@ export const ELEMENTS = {
       <br />
       — Moralis Filecoin Hackathon 2022, Public Goods Track Winner
       <br />
-      — EthSeoul Hackathon, Public Goods Track Winner
+      — EthSeoul Hackathon 2022, Public Goods Track Winner
       <br />—{' '}
       <a
         href="https://nonce.community"

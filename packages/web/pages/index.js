@@ -31,24 +31,6 @@ const images = [
     alt: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
   },
   {
-    src: '/images/kumar usa.jpeg',
-    width: 4284,
-    height: 5712,
-    alt: 'Me, in San Francisco, CA',
-    caption: 'Me, in San Francisco, CA',
-  },
-  {
-    src: '/images/sam_hinkie.jpeg',
-    width: 2048,
-    height: 1152,
-    tags: [
-      { value: 'Sam Hinkie', title: 'Sam Hinkie' },
-      { value: 'FoundersOnly Event', title: 'FoundersOnly Event' },
-    ],
-    alt: 'Met Sam Hinkie in Austin, Texas.',
-    caption: 'Met Sam Hinkie in Austin, Texas.',
-  },
-  {
     src: '/images/bryan_johnson.jpeg',
     width: 2048,
     height: 1536,
@@ -136,6 +118,17 @@ const images = [
     alt: 'Arcadia Farewell Dinner',
     caption: 'Arcadia Farewell Dinner',
   },
+  // {
+  //   src: '/images/sam_hinkie.jpeg',
+  //   width: 2048,
+  //   height: 1152,
+  //   tags: [
+  //     { value: 'Sam Hinkie', title: 'Sam Hinkie' },
+  //     { value: 'FoundersOnly Event', title: 'FoundersOnly Event' },
+  //   ],
+  //   alt: 'Met Sam Hinkie in Austin, Texas.',
+  //   caption: 'Met Sam Hinkie in Austin, Texas.',
+  // },
 ]
 
 function About() {
@@ -162,6 +155,17 @@ function About() {
                 images={images}
                 enableImageSelection={false}
                 rowHeight={350}
+              />
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/XGvTdW9iBMI?si=82fHf5YwRIAI-gHQ?autoplay=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                style={{ borderRadius: 20 }}
+                allowfullscreen
               />
             </center>
           </div>
