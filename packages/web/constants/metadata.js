@@ -20,14 +20,12 @@ const META = {
     twitch: username,
   },
   description: '',
-  thumbnail: 'https://i.ibb.co/0JfTxD2/Kumar-Abhirup-kumareth.jpg', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
+  thumbnail: 'https://i.ibb.co/NLZ8f5d/Kumar-Abhirup-Cover.png', // 'https://i.ibb.co/0JfTxD2/Kumar-Abhirup-kumareth.jpg', // 'https://i.ibb.co/MPWCPr1/Kumar-Abhirup.jpg'
   pageOgs: {
-    uses: 'https://i.ibb.co/xKvXWq3/Kumar-Abhirup-kumareth-uses.jpg',
-    writings:
-      'https://i.ibb.co/jhg75vm/Kumar-Abhirup-kumareth-writings-essays-blog.jpg',
-    subscribe:
-      'https://i.ibb.co/GVS6QBx/Kumar-Abhirup-kumareth-subscribe-to-newsletter.jpg',
-    live: 'https://i.ibb.co/sK71r4p/Kumar-Abhirup-kumareth-live.jpg',
+    uses: 'https://i.ibb.co/NLZ8f5d/Kumar-Abhirup-Cover.png', // 'https://i.ibb.co/xKvXWq3/Kumar-Abhirup-kumareth-uses.jpg',
+    writings: 'https://i.ibb.co/NLZ8f5d/Kumar-Abhirup-Cover.png', // 'https://i.ibb.co/jhg75vm/Kumar-Abhirup-kumareth-writings-essays-blog.jpg',
+    subscribe: 'https://i.ibb.co/NLZ8f5d/Kumar-Abhirup-Cover.png', // 'https://i.ibb.co/GVS6QBx/Kumar-Abhirup-kumareth-subscribe-to-newsletter.jpg',
+    live: 'https://i.ibb.co/NLZ8f5d/Kumar-Abhirup-Cover.png', // 'https://i.ibb.co/sK71r4p/Kumar-Abhirup-kumareth-live.jpg',
   },
   email: 'hey@kumareth.com',
   resume:

@@ -102,8 +102,8 @@ Homepage.getInitialProps = async context => {
   return {
     writings,
     data: {
+      title: 'Kumar Abhirup Essays',
       og: {
-        description: `${META.fname} writes a lot. You can read it all here. :)`,
         image: META.pageOgs.writings,
       },
     },
