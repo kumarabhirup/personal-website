@@ -156,7 +156,7 @@ function About() {
                 enableImageSelection={false}
                 rowHeight={350}
               />
-              <iframe
+              {/* <iframe
                 width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/XGvTdW9iBMI?si=82fHf5YwRIAI-gHQ?autoplay=1"
@@ -166,7 +166,7 @@ function About() {
                 referrerPolicy="strict-origin-when-cross-origin"
                 style={{ borderRadius: 20 }}
                 allowfullscreen
-              />
+              /> */}
             </center>
           </div>
         </div>

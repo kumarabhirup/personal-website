@@ -36,19 +36,8 @@ export const ELEMENTS = {
       >
         Nonce Korea hackerhouse
       </a>{' '}
-      in Seoul, South Korea. Lived in the Bay Area building{' '}
-      <a href="https://air.chat" target="_blank" rel="noopener noreferrer">
-        Airchat
-      </a>{' '}
-      with{' '}
-      <a
-        href="https://twitter.com/naval"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Naval
-      </a>
-      . I am in the evergreen process of learning, and I am loving it!
+      in Seoul, South Korea. I am in the evergreen process of learning, and I am
+      loving it!
       <br />
       <br />— Co-founder of{' '}
       <a href="https://merse.co" target="_blank" rel="noopener noreferrer">
@@ -85,7 +74,7 @@ export const ELEMENTS = {
       >
         The First Residency Cohort
       </a>
-      <br />— Granted $5k by{' '}
+      {/* <br />— Granted $5k by{' '}
       <a
         href="https://twitter.com/founderspodcast?lang=en"
         target="_blank"
@@ -101,7 +90,7 @@ export const ELEMENTS = {
       >
         FoundersOnly
       </a>{' '}
-      conference in Austin, Texas.
+      conference in Austin, Texas. */}
       <br />
       <br />I write{' '}
       <Link href="/writings" target="_blank" rel="noopener noreferrer">
