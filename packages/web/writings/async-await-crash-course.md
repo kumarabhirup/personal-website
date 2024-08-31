@@ -31,7 +31,7 @@ and then output `Done Last`.
 
 But the below snippet outputs "Done Last" first.
 
-That is now JavaScript behaves. It does not wait by default.
+That is how JavaScript behaves. It does not wait by default.
 
 ![Code Snippet](https://i.ibb.co/d0Nc65D/1.png)
 
