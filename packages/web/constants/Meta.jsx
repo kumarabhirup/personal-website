@@ -14,7 +14,7 @@ export const ELEMENTS = {
       successfully exited after running it for two years.
       <br />
       <br />
-      I am a 20yo Founder and Engineer, having built many projects in past, I am
+      I am a 21yo Founder and Engineer, having built many projects in past, I am
       on a path aiming to solve humanities' most pressing issues, in an
       iterative fashion, starting from most trivial things imaginable.
       <br />
@@ -42,21 +42,39 @@ export const ELEMENTS = {
       <br />— Co-founder of{' '}
       <a href="https://merse.co" target="_blank" rel="noopener noreferrer">
         Merse.co (YC S24)
+      </a>{' '}
+      (
+      <a
+        href="https://www.businessinsider.com/promising-creator-economy-influencer-marketing-startups-per-top-vcs-2024-10"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Business Insider
       </a>
+      )
+      <br />— Previously building{' '}
+      <a
+        href="https://techcrunch.com/2024/04/13/airchat-launch/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Airchat (acquired)
+      </a>{' '}
+      with <a href="https://twitter.com/naval">Naval</a>.
       <br />— Founder{' '}
       <a href="https://itsbeam.com" target="_blank" rel="noopener noreferrer">
         itsbeam.com
       </a>{' '}
       (acquired)
-      <br />— Previously building{' '}
-      <a href="https://air.chat" target="_blank" rel="noopener noreferrer">
-        Airchat
+      <br />— Recipient of{' '}
+      <a
+        href="https://www.extraordinary.club"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        The O1 Visa
       </a>{' '}
-      with <a href="https://twitter.com/naval">Naval</a>.
-      <br />
-      — Moralis Filecoin Hackathon 2022, Public Goods Track Winner
-      <br />
-      — EthSeoul Hackathon 2022, Public Goods Track Winner
+      🇺🇸
       <br />—{' '}
       <a
         href="https://nonce.community"
@@ -66,14 +84,16 @@ export const ELEMENTS = {
         Nonce Korea
       </a>{' '}
       2022 Fellow
-      <br />— Joined{' '}
+      <br />— Alumni of{' '}
       <a
         href="https://livetheresidency.com"
         target="_blank"
         rel="noopener noreferrer"
       >
         The First Residency Cohort
-      </a>
+      </a>{' '}
+      in Berkeley, CA
+      <br />— EthSeoul Hackathon 2022, Public Goods Track Winner
       {/* <br />— Granted $5k by{' '}
       <a
         href="https://twitter.com/founderspodcast?lang=en"

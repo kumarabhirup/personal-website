@@ -8,13 +8,35 @@ import { META } from '../constants/metadata'
 
 const images = [
   {
-    src: '/images/walk_with_naval.jpg',
+    src: '/images/YCombinator.jpg',
     width: 801,
+    height: 571,
+    caption: 'Merse got into Y Combinator S24 batch',
+    tags: [{ value: 'Y Combinator', title: 'Y Combinator' }],
+    alt: 'Merse got into the Y Combinator S24 batch',
+  },
+  {
+    src: '/images/YC Speaking.jpg',
+    width: 3032,
+    height: 3024,
+    caption: 'YC Demo Event',
+    alt: 'Mark Rachapoom, and Kumar Abhirup (me)',
+  },
+  {
+    src: '/images/SF Tech Week 2024 (1).jpg',
+    width: 901,
     height: 871,
-    caption:
-      'A two hour walk with Naval in San Francisco, before joining Airchat.',
-    tags: [{ value: 'Naval Ravikant', title: 'Naval Ravikant' }],
-    alt: 'A two hour walk with Naval in San Francisco, before joining Airchat.',
+    caption: 'Panel Speaker at SF Tech Week 2024',
+    tags: [{ value: 'SF Tech Week', title: 'SF Tech Week' }],
+    alt: 'Panel Speaker at SF Tech Week 2024',
+  },
+  {
+    src: '/images/SF Tech Week 2024 (2).jpg',
+    width: 801,
+    height: 571,
+    caption: 'Panel Speaker at SF Tech Week 2024',
+    tags: [{ value: 'SF Tech Week', title: 'SF Tech Week' }],
+    alt: 'Panel Speaker at SF Tech Week 2024',
   },
   {
     src: '/images/mark rachapoom founders.JPG',
@@ -24,11 +46,13 @@ const images = [
     alt: 'FoundersOnly Event with Mark Rachapoom',
   },
   {
-    src: '/images/eric_jorgenson_2.JPG',
-    width: 4032,
-    height: 3024,
-    caption: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
-    alt: 'Eric Jorgenson, Mark Rachapoom, and Kumar Abhirup (me)',
+    src: '/images/walk_with_naval.jpg',
+    width: 801,
+    height: 871,
+    caption:
+      'A two hour walk with Naval in San Francisco, before joining Airchat.',
+    tags: [{ value: 'Naval Ravikant', title: 'Naval Ravikant' }],
+    alt: 'A two hour walk with Naval in San Francisco, before joining Airchat.',
   },
   {
     src: '/images/bryan_johnson.jpeg',
@@ -69,6 +93,17 @@ const images = [
     alt: 'Judging at Stanford Treehacks',
     caption: 'Judging at Stanford Treehacks',
   },
+  // {
+  //   src: '/images/sam_hinkie.jpeg',
+  //   width: 2048,
+  //   height: 1152,
+  //   tags: [
+  //     { value: 'Sam Hinkie', title: 'Sam Hinkie' },
+  //     { value: 'FoundersOnly Event', title: 'FoundersOnly Event' },
+  //   ],
+  //   alt: 'Met Sam Hinkie in Austin, Texas.',
+  //   caption: 'Met Sam Hinkie in Austin, Texas.',
+  // },
   {
     src: '/images/agi house.jpeg',
     width: 4032,
@@ -97,37 +132,26 @@ const images = [
     alt: 'Nonce Korea 2022',
     caption: 'Nonce Korea 2022',
   },
-  {
-    src: '/images/korea_dinner.jpeg',
-    width: 4032,
-    height: 2268,
-    alt: 'Nonce Korea Dinner',
-    caption: 'Nonce Korea Dinner',
-  },
-  {
-    src: '/images/arcadia dinner 2.jpeg',
-    width: 2016,
-    height: 1512,
-    tags: [
-      { value: 'Arcadia', title: 'Arcadia' },
-      {
-        value: 'Farewell',
-        title: 'Farewell',
-      },
-    ],
-    alt: 'Arcadia Farewell Dinner',
-    caption: 'Arcadia Farewell Dinner',
-  },
   // {
-  //   src: '/images/sam_hinkie.jpeg',
-  //   width: 2048,
-  //   height: 1152,
+  //   src: '/images/korea_dinner.jpeg',
+  //   width: 4032,
+  //   height: 2268,
+  //   alt: 'Nonce Korea Dinner',
+  //   caption: 'Nonce Korea Dinner',
+  // },
+  // {
+  //   src: '/images/arcadia dinner 2.jpeg',
+  //   width: 2016,
+  //   height: 1512,
   //   tags: [
-  //     { value: 'Sam Hinkie', title: 'Sam Hinkie' },
-  //     { value: 'FoundersOnly Event', title: 'FoundersOnly Event' },
+  //     { value: 'Arcadia', title: 'Arcadia' },
+  //     {
+  //       value: 'Farewell',
+  //       title: 'Farewell',
+  //     },
   //   ],
-  //   alt: 'Met Sam Hinkie in Austin, Texas.',
-  //   caption: 'Met Sam Hinkie in Austin, Texas.',
+  //   alt: 'Arcadia Farewell Dinner',
+  //   caption: 'Arcadia Farewell Dinner',
   // },
 ]
 
@@ -137,40 +161,37 @@ function About() {
       <Layout secondaryPage>
         <div style={{ marginTop: 50, paddingLeft: '3px', paddingRight: '3px' }}>
           <h1 className="about-h1">
-            {META.fname} {META.lname}
-            {/* <TextTransitionAnimation /> */}
-          </h1>
-
+            {' '}
+            {META.fname} {META.lname} {/* <TextTransitionAnimation /> */}{' '}
+          </h1>{' '}
           <div className="about-intro">
             <Row>
-              <Col md={12}>{ELEMENTS.about}</Col>
-            </Row>
-
+              <Col md={12}> {ELEMENTS.about} </Col>{' '}
+            </Row>{' '}
             <br />
             <br />
-
-            <h2>Moments 📸</h2>
+            <h2> Moments📸 </h2>{' '}
             <center>
               <Gallery
                 images={images}
                 enableImageSelection={false}
                 rowHeight={350}
-              />
+              />{' '}
               {/* <iframe
-                width="100%"
-                height="315"
-                src="https://www.youtube.com/embed/XGvTdW9iBMI?si=82fHf5YwRIAI-gHQ?autoplay=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                style={{ borderRadius: 20 }}
-                allowfullscreen
-              /> */}
-            </center>
-          </div>
-        </div>
-      </Layout>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                width="100%"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                height="315"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                src="https://www.youtube.com/embed/XGvTdW9iBMI?si=82fHf5YwRIAI-gHQ?autoplay=1"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                title="YouTube video player"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                frameBorder="0"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                referrerPolicy="strict-origin-when-cross-origin"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                style={{ borderRadius: 20 }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                allowfullscreen
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              /> */}{' '}
+            </center>{' '}
+          </div>{' '}
+        </div>{' '}
+      </Layout>{' '}
     </>
   )
 }
