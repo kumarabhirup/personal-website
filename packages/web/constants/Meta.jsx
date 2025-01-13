@@ -146,7 +146,7 @@ export const ELEMENTS = {
 
 # Author
 
-I am Kumar Abhirup, a 20yo Founder and Engineer, having built many projects in past, I am on a path aiming to solve humanities' most pressing issues, in an iterative fashion, starting from most trivial things imaginable. To connect, you may DM me on [twitter](https://kumareth.com/twitter).
+I am Kumar Abhirup, a 21yo Founder and Engineer, having built many projects in past, I am on a path aiming to solve humanities' most pressing issues, in an iterative fashion, starting from most trivial things imaginable. To connect, you may DM me on [twitter](https://kumareth.com/twitter).
 
 _Like what I write? [Subscribe to **my newsletter**](https://kumareth.com/subscribe)._
   `,

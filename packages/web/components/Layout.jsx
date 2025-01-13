@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic'
 import { ELEMENTS } from '../constants/Meta'
 import { META } from '../constants/metadata'
 import useTwitchIsLive from '../hooks/useTwitchIsLive'
+import GridBackground from './grid-background'
 
 const ReactTwitchEmbedVideo = dynamic(
   () => import('react-twitch-embed-video'),
@@ -116,6 +117,8 @@ function Layout({
         }
         alt="Avatar"
       /> */}
+
+      <GridBackground />
 
       <div className="top-menu">
         <Row>

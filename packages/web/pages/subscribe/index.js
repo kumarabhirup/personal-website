@@ -15,6 +15,7 @@ export function DiscordInviteBox() {
         backgroundSize: '90px',
         backgroundPosition: '105% 180%',
         backgroundRepeat: 'no-repeat',
+        display: 'none', // TODO: unhide later
       }}
     >
       I have a Discord server called{' '}
@@ -23,10 +24,10 @@ export function DiscordInviteBox() {
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
-        kumar & friends
+        kumar & friends{' '}
       </a>
-      . It's a fun community of learners, that I am building ✌️ It's super small
-      as of now, glad to have you in!
+      .It 's a fun community of learners, that I am building ✌️ It' s super
+      small as of now, glad to have you in !
     </div>
   )
 }
@@ -37,17 +38,14 @@ function SubscribePage({ noColorModeChange, noLiveShow }) {
       <Layout noColorModeChange={noColorModeChange} noLiveShow={noLiveShow}>
         <Row>
           <Col md={12}>
-            {/* <div className="card"> */}
-            <Subscribe />
-            {/* </div> */}
-
+            {' '}
+            {/* <div className="card"> */} <Subscribe /> {/* </div> */}
             <br />
             <br />
-
             <DiscordInviteBox />
-          </Col>
-        </Row>
-      </Layout>
+          </Col>{' '}
+        </Row>{' '}
+      </Layout>{' '}
     </>
   )
 }
