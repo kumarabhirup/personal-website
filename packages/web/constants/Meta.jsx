@@ -13,11 +13,10 @@ export const ELEMENTS = {
       I founded my first company (Beam Community, Inc.) when I was 16, and
       successfully exited after running it for two years.
       <br />
-      <br />
-      I am a 21yo Founder and Engineer, having built many projects in past, I am
-      on a path aiming to solve humanities' most pressing issues, in an
-      iterative fashion, starting from most trivial things imaginable.
-      <br />
+      <br />I am a 21yo Founder and Engineer, having built many projects in
+      past, I am on a path aiming to solve humanities' most pressing issues, in
+      an iterative fashion, starting from most trivial things imaginable.
+      {/* <br />
       <br />
       Led a hackathon team in Korea Blockchain Week in August 2022, and won 2nd
       place at two hackathons for{' '}
@@ -37,7 +36,7 @@ export const ELEMENTS = {
         Nonce Korea hackerhouse
       </a>{' '}
       in Seoul, South Korea. I am in the evergreen process of learning, and I am
-      loving it!
+      loving it! */}
       <br />
       <br />— Co-founder of{' '}
       <a href="https://merse.co" target="_blank" rel="noopener noreferrer">
