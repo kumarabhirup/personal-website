@@ -159,7 +159,9 @@ function About() {
   return (
     <>
       <Layout secondaryPage>
-        <div style={{ marginTop: 50, paddingLeft: '3px', paddingRight: '3px' }}>
+        <div
+          style={{ marginTop: 50, paddingLeft: '15px', paddingRight: '15px' }}
+        >
           <h1 className="about-h1">
             {' '}
             {META.fname} {META.lname} {/* <TextTransitionAnimation /> */}{' '}
@@ -168,27 +170,16 @@ function About() {
             <Row>
               <Col md={12}> {ELEMENTS.about} </Col>{' '}
             </Row>{' '}
-            <br />
-            <br />
-            <h2> Moments📸 </h2>{' '}
-            <center>
-              <Gallery
-                images={images}
-                enableImageSelection={false}
-                rowHeight={350}
-              />{' '}
-              {/* <iframe
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            width="100%"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            height="315"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            src="https://www.youtube.com/embed/XGvTdW9iBMI?si=82fHf5YwRIAI-gHQ?autoplay=1"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            title="YouTube video player"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            frameBorder="0"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            referrerPolicy="strict-origin-when-cross-origin"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            style={{ borderRadius: 20 }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            allowfullscreen
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                          /> */}{' '}
-            </center>{' '}
+            <br />{' '}
+            {/* <br />
+                                                <h2> Moments📸 </h2>{' '}
+                                                <center>
+                                                  <Gallery
+                                                    images={images}
+                                                    enableImageSelection={false}
+                                                    rowHeight={350}
+                                                  />{' '}
+                                                </center> */}{' '}
           </div>{' '}
         </div>{' '}
       </Layout>{' '}

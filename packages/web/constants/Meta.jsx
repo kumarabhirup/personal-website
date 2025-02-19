@@ -63,7 +63,7 @@ export const ELEMENTS = {
       >
         Airchat (acquired)
       </a>{' '}
-      with <a href="https://twitter.com/naval">Naval</a>.
+      with <a href="https://twitter.com/naval">Naval Ravikant</a>.
       <br />— Founder{' '}
       <a href="https://itsbeam.com" target="_blank" rel="noopener noreferrer">
         itsbeam.com
