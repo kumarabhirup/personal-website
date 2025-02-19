@@ -170,16 +170,15 @@ function About() {
             <Row>
               <Col md={12}> {ELEMENTS.about} </Col>{' '}
             </Row>{' '}
-            <br />{' '}
-            {/* <br />
-                                                <h2> Moments📸 </h2>{' '}
-                                                <center>
-                                                  <Gallery
-                                                    images={images}
-                                                    enableImageSelection={false}
-                                                    rowHeight={350}
-                                                  />{' '}
-                                                </center> */}{' '}
+            <br /> <br />
+            <h2> Moments📸 </h2>{' '}
+            <center>
+              <Gallery
+                images={images}
+                enableImageSelection={false}
+                rowHeight={350}
+              />{' '}
+            </center>{' '}
           </div>{' '}
         </div>{' '}
       </Layout>{' '}
