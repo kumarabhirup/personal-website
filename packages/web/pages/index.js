@@ -104,20 +104,20 @@ const images = [
   //   alt: 'Met Sam Hinkie in Austin, Texas.',
   //   caption: 'Met Sam Hinkie in Austin, Texas.',
   // },
-  {
-    src: '/images/agi house.jpeg',
-    width: 4032,
-    height: 3024,
-    tags: [
-      { value: 'AGI House', title: 'AGI House' },
-      {
-        value: 'Hackathon',
-        title: 'Hackathon',
-      },
-    ],
-    alt: 'AGI House Hackathon, in Palo Alto, California.',
-    caption: 'AGI House Hackathon, in Palo Alto, California.',
-  },
+  // {
+  //   src: '/images/agi house.jpeg',
+  //   width: 4032,
+  //   height: 3024,
+  //   tags: [
+  //     { value: 'AGI House', title: 'AGI House' },
+  //     {
+  //       value: 'Hackathon',
+  //       title: 'Hackathon',
+  //     },
+  //   ],
+  //   alt: 'AGI House Hackathon, in Palo Alto, California.',
+  //   caption: 'AGI House Hackathon, in Palo Alto, California.',
+  // },
   {
     src: '/images/nonce.JPG',
     width: 3390,
@@ -178,16 +178,16 @@ function About() {
                 rowHeight={350}
               />{' '}
               {/* <iframe
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                width="100%"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                height="315"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                src="https://www.youtube.com/embed/XGvTdW9iBMI?si=82fHf5YwRIAI-gHQ?autoplay=1"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                title="YouTube video player"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                frameBorder="0"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                referrerPolicy="strict-origin-when-cross-origin"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                style={{ borderRadius: 20 }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                allowfullscreen
-                                                                                                                                                                                                                                                                                                                                                                                                                                                              /> */}{' '}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            width="100%"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            height="315"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            src="https://www.youtube.com/embed/XGvTdW9iBMI?si=82fHf5YwRIAI-gHQ?autoplay=1"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            title="YouTube video player"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            frameBorder="0"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            referrerPolicy="strict-origin-when-cross-origin"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            style={{ borderRadius: 20 }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            allowfullscreen
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                          /> */}{' '}
             </center>{' '}
           </div>{' '}
         </div>{' '}

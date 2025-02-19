@@ -39,8 +39,12 @@ export const ELEMENTS = {
       loving it! */}
       <br />
       <br />— Co-founder of{' '}
+      <a href="https://dench.com" target="_blank" rel="noopener noreferrer">
+        Dench.com (YC S24)
+      </a>
+      <br />— Co-founder of{' '}
       <a href="https://merse.co" target="_blank" rel="noopener noreferrer">
-        Merse.co (YC S24)
+        Merse.co
       </a>{' '}
       (
       <a
@@ -92,7 +96,15 @@ export const ELEMENTS = {
         The First Residency Cohort
       </a>{' '}
       in Berkeley, CA
-      <br />— EthSeoul Hackathon 2022, Public Goods Track Winner
+      <br />— Judge at{' '}
+      <a
+        href="https://2024.treehacks.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Stanford Treehacks 2024
+      </a>
+      <br />— Winner of EthSeoul Hackathon 2022, Public Goods Track
       {/* <br />— Granted $5k by{' '}
       <a
         href="https://twitter.com/founderspodcast?lang=en"
