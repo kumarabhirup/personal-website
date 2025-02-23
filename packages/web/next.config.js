@@ -92,12 +92,12 @@ module.exports = withCSS(
         },
         {
           source: '/schedule',
-          destination: `https://calendly.com/kumareth/chat`,
+          destination: `https://cal.com/kumareth`,
           permanent: true,
         },
         {
           source: '/calendly',
-          destination: `https://calendly.com/kumareth/chat`,
+          destination: `https://cal.com/kumareth/chat`,
           permanent: true,
         },
       ]
